@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Archaeology Data Infrastructures",
+    "section": "",
+    "text": "Preface\nIt is created in open-source Quarto scientific and technical publishing system."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "See Zhang, Zhao, and Ventrella (2018) for additional discussion of literate programming.\n\n\n\n\nZhang, Shaozeng, Bo Zhao, and Jennifer Ventrella. 2018. “Towards an Archaeological-Ethnographic Approach to Big Data: Rethinking Data Veracity.” Ethnographic Praxis in Industry Conference Proceedings 2018 (1): 62–85. https://doi.org/10.1111/1559-8918.2018.01197."
+  },
+  {
+    "objectID": "theory.html",
+    "href": "theory.html",
+    "title": "2  Theory and Method",
+    "section": "",
+    "text": "(based on TAG Brno 2021 talk)"
+  },
+  {
+    "objectID": "theory.html#theorizing-data",
+    "href": "theory.html#theorizing-data",
+    "title": "2  Theory and Method",
+    "section": "2.2 Theorizing data",
+    "text": "2.2 Theorizing data\nDefining archaeological data, micro- to macro-scales;"
+  },
+  {
+    "objectID": "theory.html#methodological-approaches",
+    "href": "theory.html#methodological-approaches",
+    "title": "2  Theory and Method",
+    "section": "2.3 Methodological Approaches",
+    "text": "2.3 Methodological Approaches\nReview of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc."
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "3  Data",
+    "section": "",
+    "text": "Data models, datafication of past reality, simple vs complex data models; Assessing findability, accessibility, interoperability, and reusability (FAIR) principles; Cultural heritage management data vs research data domains; Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Zhang, Shaozeng, Bo Zhao, and Jennifer Ventrella. 2018. “Towards\nan Archaeological-Ethnographic Approach to Big\nData: Rethinking Data Veracity.”\nEthnographic Praxis in Industry Conference Proceedings 2018\n(1): 62–85. https://doi.org/10.1111/1559-8918.2018.01197."
+  }
+]
