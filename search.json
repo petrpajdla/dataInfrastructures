@@ -4,47 +4,47 @@
     "href": "index.html",
     "title": "Archaeology Data Infrastructures",
     "section": "",
-    "text": "Preface\nIt is created in open-source Quarto scientific and technical publishing system."
+    "text": "Warning\n\n\n\nThis is a website for the work-in-progress PhD thesis of mine. It is not intended to be read by anyone except me (and maybe few other people) yet. If you do flick through it anyway, consider yourself warned. It might be messy at some places and will definitely undergo serious rewriting.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nThis work can be read online at https://petrpajdla.github.io/dataInfrastructures/. The source repository is on GitHub at https://github.com/petrpajdla/dataInfrastructures/.\n\n\n\nThis document is created in an open-source Quarto scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give Quarto publishing a try and set this whole thing up in less then an hour or so.\n\n\nThis note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.\nAs of November 2022, this is written on Archlabs GNU/Linux machine, mostly in Visual Studio Code editor and sometimes in RStudio. Changes are trackeg with Git and a remote repository is on GitHub (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch gh-pages. See a guide on how to set this up here. The online version is published with this command:\n\n\nTerminal\n\nquarto publish gh-pages\n\nIn my point of view, there are numerous advantages to writing in this manner. A non-exhaustive list is below.\n\nPlain text\nWriting in plain text enhanced with a simple Markdown syntax and some Quarto elements is great because from one source document, a .pdf, .html and a .docx documents can be rendered using pandoc.\nVersion control\nTracking changes using git is easily implemented when writing in plain text and keeping track of any changes in the manuscript is crucial for any later revisions etc.\nSimple citation management\nBibliography is organized using Zotero with Better BibTeX extension which is used to export (and keep updated) neccessary collections in a parent folder of the manuscript. My Zotero library is here."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "Introduction",
     "section": "",
     "text": "See Zhang, Zhao, and Ventrella (2018) for additional discussion of literate programming.\n\n\n\n\nZhang, Shaozeng, Bo Zhao, and Jennifer Ventrella. 2018. “Towards an Archaeological-Ethnographic Approach to Big Data: Rethinking Data Veracity.” Ethnographic Praxis in Industry Conference Proceedings 2018 (1): 62–85. https://doi.org/10.1111/1559-8918.2018.01197."
   },
   {
     "objectID": "theory.html",
     "href": "theory.html",
-    "title": "2  Theory and Method",
+    "title": "1  Theory and Method",
     "section": "",
     "text": "(based on TAG Brno 2021 talk)"
   },
   {
     "objectID": "theory.html#theorizing-data",
     "href": "theory.html#theorizing-data",
-    "title": "2  Theory and Method",
-    "section": "2.2 Theorizing data",
-    "text": "2.2 Theorizing data\nDefining archaeological data, micro- to macro-scales;"
+    "title": "1  Theory and Method",
+    "section": "1.2 Theorizing data",
+    "text": "1.2 Theorizing data\nDefining archaeological data, micro- to macro-scales;"
   },
   {
     "objectID": "theory.html#methodological-approaches",
     "href": "theory.html#methodological-approaches",
-    "title": "2  Theory and Method",
-    "section": "2.3 Methodological Approaches",
-    "text": "2.3 Methodological Approaches\nReview of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc."
+    "title": "1  Theory and Method",
+    "section": "1.3 Methodological Approaches",
+    "text": "1.3 Methodological Approaches\nReview of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc."
   },
   {
     "objectID": "data.html",
     "href": "data.html",
-    "title": "3  Data",
+    "title": "2  Data",
     "section": "",
     "text": "Data models, datafication of past reality, simple vs complex data models; Assessing findability, accessibility, interoperability, and reusability (FAIR) principles; Cultural heritage management data vs research data domains; Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "5  Summary",
+    "title": "4  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
   },
