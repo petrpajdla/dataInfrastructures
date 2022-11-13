@@ -1,0 +1,36 @@
+# Theory {#sec-theory}
+
+## Definitions and terminology {#sec-terms}
+
+### Data {#sec-terms-data}
+
+The term data is used in a plural form what is the current scientific convention [@kitchin2022, xvii]. As @kitchin2022 [pp. 15] states, "Data are not simply captured or recorded, but are the product of discursively framed and technically mediated processes." 
+
+"The production of data is a social practice, conducted through structured and structuring fields (e.g. methods, concepts, expertise, institutions) that are shaped by and contribute to configurations of power and knowledge." [@ruppert2017]
+
+"(...) databases are designed and build to hold certain kinds of data and enable certain kinds of analysis, and how they are structured has profound consequences as to what queries and analysis can be performed." [@ruppert2012]
+
+
+### Data infrastructures {#sec-terms-infra}
+
+As I was saying in the @sec-terms-data.
+
+<!-- ============================================================================= -->
+
+## Overview of theoretical concepts {#sec-concepts}
+
+
+## Archaeology as theory- and/or data-driven science
+
+::: {.callout-note}
+## Note
+This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk coauthored with Hana Kubelková and Petr Květina. It was presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting entitled *Theoretical Approaches to Computational Archaeology* I coorganized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+:::
+
+(based on TAG Brno 2021 talk)
+
+## Theorizing data
+
+Defining archaeological data, micro- to macro-scales;
+
+

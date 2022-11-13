@@ -1,0 +1,28 @@
+# Data {#sec-data}
+
+::: {.callout-note}
+## Note
+This chapter, especially the @sec-dmp: Data management plan, builds up on the project [Data management in Archaeology](https://www.phil.muni.cz/en/research/current-projects/57940) I cooperated on with Hana Kubelková in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+:::
+
+Sources of (archaeology) data in the Czech Republic, an overview:
+
+Data models, datafication of past reality, simple vs complex data models;
+Assessing findability, accessibility, interoperability, and reusability (FAIR) principles;
+Cultural heritage management data vs research data domains;
+Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure. 
+
+## Data management plan {#sec-dmp}
+
+## Data sources {#sec-sources}
+
+### Archaeology information system of the Czech Republic {#sec-aiscr}
+
+### Legacy data sources
+
+What is a legacy data source?
+
+#### Museum databases
+
+#### 
+
