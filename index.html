@@ -85,6 +85,25 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -224,7 +243,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul>
   <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
   <ul class="collapse">
-  <li><a href="#notes-on-writing-in-the-open" id="toc-notes-on-writing-in-the-open" class="nav-link" data-scroll-target="#notes-on-writing-in-the-open">Notes on writing in the open</a></li>
+  <li><a href="#notes-on-writing" id="toc-notes-on-writing" class="nav-link" data-scroll-target="#notes-on-writing">Notes on writing</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -293,8 +312,8 @@ Note
 </div>
 </div>
 <p>This document is created in an open-source <a href="https://quarto.org/">Quarto</a> scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give <em>Quarto</em> publishing a try and set this whole thing up in less then an hour or so.</p>
-<section id="notes-on-writing-in-the-open" class="level3">
-<h3 class="anchored" data-anchor-id="notes-on-writing-in-the-open">Notes on writing in the open</h3>
+<section id="notes-on-writing" class="level3">
+<h3 class="anchored" data-anchor-id="notes-on-writing">Notes on writing</h3>
 <p>This note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.</p>
 <p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are trackeg with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>. The online version is published with this command:</p>
 <div class="code-with-filename">
@@ -303,17 +322,27 @@ Note
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>In my point of view, there are numerous advantages to writing in this manner. A non-exhaustive list is below.</p>
+<p>In my point of view, there are numerous advantages to scientific writing in this manner over traditional <em>Office</em>-based approach. A non-exhaustive list of why to do scientific writing this way is below.</p>
 <ul>
 <li><strong>Plain text</strong><br>
-Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a .pdf, .html and a .docx documents can be rendered using <a href="https://pandoc.org/">pandoc</a>.</li>
+Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a <em>.pdf</em>, <em>.html</em>, <em>.docx</em> (and probably more) document formats can be rendered using <a href="https://pandoc.org/">pandoc</a>.</li>
 <li><strong>Version control</strong><br>
-Tracking changes using <em>git</em> is easily implemented when writing in plain text and keeping track of any changes in the manuscript is crucial for any later revisions etc.</li>
+Tracking changes using <em>git</em> is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.</li>
 <li><strong>Simple citation management</strong><br>
-Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> with <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension which is used to export (and keep updated) neccessary collections in a parent folder of the manuscript. My <em>Zotero</em> library is <a href="https://www.zotero.org/knytt">here</a>.</li>
+Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> with <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as <em>.bib</em> files. My <em>Zotero</em> library is <a href="https://www.zotero.org/knytt">here</a>. To format the citations, a citation style of the <em>Journal of Computer Applications in Archaeology</em> is used (.csl file was obtained <a href="https://www.zotero.org/styles/">here</a>).</li>
+<li><strong>Embedded code</strong><br>
+Code blocks (and the associated results) can be easily embedded in the text. My language of choice is <em>R</em>. For more information on reproducibility see <span class="citation" data-cites="marwick2017">Marwick (<a href="references.html#ref-marwick2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="marwick2018a">Marwick, Boettiger and Mullen (<a href="references.html#ref-marwick2018a" role="doc-biblioref">2018</a>)</span>.</li>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography" style="display: none">
+<div id="ref-marwick2017" class="csl-entry" role="doc-biblioentry">
+Marwick, B. 2017 Computational <span>Reproducibility</span> in <span>Archaeological Research</span>: <span>Basic Principles</span> and a <span>Case Study</span> of <span>Their Implementation</span>. <em>Journal of Archaeological Method and Theory</em> 24(2): 424–450. DOI: https://doi.org/<a href="https://doi.org/10.1007/s10816-015-9272-9">10.1007/s10816-015-9272-9</a>.
+</div>
+<div id="ref-marwick2018a" class="csl-entry" role="doc-biblioentry">
+Marwick, B, Boettiger, C and Mullen, L. 2018 Packaging <span>Data Analytical Work Reproducibly Using R</span> (and <span>Friends</span>). <em>The American Statistician</em> 72(1): 80–88. DOI: https://doi.org/<a href="https://doi.org/10.1080/00031305.2017.1375986">10.1080/00031305.2017.1375986</a>.
+</div>
+</div>
 </section>
 </section>
 
