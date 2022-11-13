@@ -8,3 +8,6 @@
 
 /.quarto/
 /_book/
+/bkp/
+
+settings.json

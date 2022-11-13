@@ -17,26 +17,25 @@ book:
     - index.qmd
     - intro.qmd
     - theory.qmd
+    - method.qmd
     - data.qmd
-    - discussion.qmd
-    - summary.qmd
+#    - discussion.qmd
+#    - summary.qmd
     - references.qmd
+
+format:
+  html:
+    theme: 
+      dark: slate # darkly
+      light: lumen # cosmo flatly yeti lumen
+  pdf:
+    documentclass: scrreprt
+  docx: default
+callout-appearance: simple
+number-depth: 3
+# highlight-style: tango
 
 bibliography: 
   - "zotero_data_in_archaeology.bib" 
   - "zotero_reproducible_research.bib"
 csl: journal-of-computer-applications-in-archaeology.csl
-
-highlight-style: tango
-
-format:
-  html:
-    theme: 
-      light: flatly # cosmo
-      dark: darkly
-  pdf:
-    documentclass: scrreprt
-  docx: default
-
-
-
