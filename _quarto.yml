@@ -9,7 +9,7 @@ book:
       institute: "Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
       email: "petr.pajdla@proton.me"
       orcid-id: "0000-0001-7050-9572"
-  date: "2022-11-02"
+  date: "2022-11-12"
   favicon: cover.png
   search: true
   downloads: [pdf, docx]
@@ -22,7 +22,10 @@ book:
     - summary.qmd
     - references.qmd
 
-bibliography: "zotero_data_in_archaeology.bib"
+bibliography: 
+  - "zotero_data_in_archaeology.bib" 
+  - "zotero_reproducible_research.bib"
+csl: journal-of-computer-applications-in-archaeology.csl
 
 highlight-style: tango
 
