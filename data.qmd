@@ -14,6 +14,21 @@ Archaeological information system of the Czech Republic (AIS CR) as the main dat
 
 ## Data management plan {#sec-dmp}
 
+Good data stewardship is a crucial element in *Open Science* [@mons2018, p. 1-5], an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. 
+The data management plan (DMP) then stands at the very beginning of every such endeavour. 
+In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle.
+This implies that it is not a static, but a living record of how the data was gathered and/or captured, curated, selected, analyzed, interpreted, shared and archived in the course of a project or after its end.
+A DMP helps in adhering to the FAIR principles, i.e. making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse [@wilkinson2016; @hollander2019].
+
+This DMP is partly based on the structure given in the [Data Stewardship Wizard](ds-wizard.org) [@pergl2019], an online tool dedicated to cooperative creation of DMPs, templates created in the [Ariadne project](https://vast-lab.org/dmp/index.html) [@doorn2022] and my own ingenuity.
+
+### Re-using data
+### Creating and collecting data
+### Processing data
+### Interpreting data
+### Preserving data
+### Giving access to data
+
 ## Data sources {#sec-sources}
 
 ### Archaeology information system of the Czech Republic {#sec-aiscr}
