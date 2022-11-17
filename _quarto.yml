@@ -26,8 +26,8 @@ book:
 format:
   html:
     theme: 
-      dark: slate # darkly
       light: lumen # cosmo flatly yeti lumen
+      dark: slate # darkly
   pdf:
     documentclass: scrreprt
   docx: default
@@ -38,4 +38,5 @@ number-depth: 3
 bibliography: 
   - "zotero_data_in_archaeology.bib" 
   - "zotero_reproducible_research.bib"
-csl: journal-of-computer-applications-in-archaeology.csl
+# csl: journal-of-computer-applications-in-archaeology.csl
+csl: world-archaeology.csl
