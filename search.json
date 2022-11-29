@@ -7,11 +7,25 @@
     "text": "Preface\n\n\n\n\n\n\nWarning\n\n\n\nThis is a website for the work-in-progress PhD thesis of mine. It is not intended to be read by anyone except me (and maybe few other people) yet. If you do flick through it anyway, consider yourself warned. It might be messy at some places and will definitely undergo serious rewriting.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nThis work can be read online at https://petrpajdla.github.io/dataInfrastructures/. The source repository is on GitHub at https://github.com/petrpajdla/dataInfrastructures/.\n\n\n\nThis document is created in an open-source Quarto scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give Quarto publishing a try and set this whole thing up in less then an hour or so.\n\nNotes on writing\nThis note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.\nAs of November 2022, this is written on Archlabs GNU/Linux machine, mostly in Visual Studio Code editor and sometimes in RStudio. Changes are trackeg with Git and a remote repository is on GitHub (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch gh-pages. See a guide on how to set this up here. The online version is published with this command:\n\n\nTerminal\n\nquarto publish gh-pages\n\nIn my point of view, there are numerous advantages to scientific writing in this manner over traditional Office-based approach. A non-exhaustive list of why to do scientific writing this way is below.\n\nPlain text\nWriting in plain text enhanced with a simple Markdown syntax and some Quarto elements is great because from one source document, a .pdf, .html, .docx (and probably more) document formats can be rendered using pandoc.\nVersion control\nTracking changes using git is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.\nSimple citation management\nBibliography is organized using Zotero with Better BibTeX extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as .bib files. My Zotero library is here. To format the citations, a citation style of the Journal of Computer Applications in Archaeology is used (.csl file was obtained here).\nEmbedded code\nCode blocks (and the associated results) can be easily embedded in the text. My language of choice is R. For more information on reproducibility see Marwick (2017) and Marwick, Boettiger, and Mullen (2018).\n\n\n\n\n\n\n\nIn-text citations\n\n\n\n\n\n@citekey        -> Author (year)\n-@citekey       -> (year)\n[@citekey]      -> (Author, year)\n@citekey [p. X] -> Author (year, p. X)\n\n\n\n\n\n\n\n\n\nCrossrefs\n\n\n\n\n\n{#sec-label} -> #sec-label\n{#fig-label} -> #fig-label\ncrossref withot numbering: -@sec-label, [Chapter -@sec-label]\n\n\n\n\n\n\n\nMarwick, Ben. 2017. “Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation.” Journal of Archaeological Method and Theory 24 (2): 424–450. doi:10.1007/s10816-015-9272-9.\n\n\nMarwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. “Packaging Data Analytical Work Reproducibly Using R (and Friends).” The American Statistician 72 (1): 80–88. doi:10.1080/00031305.2017.1375986."
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
+    "objectID": "intro.html#sec-context",
+    "href": "intro.html#sec-context",
     "title": "Introduction",
-    "section": "",
-    "text": "In Chapter 1, Theory, the foundation is given by defining basic terms, data, data infrastructures etc. Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized. Last but not least, the dichotomy between archaeology as data- and/or theory-driven science is debated.\nIn Chapter 2, Method, methodological boundaries are set up.\nChapter 3, Data, introduces data sources that are used here. Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process. A data management plan (Section 3.1) details how data is handled in this research."
+    "section": "Context",
+    "text": "Context\n\n\nArchaeological heritage management in the Czech Republic"
+  },
+  {
+    "objectID": "intro.html#sec-questions",
+    "href": "intro.html#sec-questions",
+    "title": "Introduction",
+    "section": "Research questions",
+    "text": "Research questions"
+  },
+  {
+    "objectID": "intro.html#sec-outline",
+    "href": "intro.html#sec-outline",
+    "title": "Introduction",
+    "section": "Thesis outline",
+    "text": "Thesis outline\nIn Chapter 1, Theory, the foundation is given by defining basic terms, data, data infrastructures etc. Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized. The dichotomy between archaeology as data- and/or theory-driven science is debated.\nIn Chapter 2, Method, methodological boundaries are set up.\nChapter 3, Data, introduces data sources that are used here. Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process. Special attention is thus given to analyzing how reality and facts are represented by the data models of used sources. A data management plan (Section 3.1) details how data is handled in this research."
   },
   {
     "objectID": "theory.html#sec-terms",
@@ -25,61 +39,61 @@
     "href": "theory.html#sec-concepts",
     "title": "1  Theory",
     "section": "1.2 Overview of theoretical concepts",
-    "text": "1.2 Overview of theoretical concepts"
+    "text": "1.2 Overview of theoretical concepts\nReview of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc. Describe software used!"
+  },
+  {
+    "objectID": "theory.html#digital-humanities",
+    "href": "theory.html#digital-humanities",
+    "title": "1  Theory",
+    "section": "1.3 Digital humanities",
+    "text": "1.3 Digital humanities"
+  },
+  {
+    "objectID": "theory.html#digital-archaeology",
+    "href": "theory.html#digital-archaeology",
+    "title": "1  Theory",
+    "section": "1.4 Digital archaeology",
+    "text": "1.4 Digital archaeology"
+  },
+  {
+    "objectID": "theory.html#spatial-archaeology",
+    "href": "theory.html#spatial-archaeology",
+    "title": "1  Theory",
+    "section": "1.5 Spatial archaeology",
+    "text": "1.5 Spatial archaeology"
   },
   {
     "objectID": "theory.html#archaeology-as-theory--andor-data-driven-science",
     "href": "theory.html#archaeology-as-theory--andor-data-driven-science",
     "title": "1  Theory",
-    "section": "1.3 Archaeology as theory- and/or data-driven science",
-    "text": "1.3 Archaeology as theory- and/or data-driven science\n\n\n\n\n\n\nNote\n\n\n\nThis section is partly based on the Data-driven Archaeology. Are we there yet? talk coauthored with Hana Kubelková and Petr Květina. It was presented at the Central European Theoretical Archaeology Group (CE TAG) meeting entitled Theoretical Approaches to Computational Archaeology I coorganized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.\n\n\n(based on TAG Brno 2021 talk)"
+    "section": "1.6 Archaeology as theory- and/or data-driven science",
+    "text": "1.6 Archaeology as theory- and/or data-driven science\n\n\n\n\n\n\nNote\n\n\n\nThis section is partly based on the Data-driven Archaeology. Are we there yet? talk coauthored with Hana Kubelková and Petr Květina. It was presented at the Central European Theoretical Archaeology Group (CE TAG) meeting entitled Theoretical Approaches to Computational Archaeology I coorganized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University."
   },
   {
     "objectID": "theory.html#theorizing-data",
     "href": "theory.html#theorizing-data",
     "title": "1  Theory",
-    "section": "1.4 Theorizing data",
-    "text": "1.4 Theorizing data\nDefining archaeological data, micro- to macro-scales;\n\n\n\n\nKitchin, Rob. 2022. The Data Revolution: Big Data, Open Data, Data Infrastructures & Their Consequences. Second. Los Angeles, California: SAGE Publications.\n\n\nRuppert, Evelyn. 2012. “The Governmental Topologies of Database Devices.” Theory, Culture & Society 29 (4-5). SAGE Publications Ltd: 116–136. doi:10.1177/0263276412439428.\n\n\nRuppert, Evelyn, Engin Isin, and Didier Bigo. 2017. “Data Politics.” Big Data & Society 4 (2). SAGE Publications Ltd: 2053951717717749. doi:10.1177/2053951717717749."
-  },
-  {
-    "objectID": "method.html#digital-humanities",
-    "href": "method.html#digital-humanities",
-    "title": "2  Methods",
-    "section": "2.1 Digital humanities",
-    "text": "2.1 Digital humanities"
-  },
-  {
-    "objectID": "method.html#digital-archaeology",
-    "href": "method.html#digital-archaeology",
-    "title": "2  Methods",
-    "section": "2.2 Digital archaeology",
-    "text": "2.2 Digital archaeology"
-  },
-  {
-    "objectID": "method.html#spatial-archaeology",
-    "href": "method.html#spatial-archaeology",
-    "title": "2  Methods",
-    "section": "2.3 Spatial archaeology",
-    "text": "2.3 Spatial archaeology"
+    "section": "1.7 Theorizing data",
+    "text": "1.7 Theorizing data\nDefining archaeological data, micro- to macro-scales;\n\n\n\n\nKitchin, Rob. 2022. The Data Revolution: Big Data, Open Data, Data Infrastructures & Their Consequences. Second. Los Angeles, California: SAGE Publications.\n\n\nRuppert, Evelyn. 2012. “The Governmental Topologies of Database Devices.” Theory, Culture & Society 29 (4-5). SAGE Publications Ltd: 116–136. doi:10.1177/0263276412439428.\n\n\nRuppert, Evelyn, Engin Isin, and Didier Bigo. 2017. “Data Politics.” Big Data & Society 4 (2). SAGE Publications Ltd: 2053951717717749. doi:10.1177/2053951717717749."
   },
   {
     "objectID": "method.html#software",
     "href": "method.html#software",
     "title": "2  Methods",
-    "section": "2.4 Software",
-    "text": "2.4 Software\nMost of the things included here, if not all of them, were achieved using open-source software. Large part of this endeavour is also documented in code. This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc. At some places there are R code blocks. The text is processed into three outputs, a website (HTML document), a PDF document and a MS Word document using Quarto. The plain text version, same as the rendered website, is hosted at GitHub. The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal. Library was organized using Zotero.\nRaster graphics were created and edited using GIMP, vecor graphics using Inkscape. All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in QGIS.\nSome data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from Wikidata was queried using SPARQL. Analysis was mostly performed in an R language for statistical computing and graphics (rcore?).\n\n2.4.1 Reproduciblity"
+    "section": "2.1 Software",
+    "text": "2.1 Software\nMost of the things included here, if not all of them, were achieved using open-source software. Large part of this endeavour is also documented in code. This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc. At some places there are R code blocks. The text is processed into three outputs, a website (HTML document), a PDF document and a MS Word document using Quarto. The plain text version, same as the rendered website, is hosted at GitHub. The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal. Library was organized using Zotero.\nRaster graphics were created and edited using GIMP, vecor graphics using Inkscape. All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in QGIS.\nSome data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from Wikidata was queried using SPARQL. Any analysis was mostly done in R, a language for statistical computing and graphics (rcore?). Various packages were used, the most important packages are lsited here, the complete list is in an Appendix\n\n2.1.1 Reproduciblity"
   },
   {
     "objectID": "data.html#sec-dmp",
     "href": "data.html#sec-dmp",
-    "title": "3  Data",
+    "title": "3  Data and materials",
     "section": "3.1 Data management plan",
     "text": "3.1 Data management plan\nGood data stewardship is a crucial element in Open Science (Mons 2018, 1–5), an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. The data management plan (DMP) then stands at the very beginning of every such endeavour. In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle. This implies that it is not a static, but a living record of how the data was gathered and/or captured, curated, selected, analyzed, interpreted, shared and archived in the course of a project or after its end. A DMP helps in adhering to the FAIR principles, i.e. making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse (Wilkinson et al. 2016; Hollander et al. 2019).\nThis DMP is partly based on the structure given in the Data Stewardship Wizard (Pergl et al. 2019), an online tool dedicated to cooperative creation of DMPs, templates created in the Ariadne project (Doorn and Ronzino 2022) and my own ingenuity.\n\n3.1.1 Re-using data\n\n\n3.1.2 Creating and collecting data\n\n\n3.1.3 Processing data\n\n\n3.1.4 Interpreting data\n\n\n3.1.5 Preserving data\n\n\n3.1.6 Giving access to data"
   },
   {
     "objectID": "data.html#sec-sources",
     "href": "data.html#sec-sources",
-    "title": "3  Data",
+    "title": "3  Data and materials",
     "section": "3.2 Data sources",
     "text": "3.2 Data sources\n\n3.2.1 Archaeology information system of the Czech Republic\n\n\n3.2.2 Legacy data sources\nWhat is a legacy data source?\n\nMuseum databases\n\n\n\n\n\n\n\nDoorn, Peter, and Paola Ronzino. 2022. “ARIADNEplus Data Management Plan Tools.” Ariadne Portal. https://vast-lab.org/dmp/.\n\n\nHollander, Hella, Francesca Morselli, Frank Uiterwaal, Femmy Admiraal, Thorsten Trippel, and Sara Di Giorgio. 2019. “PARTHENOS Guidelines to FAIRify Data Management and Make Data Reusable,” August. doi:10.5281/zenodo.2668478.\n\n\nMons, Barend. 2018. Data Stewardship For Open Science: Implementing FAIR Principles. Boca Raton: CRC Press, Taylor & Francis Group.\n\n\nPergl, Robert, Rob Hooft, Marek Suchánek, Vojtěch Knaisl, and Jan Slifka. 2019. “‘Data Stewardship Wizard’: A Tool Bringing Together Researchers, Data Stewards, and Data Experts Around Data Management Planning.” Data Science Journal 18 (1). Ubiquity Press: 59. doi:10.5334/dsj-2019-059.\n\n\nWilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3 (1). Nature Publishing Group: 160018. doi:10.1038/sdata.2016.18."
   },
@@ -89,26 +103,5 @@
     "title": "References",
     "section": "",
     "text": "Doorn, Peter, and Paola Ronzino. 2022. “ARIADNEplus Data\nManagement Plan Tools.” Ariadne Portal.\nhttps://vast-lab.org/dmp/.\n\n\nHollander, Hella, Francesca Morselli, Frank Uiterwaal, Femmy Admiraal,\nThorsten Trippel, and Sara Di Giorgio. 2019. “PARTHENOS\nGuidelines to FAIRify Data Management and Make Data\nReusable,” August. doi:10.5281/zenodo.2668478.\n\n\nKitchin, Rob. 2022. The Data Revolution: Big Data, Open Data, Data\nInfrastructures & Their Consequences. Second. Los\nAngeles, California: SAGE Publications.\n\n\nMarwick, Ben. 2017. “Computational Reproducibility in\nArchaeological Research: Basic Principles and\na Case Study of Their Implementation.”\nJournal of Archaeological Method and Theory 24 (2): 424–450.\ndoi:10.1007/s10816-015-9272-9.\n\n\nMarwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. “Packaging\nData Analytical Work Reproducibly Using R (and\nFriends).” The American Statistician 72\n(1): 80–88. doi:10.1080/00031305.2017.1375986.\n\n\nMons, Barend. 2018. Data Stewardship For Open Science:\nImplementing FAIR Principles. Boca Raton:\nCRC Press, Taylor & Francis Group.\n\n\nPergl, Robert, Rob Hooft, Marek Suchánek, Vojtěch Knaisl, and Jan\nSlifka. 2019. “‘Data Stewardship\nWizard’: A Tool Bringing Together\nResearchers, Data Stewards, and Data\nExperts Around Data Management Planning.”\nData Science Journal 18 (1). Ubiquity Press: 59.\ndoi:10.5334/dsj-2019-059.\n\n\nRuppert, Evelyn. 2012. “The Governmental Topologies\nof Database Devices.” Theory, Culture &\nSociety 29 (4-5). SAGE Publications Ltd: 116–136.\ndoi:10.1177/0263276412439428.\n\n\nRuppert, Evelyn, Engin Isin, and Didier Bigo. 2017. “Data\nPolitics.” Big Data & Society 4 (2). SAGE\nPublications Ltd: 2053951717717749. doi:10.1177/2053951717717749.\n\n\nWilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg,\nGabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al.\n2016. “The FAIR Guiding Principles for Scientific\nData Management and Stewardship.” Scientific Data 3 (1).\nNature Publishing Group: 160018. doi:10.1038/sdata.2016.18."
-  },
-  {
-    "objectID": "software.html#r-session-information",
-    "href": "software.html#r-session-information",
-    "title": "Appendix A — Software",
-    "section": "A.1 R Session Information",
-    "text": "A.1 R Session Information\n\nsessionInfo()\n\nR version 4.2.2 (2022-10-31)\nPlatform: x86_64-pc-linux-gnu (64-bit)\nRunning under: ArchLabs Linux\n\nMatrix products: default\nBLAS/LAPACK: /usr/lib/libopenblas_haswellp-r0.3.21.so\n\nlocale:\n [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              \n [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    \n [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   \n [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 \n [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       \n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.5.4 compiler_4.2.2    magrittr_2.0.3    fastmap_1.1.0    \n [5] cli_3.4.1         tools_4.2.2       htmltools_0.5.3   stringi_1.7.8    \n [9] rmarkdown_2.17    knitr_1.40        stringr_1.4.1     xfun_0.34        \n[13] digest_0.6.30     jsonlite_1.8.3    rlang_1.0.6       evaluate_0.17"
-  },
-  {
-    "objectID": "software.html#r-packages",
-    "href": "software.html#r-packages",
-    "title": "Appendix A — Software",
-    "section": "A.2 R Packages",
-    "text": "A.2 R Packages\n\ninstalled.packages()[, c(1, 3)] |> knitr::kable()\n\n\n\n\n\nPackage\nVersion\n\n\n\n\nabind\nabind\n1.4-5\n\n\naskpass\naskpass\n1.1\n\n\nassertthat\nassertthat\n0.2.1\n\n\nbackports\nbackports\n1.4.1\n\n\nbase64enc\nbase64enc\n0.1-3\n\n\nBH\nBH\n1.78.0-0\n\n\nbit\nbit\n4.0.4\n\n\nbit64\nbit64\n4.0.5\n\n\nblob\nblob\n1.2.3\n\n\nbookdown\nbookdown\n0.29\n\n\nbrew\nbrew\n1.0-8\n\n\nbrio\nbrio\n1.1.3\n\n\nbroom\nbroom\n1.0.1\n\n\nbslib\nbslib\n0.4.0\n\n\ncachem\ncachem\n1.0.6\n\n\ncallr\ncallr\n3.7.2\n\n\ncellranger\ncellranger\n1.1.0\n\n\nclassInt\nclassInt\n0.4-8\n\n\ncli\ncli\n3.4.1\n\n\nclipr\nclipr\n0.8.0\n\n\ncollections\ncollections\n0.3.6\n\n\ncolorspace\ncolorspace\n2.0-3\n\n\ncommonmark\ncommonmark\n1.8.1\n\n\ncowplot\ncowplot\n1.1.1\n\n\ncpp11\ncpp11\n0.4.3\n\n\ncrayon\ncrayon\n1.5.2\n\n\ncredentials\ncredentials\n1.3.2\n\n\ncrosstalk\ncrosstalk\n1.2.0\n\n\ncrsmeta\ncrsmeta\n0.3.0\n\n\ncurl\ncurl\n4.3.3\n\n\ncyclocomp\ncyclocomp\n1.1.0\n\n\ndata.table\ndata.table\n1.14.4\n\n\nDBI\nDBI\n1.1.3\n\n\ndbplyr\ndbplyr\n2.2.1\n\n\ndeldir\ndeldir\n1.0-6\n\n\ndesc\ndesc\n1.4.2\n\n\nDescTools\nDescTools\n0.99.47\n\n\ndevtools\ndevtools\n2.4.5\n\n\ndiffobj\ndiffobj\n0.3.5\n\n\ndigest\ndigest\n0.6.30\n\n\ndownlit\ndownlit\n0.4.2\n\n\ndplyr\ndplyr\n1.0.10\n\n\ndtplyr\ndtplyr\n1.2.2\n\n\ne1071\ne1071\n1.7-12\n\n\nellipsis\nellipsis\n0.3.2\n\n\nevaluate\nevaluate\n0.17\n\n\nExact\nExact\n3.2\n\n\nexpm\nexpm\n0.999-6\n\n\nfansi\nfansi\n1.0.3\n\n\nfarver\nfarver\n2.1.1\n\n\nfastmap\nfastmap\n1.1.0\n\n\nfontawesome\nfontawesome\n0.4.0\n\n\nforcats\nforcats\n0.5.2\n\n\nfs\nfs\n1.5.2\n\n\ngargle\ngargle\n1.2.1\n\n\ngenerics\ngenerics\n0.1.3\n\n\ngert\ngert\n1.9.1\n\n\nggforce\nggforce\n0.4.1\n\n\nggplot2\nggplot2\n3.3.6\n\n\nggrepel\nggrepel\n0.9.1\n\n\nggspatial\nggspatial\n1.1.6\n\n\ngh\ngh\n1.3.1\n\n\ngitcreds\ngitcreds\n0.1.2\n\n\ngld\ngld\n2.6.6\n\n\nglue\nglue\n1.6.2\n\n\ngoftest\ngoftest\n1.2-3\n\n\ngoogledrive\ngoogledrive\n2.0.0\n\n\ngooglesheets4\ngooglesheets4\n1.0.1\n\n\ngridExtra\ngridExtra\n2.3\n\n\ngtable\ngtable\n0.3.1\n\n\ngtools\ngtools\n3.9.3\n\n\nhaven\nhaven\n2.5.1\n\n\nhere\nhere\n1.0.1\n\n\nhighr\nhighr\n0.9\n\n\nhms\nhms\n1.1.2\n\n\nhtmltools\nhtmltools\n0.5.3\n\n\nhtmlwidgets\nhtmlwidgets\n1.5.4\n\n\nhttpuv\nhttpuv\n1.6.6\n\n\nhttr\nhttr\n1.4.4\n\n\nhttr2\nhttr2\n0.2.2\n\n\nids\nids\n1.0.1\n\n\nigraph\nigraph\n1.3.5\n\n\ninfer\ninfer\n1.0.3\n\n\nini\nini\n0.3.1\n\n\nisoband\nisoband\n0.2.6\n\n\njanitor\njanitor\n2.1.0\n\n\njpeg\njpeg\n0.1-9\n\n\njquerylib\njquerylib\n0.1.4\n\n\njsonlite\njsonlite\n1.8.3\n\n\nknitr\nknitr\n1.40\n\n\nlabeling\nlabeling\n0.4.2\n\n\nlanguageserver\nlanguageserver\n0.3.14\n\n\nlater\nlater\n1.3.0\n\n\nlazyeval\nlazyeval\n0.2.2\n\n\nleaflet\nleaflet\n2.1.1\n\n\nleaflet.providers\nleaflet.providers\n1.9.0\n\n\nlemon\nlemon\n0.4.5\n\n\nlifecycle\nlifecycle\n1.0.3\n\n\nlintr\nlintr\n3.0.2\n\n\nlmom\nlmom\n2.9\n\n\nlubridate\nlubridate\n1.8.0\n\n\nmagrittr\nmagrittr\n2.0.3\n\n\nmarkdown\nmarkdown\n1.3\n\n\nmemoise\nmemoise\n2.0.1\n\n\nmime\nmime\n0.12\n\n\nminiUI\nminiUI\n0.1.1.1\n\n\nmodelr\nmodelr\n0.1.9\n\n\nmunsell\nmunsell\n0.5.0\n\n\nmvtnorm\nmvtnorm\n1.1-3\n\n\nnabor\nnabor\n0.5.0\n\n\nnngeo\nnngeo\n0.4.6\n\n\nopenssl\nopenssl\n2.0.4\n\n\nosmdata\nosmdata\n0.1.10\n\n\npackrat\npackrat\n0.8.1\n\n\nparzer\nparzer\n0.4.1\n\n\npatchwork\npatchwork\n1.1.2\n\n\npdist\npdist\n1.2.1\n\n\npillar\npillar\n1.8.1\n\n\npkgbuild\npkgbuild\n1.3.1\n\n\npkgconfig\npkgconfig\n2.0.3\n\n\npkgdown\npkgdown\n2.0.6\n\n\npkgload\npkgload\n1.3.1\n\n\nplyr\nplyr\n1.8.7\n\n\npng\npng\n0.1-7\n\n\npolyclip\npolyclip\n1.10-4\n\n\npraise\npraise\n1.0.0\n\n\nprettymapr\nprettymapr\n0.2.4\n\n\nprettyunits\nprettyunits\n1.1.1\n\n\nprocessx\nprocessx\n3.8.0\n\n\nprofvis\nprofvis\n0.3.7\n\n\nprogress\nprogress\n1.2.2\n\n\nPROJ\nPROJ\n0.4.0\n\n\nproj4\nproj4\n1.0-11\n\n\npromises\npromises\n1.2.0.1\n\n\nproxy\nproxy\n0.4-27\n\n\nps\nps\n1.7.2\n\n\npurrr\npurrr\n0.3.5\n\n\nquarto\nquarto\n1.2\n\n\nR.cache\nR.cache\n0.16.0\n\n\nR.methodsS3\nR.methodsS3\n1.8.2\n\n\nR.oo\nR.oo\n1.25.0\n\n\nR.utils\nR.utils\n2.12.1\n\n\nR6\nR6\n2.5.1\n\n\nragg\nragg\n1.2.4\n\n\nrandomizr\nrandomizr\n0.22.0\n\n\nrappdirs\nrappdirs\n0.3.3\n\n\nraster\nraster\n3.6-3\n\n\nrcmdcheck\nrcmdcheck\n1.4.0\n\n\nRColorBrewer\nRColorBrewer\n1.1-3\n\n\nRcpp\nRcpp\n1.0.9\n\n\nRcppEigen\nRcppEigen\n0.3.3.9.2\n\n\nRCzechia\nRCzechia\n1.9.4\n\n\nreadr\nreadr\n2.1.3\n\n\nreadxl\nreadxl\n1.4.1\n\n\nrematch\nrematch\n1.0.1\n\n\nrematch2\nrematch2\n2.1.2\n\n\nremotes\nremotes\n2.4.2\n\n\nreprex\nreprex\n2.0.2\n\n\nreproj\nreproj\n0.4.3\n\n\nreshape2\nreshape2\n1.4.4\n\n\nrex\nrex\n1.2.1\n\n\nrgdal\nrgdal\n1.5-32\n\n\nrjson\nrjson\n0.2.21\n\n\nrlang\nrlang\n1.0.6\n\n\nrmarkdown\nrmarkdown\n2.17\n\n\nrootSolve\nrootSolve\n1.8.2.3\n\n\nrosm\nrosm\n0.2.6\n\n\nroxygen2\nroxygen2\n7.2.1\n\n\nrprojroot\nrprojroot\n2.0.3\n\n\nrsconnect\nrsconnect\n0.8.28\n\n\nrstudioapi\nrstudioapi\n0.14\n\n\nRttf2pt1\nRttf2pt1\n1.3.11\n\n\nrversions\nrversions\n2.1.2\n\n\nrvest\nrvest\n1.0.3\n\n\ns2\ns2\n1.1.0\n\n\nsass\nsass\n0.4.2\n\n\nscales\nscales\n1.2.1\n\n\nselectr\nselectr\n0.4-2\n\n\nsessioninfo\nsessioninfo\n1.2.2\n\n\nsf\nsf\n1.0-8\n\n\nshiny\nshiny\n1.7.3\n\n\nshowtext\nshowtext\n0.9-5\n\n\nshowtextdb\nshowtextdb\n3.0\n\n\nsnakecase\nsnakecase\n0.11.0\n\n\nsourcetools\nsourcetools\n0.1.7\n\n\nsp\nsp\n1.5-0\n\n\nspatstat\nspatstat\n2.3-4\n\n\nspatstat.core\nspatstat.core\n2.4-4\n\n\nspatstat.data\nspatstat.data\n3.0-0\n\n\nspatstat.geom\nspatstat.geom\n3.0-3\n\n\nspatstat.linnet\nspatstat.linnet\n2.3-2\n\n\nspatstat.random\nspatstat.random\n2.2-0\n\n\nspatstat.sparse\nspatstat.sparse\n3.0-0\n\n\nspatstat.utils\nspatstat.utils\n3.0-1\n\n\nspData\nspData\n2.2.0\n\n\nspdep\nspdep\n1.2-7\n\n\nstringi\nstringi\n1.7.8\n\n\nstringr\nstringr\n1.4.1\n\n\nstyler\nstyler\n1.8.0\n\n\nsvglite\nsvglite\n2.1.0\n\n\nsys\nsys\n3.4.1\n\n\nsysfonts\nsysfonts\n0.8.8\n\n\nsystemfonts\nsystemfonts\n1.0.4\n\n\ntensor\ntensor\n1.5\n\n\nterra\nterra\n1.6-17\n\n\ntestthat\ntestthat\n3.1.5\n\n\ntextshaping\ntextshaping\n0.3.6\n\n\ntibble\ntibble\n3.1.8\n\n\ntidyr\ntidyr\n1.2.1\n\n\ntidyselect\ntidyselect\n1.2.0\n\n\ntidyverse\ntidyverse\n1.3.2\n\n\ntinytex\ntinytex\n0.42\n\n\ntweenr\ntweenr\n2.0.2\n\n\ntzdb\ntzdb\n0.3.0\n\n\nunits\nunits\n0.8-0\n\n\nurlchecker\nurlchecker\n1.0.1\n\n\nusethis\nusethis\n2.1.6\n\n\nutf8\nutf8\n1.2.2\n\n\nuuid\nuuid\n1.1-0\n\n\nvctrs\nvctrs\n0.5.0\n\n\nviridis\nviridis\n0.6.2\n\n\nviridisLite\nviridisLite\n0.4.1\n\n\nvisNetwork\nvisNetwork\n2.1.2\n\n\nvroom\nvroom\n1.6.0\n\n\nwaldo\nwaldo\n0.4.0\n\n\nwhisker\nwhisker\n0.4\n\n\nwithr\nwithr\n2.5.0\n\n\nwk\nwk\n0.7.0\n\n\nxfun\nxfun\n0.34\n\n\nxml2\nxml2\n1.3.3\n\n\nxmlparsedata\nxmlparsedata\n1.0.5\n\n\nxopen\nxopen\n1.0.0\n\n\nxtable\nxtable\n1.8-4\n\n\nyaml\nyaml\n2.3.6\n\n\nzip\nzip\n2.2.2\n\n\nbase\nbase\n4.2.2\n\n\nboot\nboot\n1.3-28\n\n\nclass\nclass\n7.3-20\n\n\ncluster\ncluster\n2.1.4\n\n\ncodetools\ncodetools\n0.2-18\n\n\ncompiler\ncompiler\n4.2.2\n\n\ndatasets\ndatasets\n4.2.2\n\n\nforeign\nforeign\n0.8-83\n\n\ngraphics\ngraphics\n4.2.2\n\n\ngrDevices\ngrDevices\n4.2.2\n\n\ngrid\ngrid\n4.2.2\n\n\nKernSmooth\nKernSmooth\n2.23-20\n\n\nlattice\nlattice\n0.20-45\n\n\nMASS\nMASS\n7.3-58.1\n\n\nMatrix\nMatrix\n1.5-1\n\n\nmethods\nmethods\n4.2.2\n\n\nmgcv\nmgcv\n1.8-41\n\n\nnlme\nnlme\n3.1-160\n\n\nnnet\nnnet\n7.3-18\n\n\nparallel\nparallel\n4.2.2\n\n\nrpart\nrpart\n4.1.19\n\n\nspatial\nspatial\n7.3-15\n\n\nsplines\nsplines\n4.2.2\n\n\nstats\nstats\n4.2.2\n\n\nstats4\nstats4\n4.2.2\n\n\nsurvival\nsurvival\n3.4-0\n\n\ntcltk\ntcltk\n4.2.2\n\n\ntools\ntools\n4.2.2\n\n\nutils\nutils\n4.2.2"
-  },
-  {
-    "objectID": "glossary.html",
-    "href": "glossary.html",
-    "title": "Appendix B — Glossary",
-    "section": "",
-    "text": "Data\n\n\nData infrastructure\n\n\nData management plan (DMP)\n(also data stewardship plan)\n\n\nDatabase\n\n\nData set\n\n\nFAIR data principles\n\n\nLegacy data\n\n\nRoles\n\nData curator\n\n\nData steward"
   }
 ]
