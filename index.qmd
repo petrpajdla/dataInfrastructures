@@ -1,4 +1,4 @@
-# Preface {.unnumbered}
+# Preface {.unnumbered #sec-preface}
 
 ::: {.callout-warning}
 ## Warning
@@ -11,7 +11,7 @@ This work can be read online at <https://petrpajdla.github.io/dataInfrastructure
 The source repository is on GitHub at <https://github.com/petrpajdla/dataInfrastructures/>.
 :::
 
-This document is created in an open-source [Quarto](https://quarto.org/) scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give *Quarto* publishing a try and set this whole thing up in less then an hour or so.
+This document is created in an open-source [Quarto](https://quarto.oq()rg/) scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give *Quarto* publishing a try and set this whole thing up in less then an hour or so.
 
 ### Notes on writing
 
@@ -53,3 +53,22 @@ In my point of view, there are numerous advantages to scientific writing in this
 crossref withot numbering: -@sec-label, [Chapter -@sec-label]
 ```
 :::
+
+### Stats
+
+```{r}
+#| echo: false
+fl <- c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd")
+# count words (w) and characters (c) using shell
+system(paste0("wc -wc ", paste0(fl, collapse = " "), " > wc.txt"))
+wc <- read.delim("wc.txt", header = FALSE, sep = " ")[, 2:4] |>
+  setNames(c("w", "c", "f"))
+```
+
+As of `r format(Sys.Date(), "%B %d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages of text. 
+Length of individual chapters is as follows: 
+
+```{r}
+#| echo: false
+wc
+```

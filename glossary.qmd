@@ -1,0 +1,26 @@
+# Glossary {#sec-glossary}
+
+### Data {.unnumbered}
+
+### Data infrastructure {.unnumbered}
+
+### Data management plan (DMP) {.unnumbered}
+
+(also data stewardship plan)
+
+### Database {.unnumbered}
+
+### Data set {.unnumbered}
+
+### FAIR data principles {.unnumbered}
+
+### Legacy data {.unnumbered}
+
+
+
+
+### Roles {.unnumbered}
+
+#### Data curator
+
+#### Data steward

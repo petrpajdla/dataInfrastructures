@@ -1,0 +1,14 @@
+# Software {#sec-soft}
+
+## R Session Information
+
+```{r}
+sessionInfo()
+```
+
+
+## R Packages
+
+```{r}
+installed.packages()[, c(1, 3)] |> knitr::kable()
+```

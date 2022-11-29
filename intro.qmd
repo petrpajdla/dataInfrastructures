@@ -1,0 +1,30 @@
+# Introduction {.unnumbered #sec-intro}
+
+<!-- Briefly describe the structure of the work! -->
+
+## Context {#sec-context}
+
+<!-- research context -->
+
+### Archaeological heritage management in the Czech Republic
+
+
+
+
+## Research questions {#sec-questions}
+
+<!-- motivation: research questions -->
+
+
+## Thesis outline {#sec-outline}
+
+In @sec-theory, *Theory*, the foundation is given by defining basic terms, data, data infrastructures etc. 
+Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized. 
+The dichotomy between archaeology as data- and/or theory-driven science is debated.
+
+In @sec-method, *Method*, methodological boundaries are set up. 
+
+@sec-data, *Data*, introduces data sources that are used here. 
+Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process.
+Special attention is thus given to analyzing how reality and facts are represented by the data models of used sources.
+A data management plan (@sec-dmp) details how data is handled in this research.
