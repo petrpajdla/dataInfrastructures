@@ -6,10 +6,10 @@ book:
   subtitle: "Data reuse potentials and limitations to modelling settlement systems (...)"
   author: 
     - name: "Petr Pajdla"
-      institute: "Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
+      affiliation: "Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
       email: "petr.pajdla@proton.me"
-      orcid-id: "0000-0001-7050-9572"
-  date: "2022-11-12"
+      # orcid-id: "0000-0001-7050-9572"
+  date: today
   favicon: cover.png
   search: true
   downloads: [pdf, docx]
@@ -22,6 +22,10 @@ book:
 #    - discussion.qmd
 #    - summary.qmd
     - references.qmd
+  # appendices:
+    # - software.qmd
+    # - glossary.qmd
+citation: true
 
 format:
   html:
