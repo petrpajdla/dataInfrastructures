@@ -1,9 +1,18 @@
-# Data {#sec-data}
+# Data and materials {#sec-data}
 
 ::: {.callout-note}
 ## Note
 This chapter, especially the @sec-dmp: Data management plan, builds up on the project [Data management in Archaeology](https://www.phil.muni.cz/en/research/current-projects/57940) I cooperated on with Hana Kubelková in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
 :::
+
+## Overview {.unnumbered}
+
+@sec-data details:
+
+- How data is managed in this research. This is described in a data management plan (@sec-dmp).
+- What data sources are available in the Czech Republic (@sec-sources).
+- What data models are most commonly used in Czech archaeology.
+- How is the reality represented in the databases of the *Archaeological information system of the Czech Republic* (@sec-aiscr).
 
 Sources of (archaeology) data in the Czech Republic, an overview:
 
@@ -12,22 +21,56 @@ Assessing findability, accessibility, interoperability, and reusability (FAIR) p
 Cultural heritage management data vs research data domains;
 Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure. 
 
+
 ## Data management plan {#sec-dmp}
 
 Good data stewardship is a crucial element in *Open Science* [@mons2018, p. 1-5], an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. 
 The data management plan (DMP) then stands at the very beginning of every such endeavour. 
 In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle.
-This implies that it is not a static, but a living record of how the data was gathered and/or captured, curated, selected, analyzed, interpreted, shared and archived in the course of a project or after its end.
+This implies that it is not a static, but a living record of how the data was gathered and/or captured, curated, selected, analysed, interpreted, shared and archived in the course of a project or after its end.
 A DMP helps in adhering to the FAIR principles, i.e. making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse [@wilkinson2016; @hollander2019].
 
 This DMP is partly based on the structure given in the [Data Stewardship Wizard](ds-wizard.org) [@pergl2019], an online tool dedicated to cooperative creation of DMPs, templates created in the [Ariadne project](https://vast-lab.org/dmp/index.html) [@doorn2022] and my own ingenuity.
 
-### Re-using data
-### Creating and collecting data
-### Processing data
-### Interpreting data
-### Preserving data
-### Giving access to data
+### Created, collected and re-used data
+
+- Re-use
+Are there pre-existing data?
+License? Conditions for use?
+How is it accessed?
+
+- Creation and collection
+Data formats?
+Volumes of data? Suitable for LTP and sharing?
+
+Aby used vocabularies, terminologies, ontologies?
+
+Any metadata convention?
+File naming conventions?
+Persistent identifiers?
+
+### Data processing
+
+How will you work with the data?
+Do you have/need storage?
+Do you do backups?
+Are you using object-store? Are you using relational database? Graph database? Triple store?
+How are changes in data managed?
+
+### Interpretation
+
+Specify/list data formats you will be using and their structure.
+Will different data be integrated?
+
+### Data preservation
+
+What data sets are you producing?
+Is data long-term archived? Will it be usable and accessible after a long period of time?
+
+### Access to data
+
+Will the data be as open as possible?
+What are the reasons your data cannot became open?
 
 ## Data sources {#sec-sources}
 
@@ -40,4 +83,6 @@ What is a legacy data source?
 #### Museum databases
 
 #### 
+
+## Chapter summary {.unnumbered}
 
