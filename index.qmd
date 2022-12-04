@@ -17,7 +17,7 @@ This document is created in an open-source [Quarto](https://quarto.oq()rg/) scie
 
 This note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.
 
-As of November 2022, this is written on [Archlabs](https://archlabslinux.com/) *GNU/Linux* machine, mostly in [Visual Studio Code](https://code.visualstudio.com/) editor and sometimes in [RStudio](https://posit.co/). Changes are trackeg with *Git* and a remote repository is on *GitHub* (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch `gh-pages`. See a guide on how to set this up [here](https://quarto.org/docs/publishing/github-pages.html). The online version is published with this command:
+As of November 2022, this is written on [Archlabs](https://archlabslinux.com/) *GNU/Linux* machine, mostly in [Visual Studio Code](https://code.visualstudio.com/) editor and sometimes in [RStudio](https://posit.co/). Changes are tracked with *Git* and a remote repository is on *GitHub* (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch `gh-pages`. See a guide on how to set this up [here](https://quarto.org/docs/publishing/github-pages.html). The online version is published with this command:
 
 ```{.bash filename="Terminal"}
 quarto publish gh-pages
@@ -57,7 +57,8 @@ crossref withot numbering: -@sec-label, [Chapter -@sec-label]
 ### Stats
 
 ```{r}
-#| echo: false
+#| label: wc-in
+#| echo: true
 fl <- c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd")
 # count words (w) and characters (c) using shell
 system(paste0("wc -wc ", paste0(fl, collapse = " "), " > wc.txt"))
@@ -65,10 +66,11 @@ wc <- read.delim("wc.txt", header = FALSE, sep = " ")[, 2:4] |>
   setNames(c("w", "c", "f"))
 ```
 
-As of `r format(Sys.Date(), "%B %d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages of text. 
+As of `r format(Sys.Date(), "%B %d, %Y")` there are roughly `r round(wc[nrow(wc), 1]/1800, 1)` pages of text. 
 Length of individual chapters is as follows: 
 
 ```{r}
+#| label: wc-out
 #| echo: false
 wc
 ```
