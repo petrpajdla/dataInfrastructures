@@ -1,5 +1,16 @@
 # Theory {#sec-theory}
 
+## Overview {.unnumbered}
+
+<!-- A list of at least 3 things that are covered in the chapter. -->
+
+@sec-theory presents: 
+
+- Definitions for fundamental concepts I am building up on further in the text.
+- An overview of theoretical approaches the work is determined and shaped by.
+- A discussion of archaeological research as theory- and/or data-driven.
+- A commentary on data from the theoretical points presented earlier.
+
 ## Definitions and terminology {#sec-terms}
 
 ### Data {#sec-terms-data}
@@ -19,18 +30,30 @@ As I was saying in the @sec-terms-data.
 
 ## Overview of theoretical concepts {#sec-concepts}
 
+Review of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc. 
+Describe software used!
+
+## Digital humanities
+
+## Digital archaeology
+
+## Spatial archaeology
+
 
 ## Archaeology as theory- and/or data-driven science
 
 ::: {.callout-note}
 ## Note
-This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk coauthored with Hana Kubelková and Petr Květina. It was presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting entitled *Theoretical Approaches to Computational Archaeology* I coorganized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk co-authored with Hana Kubelková and Petr Květina. It was presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting entitled *Theoretical Approaches to Computational Archaeology* I organized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
 :::
 
-(based on TAG Brno 2021 talk)
+
 
 ## Theorizing data
 
 Defining archaeological data, micro- to macro-scales;
 
 
+## Chapter summary {.unnumbered}
+
+<!-- One paragraph summarising what is the chapter about. -->

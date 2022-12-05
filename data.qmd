@@ -9,10 +9,10 @@ This chapter, especially the @sec-dmp: Data management plan, builds up on the pr
 
 @sec-data details:
 
-- How data is managed in this research. This is described in a data management plan (@sec-dmp).
-- What data sources are available in the Czech Republic (@sec-sources).
+- How data is managed in this research. This is described in a data management plan.
+- What data sources are available in the Czech Republic.
 - What data models are most commonly used in Czech archaeology.
-- How is the reality represented in the databases of the *Archaeological information system of the Czech Republic* (@sec-aiscr).
+- How is the reality represented in the databases of the *Archaeological information system of the Czech Republic*.
 
 Sources of (archaeology) data in the Czech Republic, an overview:
 
@@ -24,29 +24,42 @@ Archaeological information system of the Czech Republic (AIS CR) as the main dat
 
 ## Data management plan {#sec-dmp}
 
-Good data stewardship is a crucial element in *Open Science* [@mons2018, p. 1-5], an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. 
-The data management plan (DMP) then stands at the very beginning of every such endeavour. 
-In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle.
-This implies that it is not a static, but a living record of how the data was gathered and/or captured, curated, selected, analysed, interpreted, shared and archived in the course of a project or after its end.
-A DMP helps in adhering to the FAIR principles, i.e. making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse [@wilkinson2016; @hollander2019].
+Good data stewardship is a crucial element in *Open Science* [@mons2018, p. 1-5], an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. The data management plan (DMP) then stands at the very beginning of every such endeavour. In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle. This implies that it is not a static, but a living record of how the data was captured, created, curated, selected, analysed, interpreted, shared, and archived in course of a project or after its end. A DMP helps in adhering to the FAIR principles, i.e. making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse [@wilkinson2016; @hollander2019].
 
-This DMP is partly based on the structure given in the [Data Stewardship Wizard](ds-wizard.org) [@pergl2019], an online tool dedicated to cooperative creation of DMPs, templates created in the [Ariadne project](https://vast-lab.org/dmp/index.html) [@doorn2022] and my own ingenuity.
+This DMP is partly based on the structure given in the [Data Stewardship Wizard](ds-wizard.org) [@pergl2019], an online tool dedicated to cooperative creation of DMPs, templates created in the [Ariadne project](https://vast-lab.org/dmp/index.html) [@doorn2022] and my own ideas on good DMP practice. It is included both as part of the text and as a standalone machine actionable file (link?).
+<!-- add link for DMP JSON or other format... -->
 
 ### Created, collected and re-used data
 
-- Re-use
+#### Data re-use
+
+The work is predominantly based on re-using existing data. The sources of data are listed in @sec-sources. I presume that there are many pre-existing data sets in the Czech archaeology, but most of them are either inaccessible or not findable, i.e. we cannot be sure they even exist. The single most complete source for archaeology data in the Czech Republic is without a doubt the *AIS CR* infrastructure.
+
+There are several well published data sets covering the area of the Czech Republic in the [Journal of Open Archaeology Data](https://openarchaeologydata.metajnl.com/), the radiocarbon data by @tkac2021 and the Neolithic settlements data set by @pajdla2021. These have an advantage of well formulated access and re-use policies, explicit licence and other conditions for use.
+
+<!-- Wikidata?, OpenStreetMap?
+Re-use
 Are there pre-existing data?
 License? Conditions for use?
-How is it accessed?
+How is it accessed? -->
 
-- Creation and collection
+#### Data creation and collection
+<!-- - Creation and collection
 Data formats?
-Volumes of data? Suitable for LTP and sharing?
+Volumes of data? Suitable for LTP and sharing? -->
 
-Aby used vocabularies, terminologies, ontologies?
+#### Vocabularies
 
-Any metadata convention?
-File naming conventions?
+<!-- Any used vocabularies, terminologies, ontologies? -->
+I am explicitly using vocabularies that are inherent to data sources from which the data is reused. A principal and authoritative vocabulary for archaeology and related fields is the *Getty Art & Architecture Thesaurus* ([AAT](https://www.getty.edu/research/tools/vocabularies/aat/)). Getty *AAT* subjects are used by the *ARIADNE* infrastructure and many other archaeology infrastructures are mapping their vocabularies to the *AAT* subjects. The emerging *ARIADNE* *AO_Cat* formal ontology is also taken into account when interacting with *ARIADNE* services. The *AIS CR* vocabularies, although implicit to the data, are yet to be published. A possibly incomplete version can be reverse engineered from the available data sets. If reconciliation between data from different data sources is necessary, the *AAT* is used to map between them.
+
+<!-- Any metadata convention? -->
+
+#### File naming conventions
+
+
+
+
 Persistent identifiers?
 
 ### Data processing
