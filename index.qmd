@@ -58,15 +58,15 @@ crossref withot numbering: -@sec-label, [Chapter -@sec-label]
 
 ```{r}
 #| label: wc-in
-#| echo: true
+#| echo: false
 fl <- c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd")
 # count words (w) and characters (c) using shell
-system(paste0("wc -wc ", paste0(fl, collapse = " "), " > wc.txt"))
-wc <- read.delim("wc.txt", header = FALSE, sep = " ")[, 2:4] |>
+system(paste0("wc -wm ", paste0(fl, collapse = " "), " | sed -re 's/ +/,/g' > wc.txt"))
+wc <- read.csv("wc.txt", header = FALSE)[, 2:4] |>
   setNames(c("w", "c", "f"))
 ```
 
-As of `r format(Sys.Date(), "%B %d, %Y")` there are roughly `r round(wc[nrow(wc), 1]/1800, 1)` pages of text. 
+As of `r format(Sys.Date(), "%B %-d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages of text. 
 Length of individual chapters is as follows: 
 
 ```{r}
