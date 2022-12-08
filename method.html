@@ -87,7 +87,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Archaeology Data Infrastructures</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/petrpajdla/dataInfrastructures/" title="" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
     <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
         <li>
@@ -144,6 +145,21 @@ ul.task-list li input[type="checkbox"] {
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -153,10 +169,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#software" id="toc-software" class="nav-link active" data-scroll-target="#software"><span class="toc-section-number">2.1</span>  Software</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software"><span class="toc-section-number">2.1</span>  Software</a>
   <ul class="collapse">
   <li><a href="#reproduciblity" id="toc-reproduciblity" class="nav-link" data-scroll-target="#reproduciblity"><span class="toc-section-number">2.1.1</span>  Reproduciblity</a></li>
   </ul></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary">Chapter summary</a></li>
   </ul>
 </nav>
     </div>
@@ -180,16 +198,27 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p><a href="#sec-method"><span>Chapter&nbsp;2</span></a> describes:</p>
+<ul>
+<li></li>
+<li>The software that is used in the analysis.</li>
+</ul>
+</section>
 <section id="software" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="software"><span class="header-section-number">2.1</span> Software</h2>
-<p>Most of the things included here, if not all of them, were achieved using open-source software. Large part of this endeavour is also documented in code. This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc. At some places there are R code blocks. The text is processed into three outputs, a <a href="https://petrpajdla.github.io/dataInfrastructures/">website</a> (HTML document), a <a href="https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.pdf">PDF</a> document and a <a href="https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.docx">MS Word</a> document using Quarto. The plain text version, same as the rendered website, is hosted at <a href="https://github.com/petrpajdla/dataInfrastructures">GitHub</a>. The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal. Library was organized using <a href="">Zotero</a>.</p>
-<p>Raster graphics were created and edited using <a href="">GIMP</a>, vecor graphics using <a href="">Inkscape</a>. All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in <a href="">QGIS</a>.</p>
-<p>Some data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from <a href="">Wikidata</a> was queried using SPARQL. Any analysis was mostly done in R, a language for statistical computing and graphics <span class="citation" data-cites="rcore">(<a href="references.html#ref-rcore" role="doc-biblioref"><strong>rcore?</strong></a>)</span>. Various packages were used, the most important packages are lsited here, the complete list is in an Appendix</p>
+<p>Most of the things included here, if not all of them, were achieved using open-source software. Large part of this endeavor is also documented in code. This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc. At some places there are R code blocks. The text is processed into three outputs, a <a href="https://petrpajdla.github.io/dataInfrastructures/">website</a> (HTML document), a <a href="https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.pdf">PDF</a> document and a <a href="https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.docx">MS Word</a> document using Quarto. The plain text version, same as the rendered website, is hosted at <a href="https://github.com/petrpajdla/dataInfrastructures">GitHub</a>. The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal. Library was organized using <a href="">Zotero</a>.</p>
+<p>Raster graphics were created and edited using <a href="">GIMP</a>, vector graphics using <a href="">Inkscape</a>. All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in <a href="">QGIS</a>.</p>
+<p>Some data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from <a href="">Wikidata</a> was queried using SPARQL. Any analysis was mostly done in R, a language for statistical computing and graphics <span class="citation" data-cites="rcore">(<a href="references.html#ref-rcore" role="doc-biblioref"><strong>rcore?</strong></a>)</span>. Various packages were used, the most important packages are listed here, the complete list is in an Appendix</p>
 <section id="reproduciblity" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="reproduciblity"><span class="header-section-number">2.1.1</span> Reproduciblity</h3>
-
-
 </section>
+</section>
+<section id="chapter-summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="chapter-summary">Chapter summary</h2>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Petr Pajdla">
-<meta name="dcterms.date" content="2022-11-12">
+<meta name="dcterms.date" content="2022-12-08">
 
 <title>Archaeology Data Infrastructures</title>
 <style>
@@ -170,7 +170,8 @@ div.csl-indent {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Archaeology Data Infrastructures</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/petrpajdla/dataInfrastructures/" title="" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
     <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
         <li>
@@ -227,6 +228,21 @@ div.csl-indent {
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -239,6 +255,7 @@ div.csl-indent {
   <li><a href="#sec-preface" id="toc-sec-preface" class="nav-link active" data-scroll-target="#sec-preface">Preface</a>
   <ul class="collapse">
   <li><a href="#notes-on-writing" id="toc-notes-on-writing" class="nav-link" data-scroll-target="#notes-on-writing">Notes on writing</a></li>
+  <li><a href="#stats" id="toc-stats" class="nav-link" data-scroll-target="#stats">Stats</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -255,14 +272,17 @@ div.csl-indent {
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
-    Petr Pajdla 
+    Petr Pajdla <a href="https://orcid.org/0000-0001-7050-9572" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
             Department of Archaeology and Museology, Faculty of Arts, Masaryk University
+          </p>
+        <p class="affiliation">
+            Institute of Archaeology, Czech Acad. Sci., Brno
           </p>
       </div>
     </div>
@@ -273,7 +293,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 12, 2022</p>
+      <p class="date">December 8, 2022</p>
     </div>
   </div>
   
@@ -314,11 +334,11 @@ Note
 </div>
 </div>
 </div>
-<p>This document is created in an open-source <a href="https://quarto.org/">Quarto</a> scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give <em>Quarto</em> publishing a try and set this whole thing up in less then an hour or so.</p>
+<p>This document is created in an open-source <a href="https://quarto.oq()rg/">Quarto</a> scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give <em>Quarto</em> publishing a try and set this whole thing up in less then an hour or so.</p>
 <section id="notes-on-writing" class="level3">
 <h3 class="anchored" data-anchor-id="notes-on-writing">Notes on writing</h3>
 <p>This note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.</p>
-<p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are trackeg with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>. The online version is published with this command:</p>
+<p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are tracked with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>. The online version is published with this command:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
@@ -371,6 +391,23 @@ Crossrefs
 {#fig-label} -&gt; #fig-label
 crossref withot numbering: -@sec-label, [Chapter -@sec-label]</code></pre>
 </div>
+</div>
+</div>
+</section>
+<section id="stats" class="level3">
+<h3 class="anchored" data-anchor-id="stats">Stats</h3>
+<div class="cell">
+
+</div>
+<p>As of December 8, 2022 there are roughly 6.3 pages of text. Length of individual chapters is as follows:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>     w     c          f
+1  267  1788  intro.qmd
+2  330  2391 theory.qmd
+3  227  1741 method.qmd
+4  802  5424   data.qmd
+5 1626 11344      total</code></pre>
 </div>
 </div>
 
