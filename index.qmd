@@ -59,7 +59,7 @@ crossref withot numbering: -@sec-label, [Chapter -@sec-label]
 ```{r}
 #| label: wc-in
 #| echo: false
-fl <- c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd")
+fl <- paste0("chapters/", c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd"))
 # count words (w) and characters (c) using shell
 system(paste0("wc -wm ", paste0(fl, collapse = " "), " | sed -re 's/ +/,/g' > wc.txt"))
 wc <- read.csv("wc.txt", header = FALSE)[, 2:4] |>
@@ -74,3 +74,5 @@ Length of individual chapters is as follows:
 #| echo: false
 wc
 ```
+
+

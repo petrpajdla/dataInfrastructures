@@ -4,11 +4,11 @@ project:
 book:
   title: "Archaeology Data Infrastructures"
   subtitle: "Data reuse potentials and limitations to modelling settlement systems (...)"
-  author: 
+  author:
     - name: "Petr Pajdla"
       email: "petr.pajdla@proton.me"
       orcid: "0000-0001-7050-9572"
-      affiliations: 
+      affiliations:
         - name: "Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
         - name: "Institute of Archaeology, Czech Acad. Sci., Brno"
   date: today
@@ -23,21 +23,21 @@ book:
   downloads: [pdf, docx]
   chapters:
     - index.qmd
-    - intro.qmd
-    - theory.qmd
-    - method.qmd
-    - data.qmd
-#    - discussion.qmd
-#    - summary.qmd
+    - chapters/intro.qmd
+    - chapters/theory.qmd
+    - chapters/method.qmd
+    - chapters/data.qmd
+#    - chapters/discussion.qmd
+#    - chapters/summary.qmd
     - references.qmd
   appendices:
-    - glossary.qmd
-    # - software.qmd
+    - appendices/glossary.qmd
+    # - appendices/software.qmd
 citation: true
 
 format:
   html:
-    theme: 
+    theme:
       light: lumen # cosmo flatly yeti lumen
       dark: slate # darkly slate
   pdf:
@@ -47,8 +47,8 @@ callout-appearance: simple
 number-depth: 3
 # highlight-style: tango
 
-bibliography: 
-  - "zotero_data_in_archaeology.bib" 
+bibliography:
+  - "zotero_data_in_archaeology.bib"
   - "zotero_reproducible_research.bib"
 # csl: journal-of-computer-applications-in-archaeology.csl
 csl: world-archaeology.csl
