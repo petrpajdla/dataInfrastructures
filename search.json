@@ -4,151 +4,151 @@
     "href": "index.html",
     "title": "Archaeology Data Infrastructures",
     "section": "",
-    "text": "Preface\n\n\n\n\n\n\nWarning\n\n\n\nThis is a website for the work-in-progress PhD thesis of mine. It is not intended to be read by anyone except me (and maybe few other people) yet. If you do flick through it anyway, consider yourself warned. It might be messy at some places and will definitely undergo serious rewriting.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nThis work can be read online at https://petrpajdla.github.io/dataInfrastructures/. The source repository is on GitHub at https://github.com/petrpajdla/dataInfrastructures/.\n\n\n\nThis document is created in an open-source Quarto scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give Quarto publishing a try and set this whole thing up in less then an hour or so.\n\nNotes on writing\nThis note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.\nAs of November 2022, this is written on Archlabs GNU/Linux machine, mostly in Visual Studio Code editor and sometimes in RStudio. Changes are tracked with Git and a remote repository is on GitHub (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch gh-pages. See a guide on how to set this up here. The online version is published with this command:\n\n\nTerminal\n\nquarto publish gh-pages\n\nIn my point of view, there are numerous advantages to scientific writing in this manner over traditional Office-based approach. A non-exhaustive list of why to do scientific writing this way is below.\n\nPlain text\nWriting in plain text enhanced with a simple Markdown syntax and some Quarto elements is great because from one source document, a .pdf, .html, .docx (and probably more) document formats can be rendered using pandoc.\nVersion control\nTracking changes using git is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.\nSimple citation management\nBibliography is organized using Zotero with Better BibTeX extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as .bib files. My Zotero library is here. To format the citations, a citation style of the Journal of Computer Applications in Archaeology is used (.csl file was obtained here).\nEmbedded code\nCode blocks (and the associated results) can be easily embedded in the text. My language of choice is R. For more information on reproducibility see Marwick (2017) and Marwick, Boettiger, and Mullen (2018).\n\n\n\n\n\n\n\nIn-text citations\n\n\n\n\n\n@citekey        -> Author (year)\n-@citekey       -> (year)\n[@citekey]      -> (Author, year)\n@citekey [p. X] -> Author (year, p. X)\n\n\n\n\n\n\n\n\n\nCrossrefs\n\n\n\n\n\n{#sec-label} -> #sec-label\n{#fig-label} -> #fig-label\ncrossref withot numbering: -@sec-label, [Chapter -@sec-label]\n\n\n\n\n\nStats\n\n\n\nAs of February 17, 2023 there are roughly 6.3 pages of text. Length of individual chapters is as follows:\n\n\n     w     c          f\n1  267  1788  intro.qmd\n2  330  2391 theory.qmd\n3  227  1741 method.qmd\n4  802  5424   data.qmd\n5 1626 11344      total\n\n\nP\n\n\n\n\nMarwick, Ben. 2017. “Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation.” Journal of Archaeological Method and Theory 24 (2): 424–450. doi:10.1007/s10816-015-9272-9.\n\n\nMarwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. “Packaging Data Analytical Work Reproducibly Using R (and Friends).” The American Statistician 72 (1): 80–88. doi:10.1080/00031305.2017.1375986."
+    "text": "Preface\n\n\n\n\n\n\nWarning\n\n\n\nThis is a website for the work-in-progress PhD thesis of mine. It is not intended to be read by anyone except me (and maybe few other people) yet. If you do flick through it anyway, consider yourself warned. It might be messy at some places and will definitely undergo serious rewriting.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nThis work can be read online at https://petrpajdla.github.io/dataInfrastructures/. The source repository is on GitHub at https://github.com/petrpajdla/dataInfrastructures/.\n\n\n\nThis document is created in an open-source Quarto scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give Quarto publishing a try and set this whole thing up in less then an hour or so.\n\nNotes on writing\nThis note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.\nAs of November 2022, this is written on Archlabs GNU/Linux machine, mostly in Visual Studio Code editor and sometimes in RStudio. Changes are tracked with Git and a remote repository is on GitHub (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch gh-pages. See a guide on how to set this up here. The online version is published with this command:\n\n\nTerminal\n\nquarto publish gh-pages\n\nIn my point of view, there are numerous advantages to scientific writing in this manner over traditional Office-based approach. A non-exhaustive list of why to do scientific writing this way is below.\n\nPlain text\nWriting in plain text enhanced with a simple Markdown syntax and some Quarto elements is great because from one source document, a .pdf, .html, .docx (and probably more) document formats can be rendered using pandoc.\nVersion control\nTracking changes using git is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.\nSimple citation management\nBibliography is organized using Zotero with Better BibTeX extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as .bib files. My Zotero library is here. To format the citations, a citation style of the Journal of Computer Applications in Archaeology is used (.csl file was obtained here).\nEmbedded code\nCode blocks (and the associated results) can be easily embedded in the text. My language of choice is R. For more information on reproducibility see Marwick (2017) and Marwick, Boettiger, and Mullen (2018).\n\n\n\n\n\n\n\nIn-text citations\n\n\n\n\n\n@citekey        -> Author (year)\n-@citekey       -> (year)\n[@citekey]      -> (Author, year)\n@citekey [p. X] -> Author (year, p. X)\n\n\n\n\n\n\n\n\n\nCrossrefs\n\n\n\n\n\n{#sec-label} -> #sec-label\n{#fig-label} -> #fig-label\ncrossref withot numbering: -@sec-label, [Chapter -@sec-label]\n\n\n\n\n\nStats\n\n\n\nAs of February 17, 2023 there are roughly 6.3 pages of text. Length of individual chapters is as follows:\n\n\n     w     c                   f\n1  267  1788  chapters/intro.qmd\n2  330  2391 chapters/theory.qmd\n3  227  1741 chapters/method.qmd\n4  802  5424   chapters/data.qmd\n5 1626 11344               total\n\n\nP\n\n\n\n\nMarwick, Ben. 2017. “Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation.” Journal of Archaeological Method and Theory 24 (2): 424–450. doi:10.1007/s10816-015-9272-9.\n\n\nMarwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. “Packaging Data Analytical Work Reproducibly Using R (and Friends).” The American Statistician 72 (1): 80–88. doi:10.1080/00031305.2017.1375986."
   },
   {
-    "objectID": "intro.html#overview",
-    "href": "intro.html#overview",
+    "objectID": "chapters/intro.html#overview",
+    "href": "chapters/intro.html#overview",
     "title": "Introduction",
     "section": "Overview",
     "text": "Overview\nThe introduction explains:\n\nWhat is the general research context of the work.\nHow archaeological heritage is managed in the Czech Republic, especially in relation to data.\nWhat research questions are asked here and why.\nHow is the thesis structured into chapters and sections."
   },
   {
-    "objectID": "intro.html#sec-context",
-    "href": "intro.html#sec-context",
+    "objectID": "chapters/intro.html#sec-context",
+    "href": "chapters/intro.html#sec-context",
     "title": "Introduction",
     "section": "Context",
     "text": "Context\n\n\nArchaeological heritage management in the Czech Republic\nHow archaeology, its finds, sites and data are managed in various countries is heavily influenced by given legal framework. In this section, issues specific to the case of the Czech Republic are described."
   },
   {
-    "objectID": "intro.html#sec-questions",
-    "href": "intro.html#sec-questions",
+    "objectID": "chapters/intro.html#sec-questions",
+    "href": "chapters/intro.html#sec-questions",
     "title": "Introduction",
     "section": "Research questions",
     "text": "Research questions"
   },
   {
-    "objectID": "intro.html#sec-outline",
-    "href": "intro.html#sec-outline",
+    "objectID": "chapters/intro.html#sec-outline",
+    "href": "chapters/intro.html#sec-outline",
     "title": "Introduction",
     "section": "Thesis outline",
     "text": "Thesis outline\n\nHere is a brief outline of the structure of the thesis. In Chapter 1, Theory, the foundation is given by defining basic terms, data, data infrastructures etc. Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized. The dichotomy between archaeology as data- and/or theory-driven science is debated.\nIn Chapter 2, Method, methodological boundaries are set up.\nChapter 3, Data, introduces data sources that are used here. Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process. Special attention is thus given to analysing how reality and facts are represented by the data models of used sources. A data management plan (Section 3.1) details how data is handled in this research."
   },
   {
-    "objectID": "intro.html#summary",
-    "href": "intro.html#summary",
+    "objectID": "chapters/intro.html#summary",
+    "href": "chapters/intro.html#summary",
     "title": "Introduction",
     "section": "Summary",
     "text": "Summary"
   },
   {
-    "objectID": "theory.html#overview",
-    "href": "theory.html#overview",
+    "objectID": "chapters/theory.html#overview",
+    "href": "chapters/theory.html#overview",
     "title": "1  Theory",
     "section": "Overview",
     "text": "Overview\n\nChapter 1 presents:\n\nDefinitions for fundamental concepts I am building up on further in the text.\nAn overview of theoretical approaches the work is determined and shaped by.\nA discussion of archaeological research as theory- and/or data-driven.\nA commentary on data from the theoretical points presented earlier."
   },
   {
-    "objectID": "theory.html#sec-terms",
-    "href": "theory.html#sec-terms",
+    "objectID": "chapters/theory.html#sec-terms",
+    "href": "chapters/theory.html#sec-terms",
     "title": "1  Theory",
     "section": "1.1 Definitions and terminology",
     "text": "1.1 Definitions and terminology\n\n1.1.1 Data\nThe term data is used in a plural form what is the current scientific convention (Kitchin 2022, xvii). As Kitchin (2022, 15) states, “Data are not simply captured or recorded, but are the product of discursively framed and technically mediated processes.”\n“The production of data is a social practice, conducted through structured and structuring fields (e.g. methods, concepts, expertise, institutions) that are shaped by and contribute to configurations of power and knowledge.” (Ruppert, Isin, and Bigo 2017)\n“(…) databases are designed and build to hold certain kinds of data and enable certain kinds of analysis, and how they are structured has profound consequences as to what queries and analysis can be performed.” (Ruppert 2012)\n\n\n1.1.2 Data infrastructures\nAs I was saying in the Section 1.1.1."
   },
   {
-    "objectID": "theory.html#sec-concepts",
-    "href": "theory.html#sec-concepts",
+    "objectID": "chapters/theory.html#sec-concepts",
+    "href": "chapters/theory.html#sec-concepts",
     "title": "1  Theory",
     "section": "1.2 Overview of theoretical concepts",
     "text": "1.2 Overview of theoretical concepts\nReview of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc. Describe software used!"
   },
   {
-    "objectID": "theory.html#digital-humanities",
-    "href": "theory.html#digital-humanities",
+    "objectID": "chapters/theory.html#digital-humanities",
+    "href": "chapters/theory.html#digital-humanities",
     "title": "1  Theory",
     "section": "1.3 Digital humanities",
     "text": "1.3 Digital humanities"
   },
   {
-    "objectID": "theory.html#digital-archaeology",
-    "href": "theory.html#digital-archaeology",
+    "objectID": "chapters/theory.html#digital-archaeology",
+    "href": "chapters/theory.html#digital-archaeology",
     "title": "1  Theory",
     "section": "1.4 Digital archaeology",
     "text": "1.4 Digital archaeology"
   },
   {
-    "objectID": "theory.html#spatial-archaeology",
-    "href": "theory.html#spatial-archaeology",
+    "objectID": "chapters/theory.html#spatial-archaeology",
+    "href": "chapters/theory.html#spatial-archaeology",
     "title": "1  Theory",
     "section": "1.5 Spatial archaeology",
     "text": "1.5 Spatial archaeology"
   },
   {
-    "objectID": "theory.html#archaeology-as-theory--andor-data-driven-science",
-    "href": "theory.html#archaeology-as-theory--andor-data-driven-science",
+    "objectID": "chapters/theory.html#archaeology-as-theory--andor-data-driven-science",
+    "href": "chapters/theory.html#archaeology-as-theory--andor-data-driven-science",
     "title": "1  Theory",
     "section": "1.6 Archaeology as theory- and/or data-driven science",
     "text": "1.6 Archaeology as theory- and/or data-driven science\n\n\n\n\n\n\nNote\n\n\n\nThis section is partly based on the Data-driven Archaeology. Are we there yet? talk co-authored with Hana Kubelková and Petr Květina. It was presented at the Central European Theoretical Archaeology Group (CE TAG) meeting entitled Theoretical Approaches to Computational Archaeology I organized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University."
   },
   {
-    "objectID": "theory.html#theorizing-data",
-    "href": "theory.html#theorizing-data",
+    "objectID": "chapters/theory.html#theorizing-data",
+    "href": "chapters/theory.html#theorizing-data",
     "title": "1  Theory",
     "section": "1.7 Theorizing data",
     "text": "1.7 Theorizing data\nDefining archaeological data, micro- to macro-scales;"
   },
   {
-    "objectID": "theory.html#chapter-summary",
-    "href": "theory.html#chapter-summary",
+    "objectID": "chapters/theory.html#chapter-summary",
+    "href": "chapters/theory.html#chapter-summary",
     "title": "1  Theory",
     "section": "Chapter summary",
     "text": "Chapter summary\n\n\n\n\n\nKitchin, Rob. 2022. The Data Revolution: Big Data, Open Data, Data Infrastructures & Their Consequences. Second. Los Angeles, California: SAGE Publications.\n\n\nRuppert, Evelyn. 2012. “The Governmental Topologies of Database Devices.” Theory, Culture & Society 29 (4-5). SAGE Publications Ltd: 116–136. doi:10.1177/0263276412439428.\n\n\nRuppert, Evelyn, Engin Isin, and Didier Bigo. 2017. “Data Politics.” Big Data & Society 4 (2). SAGE Publications Ltd: 2053951717717749. doi:10.1177/2053951717717749."
   },
   {
-    "objectID": "method.html#overview",
-    "href": "method.html#overview",
+    "objectID": "chapters/method.html#overview",
+    "href": "chapters/method.html#overview",
     "title": "2  Methods",
     "section": "Overview",
     "text": "Overview\nChapter 2 describes:\n\n\nThe software that is used in the analysis."
   },
   {
-    "objectID": "method.html#software",
-    "href": "method.html#software",
+    "objectID": "chapters/method.html#software",
+    "href": "chapters/method.html#software",
     "title": "2  Methods",
     "section": "2.1 Software",
     "text": "2.1 Software\nMost of the things included here, if not all of them, were achieved using open-source software. Large part of this endeavor is also documented in code. This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc. At some places there are R code blocks. The text is processed into three outputs, a website (HTML document), a PDF document and a MS Word document using Quarto. The plain text version, same as the rendered website, is hosted at GitHub. The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal. Library was organized using Zotero.\nRaster graphics were created and edited using GIMP, vector graphics using Inkscape. All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in QGIS.\nSome data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from Wikidata was queried using SPARQL. Any analysis was mostly done in R, a language for statistical computing and graphics (rcore?). Various packages were used, the most important packages are listed here, the complete list is in an Appendix\n\n2.1.1 Reproduciblity"
   },
   {
-    "objectID": "method.html#chapter-summary",
-    "href": "method.html#chapter-summary",
+    "objectID": "chapters/method.html#chapter-summary",
+    "href": "chapters/method.html#chapter-summary",
     "title": "2  Methods",
     "section": "Chapter summary",
     "text": "Chapter summary"
   },
   {
-    "objectID": "data.html#overview",
-    "href": "data.html#overview",
+    "objectID": "chapters/data.html#overview",
+    "href": "chapters/data.html#overview",
     "title": "3  Data and materials",
     "section": "Overview",
     "text": "Overview\nChapter 3 details:\n\nHow data is managed in this research. This is described in a data management plan.\nWhat data sources are available in the Czech Republic.\nWhat data models are most commonly used in Czech archaeology.\nHow is the reality represented in the databases of the Archaeological information system of the Czech Republic.\n\nSources of (archaeology) data in the Czech Republic, an overview:\nData models, datafication of past reality, simple vs complex data models; Assessing findability, accessibility, interoperability, and reusability (FAIR) principles; Cultural heritage management data vs research data domains; Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure."
   },
   {
-    "objectID": "data.html#sec-dmp",
-    "href": "data.html#sec-dmp",
+    "objectID": "chapters/data.html#sec-dmp",
+    "href": "chapters/data.html#sec-dmp",
     "title": "3  Data and materials",
     "section": "3.1 Data management plan",
     "text": "3.1 Data management plan\nGood data stewardship is a crucial element in Open Science (Mons 2018, 1–5), an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. The data management plan (DMP) then stands at the very beginning of every such endeavour. In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle. This implies that it is not a static, but a living record of how the data was captured, created, curated, selected, analysed, interpreted, shared, and archived in course of a project or after its end. A DMP helps in adhering to the FAIR principles, i.e. making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse (Wilkinson et al. 2016; Hollander et al. 2019).\nThis DMP is partly based on the structure given in the Data Stewardship Wizard (Pergl et al. 2019), an online tool dedicated to cooperative creation of DMPs, templates created in the Ariadne project (Doorn and Ronzino 2022) and my own ideas on good DMP practice. It is included both as part of the text and as a standalone machine actionable file (link?). \n\n3.1.1 Created, collected and re-used data\n\nData re-use\nThe work is predominantly based on re-using existing data. The sources of data are listed in Section 3.2. I presume that there are many pre-existing data sets in the Czech archaeology, but most of them are either inaccessible or not findable, i.e. we cannot be sure they even exist. The single most complete source for archaeology data in the Czech Republic is without a doubt the AIS CR infrastructure.\nThere are several well published data sets covering the area of the Czech Republic in the Journal of Open Archaeology Data, the radiocarbon data by Tkáč and Kolář (2021) and the Neolithic settlements data set by Pajdla and Trampota (2021). These have an advantage of well formulated access and re-use policies, explicit licence and other conditions for use.\n\n\n\nData creation and collection\n\n\n\n\nVocabularies\n\nI am explicitly using vocabularies that are inherent to data sources from which the data is reused. A principal and authoritative vocabulary for archaeology and related fields is the Getty Art & Architecture Thesaurus (AAT). Getty AAT subjects are used by the ARIADNE infrastructure and many other archaeology infrastructures are mapping their vocabularies to the AAT subjects. The emerging ARIADNE AO_Cat formal ontology is also taken into account when interacting with ARIADNE services. The AIS CR vocabularies, although implicit to the data, are yet to be published. A possibly incomplete version can be reverse engineered from the available data sets. If reconciliation between data from different data sources is necessary, the AAT is used to map between them.\n\n\n\nFile naming conventions\nPersistent identifiers?\n\n\n\n3.1.2 Data processing\nHow will you work with the data? Do you have/need storage? Do you do backups? Are you using object-store? Are you using relational database? Graph database? Triple store? How are changes in data managed?\n\n\n3.1.3 Interpretation\nSpecify/list data formats you will be using and their structure. Will different data be integrated?\n\n\n3.1.4 Data preservation\nWhat data sets are you producing? Is data long-term archived? Will it be usable and accessible after a long period of time?\n\n\n3.1.5 Access to data\nWill the data be as open as possible? What are the reasons your data cannot became open?"
   },
   {
-    "objectID": "data.html#sec-sources",
-    "href": "data.html#sec-sources",
+    "objectID": "chapters/data.html#sec-sources",
+    "href": "chapters/data.html#sec-sources",
     "title": "3  Data and materials",
     "section": "3.2 Data sources",
     "text": "3.2 Data sources\n\n3.2.1 Archaeology information system of the Czech Republic\n\n\n3.2.2 Legacy data sources\nWhat is a legacy data source?\n\nMuseum databases"
   },
   {
-    "objectID": "data.html#chapter-summary",
-    "href": "data.html#chapter-summary",
+    "objectID": "chapters/data.html#chapter-summary",
+    "href": "chapters/data.html#chapter-summary",
     "title": "3  Data and materials",
     "section": "Chapter summary",
     "text": "Chapter summary\n\n\n\n\nDoorn, Peter, and Paola Ronzino. 2022. “ARIADNEplus Data Management Plan Tools.” Ariadne Portal. https://vast-lab.org/dmp/.\n\n\nHollander, Hella, Francesca Morselli, Frank Uiterwaal, Femmy Admiraal, Thorsten Trippel, and Sara Di Giorgio. 2019. “PARTHENOS Guidelines to FAIRify Data Management and Make Data Reusable,” August. doi:10.5281/zenodo.2668478.\n\n\nMons, Barend. 2018. Data Stewardship For Open Science: Implementing FAIR Principles. Boca Raton: CRC Press, Taylor & Francis Group.\n\n\nPajdla, Petr, and František Trampota. 2021. “Neolithic Settlements in Central Europe: Data from the Project ‘Lifestyle as an Unintentional Identity in the Neolithic’.” Journal of Open Archaeology Data 9 (0). Ubiquity Press: 13. doi:10.5334/joad.88.\n\n\nPergl, Robert, Rob Hooft, Marek Suchánek, Vojtěch Knaisl, and Jan Slifka. 2019. “‘Data Stewardship Wizard’: A Tool Bringing Together Researchers, Data Stewards, and Data Experts Around Data Management Planning.” Data Science Journal 18 (1). Ubiquity Press: 59. doi:10.5334/dsj-2019-059.\n\n\nTkáč, Peter, and Jan Kolář. 2021. “Towards New Demography Proxies and Regional Chronologies: Radiocarbon Dates from Archaeological Contexts Located in the Czech Republic Covering the Period Between 10,000 BC and AD 1250.” Journal of Open Archaeology Data 9 (0). Ubiquity Press: 9. doi:10.5334/joad.85.\n\n\nWilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3 (1). Nature Publishing Group: 160018. doi:10.1038/sdata.2016.18."
