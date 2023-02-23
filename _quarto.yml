@@ -1,6 +1,9 @@
 project:
   type: book
 
+execute:
+  freeze: auto
+
 book:
   title: "Archaeology Data Infrastructures"
   subtitle: "Data reuse potentials and limitations to modelling settlement systems (...)"
