@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,9 +49,9 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../references.html" rel="next">
+<link href="../biblio/references.html" rel="next">
 <link href="../chapters/method.html" rel="prev">
-<link href="../cover.png" rel="icon" type="image/png">
+<link href="../figs/cover.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -79,7 +79,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -90,11 +91,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data and materials</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data and materials</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -102,79 +108,89 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Archaeology Data Infrastructures</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/petrpajdla/dataInfrastructures/" title="" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="../Archaeology-Data-Infrastructures.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="../Archaeology-Data-Infrastructures.docx">
-            <i class="bi bi-bi-file-word pe-1"></i>
-          Download Docx
-          </a>
-        </li>
-    </ul>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/petrpajdla/dataInfrastructures/" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../Archaeology-Data-Infrastructures.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../Archaeology-Data-Infrastructures.docx">
+              <i class="bi bi-bi-file-word pe-1"></i>
+            Download Docx
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/intro.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  <a href="../chapters/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/theory.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Theory</span></a>
+  <a href="../chapters/theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Theory</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/method.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Methods</span></a>
+  <a href="../chapters/method.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/data.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data and materials</span></a>
+  <a href="../chapters/data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data and materials</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="../biblio/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></a>
+  <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
   </div>
 </li>
       </ul>
@@ -182,36 +198,36 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#sec-dmp" id="toc-sec-dmp" class="nav-link" data-scroll-target="#sec-dmp"><span class="toc-section-number">3.1</span>  Data management plan</a>
+  <li><a href="#sec-dmp" id="toc-sec-dmp" class="nav-link active" data-scroll-target="#sec-dmp"><span class="header-section-number">3.1</span> Data management plan</a>
   <ul class="collapse">
-  <li><a href="#created-collected-and-re-used-data" id="toc-created-collected-and-re-used-data" class="nav-link" data-scroll-target="#created-collected-and-re-used-data"><span class="toc-section-number">3.1.1</span>  Created, collected and re-used data</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing"><span class="toc-section-number">3.1.2</span>  Data processing</a></li>
-  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation"><span class="toc-section-number">3.1.3</span>  Interpretation</a></li>
-  <li><a href="#data-preservation" id="toc-data-preservation" class="nav-link" data-scroll-target="#data-preservation"><span class="toc-section-number">3.1.4</span>  Data preservation</a></li>
-  <li><a href="#access-to-data" id="toc-access-to-data" class="nav-link" data-scroll-target="#access-to-data"><span class="toc-section-number">3.1.5</span>  Access to data</a></li>
+  <li><a href="#created-collected-and-re-used-data" id="toc-created-collected-and-re-used-data" class="nav-link" data-scroll-target="#created-collected-and-re-used-data"><span class="header-section-number">3.1.1</span> Created, collected and re-used data</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing"><span class="header-section-number">3.1.2</span> Data processing</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation"><span class="header-section-number">3.1.3</span> Interpretation</a></li>
+  <li><a href="#data-preservation" id="toc-data-preservation" class="nav-link" data-scroll-target="#data-preservation"><span class="header-section-number">3.1.4</span> Data preservation</a></li>
+  <li><a href="#access-to-data" id="toc-access-to-data" class="nav-link" data-scroll-target="#access-to-data"><span class="header-section-number">3.1.5</span> Access to data</a></li>
   </ul></li>
-  <li><a href="#sec-sources" id="toc-sec-sources" class="nav-link" data-scroll-target="#sec-sources"><span class="toc-section-number">3.2</span>  Data sources</a>
+  <li><a href="#sec-sources" id="toc-sec-sources" class="nav-link" data-scroll-target="#sec-sources"><span class="header-section-number">3.2</span> Data sources</a>
   <ul class="collapse">
-  <li><a href="#sec-aiscr" id="toc-sec-aiscr" class="nav-link" data-scroll-target="#sec-aiscr"><span class="toc-section-number">3.2.1</span>  Archaeology information system of the Czech Republic</a></li>
-  <li><a href="#legacy-data-sources" id="toc-legacy-data-sources" class="nav-link" data-scroll-target="#legacy-data-sources"><span class="toc-section-number">3.2.2</span>  Legacy data sources</a></li>
+  <li><a href="#sec-aiscr" id="toc-sec-aiscr" class="nav-link" data-scroll-target="#sec-aiscr"><span class="header-section-number">3.2.1</span> Archaeology information system of the Czech Republic</a></li>
+  <li><a href="#legacy-data-sources" id="toc-legacy-data-sources" class="nav-link" data-scroll-target="#legacy-data-sources"><span class="header-section-number">3.2.2</span> Legacy data sources</a></li>
   </ul></li>
   <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary">Chapter summary</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/petrpajdla/dataInfrastructures/blob/main/chapters/data.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/edit/main/chapters/data.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-data" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data and materials</span></span></h1>
+<h1 class="title"><span id="sec-data" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data and materials</span></span></h1>
 </div>
 
 
@@ -226,12 +242,30 @@ div.csl-indent {
 
 </header>
 
-<div class="callout-note callout callout-style-simple callout-captioned">
+<div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
+<a href="#sec-data"><span>Chapter&nbsp;3</span></a> details:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>How data is managed in this research. This is described in a data management plan.</li>
+<li>What data sources are available in the Czech Republic.</li>
+<li>What data models are most commonly used in Czech archaeology.</li>
+<li>How is the reality represented in the databases of the <em>Archaeological information system of the Czech Republic</em>.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -239,28 +273,18 @@ Note
 <p>This chapter, especially the <a href="#sec-dmp"><span>Section&nbsp;3.1</span></a>: Data management plan, builds up on the project <a href="https://www.phil.muni.cz/en/research/current-projects/57940">Data management in Archaeology</a> I cooperated on with Hana Kubelková in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.</p>
 </div>
 </div>
-<section id="overview" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p><a href="#sec-data"><span>Chapter&nbsp;3</span></a> details:</p>
-<ul>
-<li>How data is managed in this research. This is described in a data management plan.</li>
-<li>What data sources are available in the Czech Republic.</li>
-<li>What data models are most commonly used in Czech archaeology.</li>
-<li>How is the reality represented in the databases of the <em>Archaeological information system of the Czech Republic</em>.</li>
-</ul>
 <p>Sources of (archaeology) data in the Czech Republic, an overview:</p>
 <p>Data models, datafication of past reality, simple vs complex data models; Assessing findability, accessibility, interoperability, and reusability (FAIR) principles; Cultural heritage management data vs research data domains; Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure.</p>
-</section>
 <section id="sec-dmp" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="sec-dmp"><span class="header-section-number">3.1</span> Data management plan</h2>
-<p>Good data stewardship is a crucial element in <em>Open Science</em> <span class="citation" data-cites="mons2018">(<a href="../references.html#ref-mons2018" role="doc-biblioref">Mons 2018, 1–5</a>)</span>, an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. The data management plan (DMP) then stands at the very beginning of every such endeavour. In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle. This implies that it is not a static, but a living record of how the data was captured, created, curated, selected, analysed, interpreted, shared, and archived in course of a project or after its end. A DMP helps in adhering to the FAIR principles, i.e.&nbsp;making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse <span class="citation" data-cites="wilkinson2016 hollander2019">(<a href="../references.html#ref-wilkinson2016" role="doc-biblioref">Wilkinson et al. 2016</a>; <a href="../references.html#ref-hollander2019" role="doc-biblioref">Hollander et al. 2019</a>)</span>.</p>
-<p>This DMP is partly based on the structure given in the <a href="ds-wizard.org">Data Stewardship Wizard</a> <span class="citation" data-cites="pergl2019">(<a href="../references.html#ref-pergl2019" role="doc-biblioref">Pergl et al. 2019</a>)</span>, an online tool dedicated to cooperative creation of DMPs, templates created in the <a href="https://vast-lab.org/dmp/index.html">Ariadne project</a> <span class="citation" data-cites="doorn2022">(<a href="../references.html#ref-doorn2022" role="doc-biblioref">Doorn and Ronzino 2022</a>)</span> and my own ideas on good DMP practice. It is included both as part of the text and as a standalone machine actionable file (link?). <!-- add link for DMP JSON or other format... --></p>
+<p>Good data stewardship is a crucial element in <em>Open Science</em> <span class="citation" data-cites="mons2018">(<a href="../biblio/references.html#ref-mons2018" role="doc-biblioref">Mons 2018, 1–5</a>)</span>, an umbrella concept for how scientific research is conducted in a way that knowledge is reusable, modifiable and redistributable. The data management plan (DMP) then stands at the very beginning of every such endeavour. In its essence, a DMP is a stand-alone document detailing how data is handled at each of the steps in its life cycle. This implies that it is not a static, but a living record of how the data was captured, created, curated, selected, analysed, interpreted, shared, and archived in course of a project or after its end. A DMP helps in adhering to the FAIR principles, i.e.&nbsp;making data findable, accessible, interoperable and reusable, a set of propositions enabling more effective knowledge discovery, collaboration, and data reuse <span class="citation" data-cites="wilkinson2016 hollander2019">(<a href="../biblio/references.html#ref-wilkinson2016" role="doc-biblioref">Wilkinson et al. 2016</a>; <a href="../biblio/references.html#ref-hollander2019" role="doc-biblioref">Hollander et al. 2019</a>)</span>.</p>
+<p>This DMP is partly based on the structure given in the <a href="ds-wizard.org">Data Stewardship Wizard</a> <span class="citation" data-cites="pergl2019">(<a href="../biblio/references.html#ref-pergl2019" role="doc-biblioref">Pergl et al. 2019</a>)</span>, an online tool dedicated to cooperative creation of DMPs, templates created in the <a href="https://vast-lab.org/dmp/index.html">Ariadne project</a> <span class="citation" data-cites="doorn2022">(<a href="../biblio/references.html#ref-doorn2022" role="doc-biblioref">Doorn and Ronzino 2022</a>)</span> and my own ideas on good DMP practice. It is included both as part of the text and as a standalone machine actionable file (link?). <!-- add link for DMP JSON or other format... --></p>
 <section id="created-collected-and-re-used-data" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="created-collected-and-re-used-data"><span class="header-section-number">3.1.1</span> Created, collected and re-used data</h3>
 <section id="data-re-use" class="level4">
 <h4 class="anchored" data-anchor-id="data-re-use">Data re-use</h4>
 <p>The work is predominantly based on re-using existing data. The sources of data are listed in <a href="#sec-sources"><span>Section&nbsp;3.2</span></a>. I presume that there are many pre-existing data sets in the Czech archaeology, but most of them are either inaccessible or not findable, i.e.&nbsp;we cannot be sure they even exist. The single most complete source for archaeology data in the Czech Republic is without a doubt the <em>AIS CR</em> infrastructure.</p>
-<p>There are several well published data sets covering the area of the Czech Republic in the <a href="https://openarchaeologydata.metajnl.com/">Journal of Open Archaeology Data</a>, the radiocarbon data by <span class="citation" data-cites="tkac2021">Tkáč and Kolář (<a href="../references.html#ref-tkac2021" role="doc-biblioref">2021</a>)</span> and the Neolithic settlements data set by <span class="citation" data-cites="pajdla2021">Pajdla and Trampota (<a href="../references.html#ref-pajdla2021" role="doc-biblioref">2021</a>)</span>. These have an advantage of well formulated access and re-use policies, explicit licence and other conditions for use.</p>
+<p>There are several well published data sets covering the area of the Czech Republic in the <a href="https://openarchaeologydata.metajnl.com/">Journal of Open Archaeology Data</a>, the radiocarbon data by <span class="citation" data-cites="tkac2021">Tkáč and Kolář (<a href="../biblio/references.html#ref-tkac2021" role="doc-biblioref">2021</a>)</span> and the Neolithic settlements data set by <span class="citation" data-cites="pajdla2021">Pajdla and Trampota (<a href="../biblio/references.html#ref-pajdla2021" role="doc-biblioref">2021</a>)</span>. These have an advantage of well formulated access and re-use policies, explicit licence and other conditions for use.</p>
 <!-- Wikidata?, OpenStreetMap?
 Re-use
 Are there pre-existing data?
@@ -322,27 +346,27 @@ Volumes of data? Suitable for LTP and sharing? -->
 <h2 class="unnumbered anchored" data-anchor-id="chapter-summary">Chapter summary</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-doorn2022" class="csl-entry" role="doc-biblioentry">
-Doorn, Peter, and Paola Ronzino. 2022. <span>“<span>ARIADNEplus Data Management Plan Tools</span>.”</span> <em>Ariadne Portal</em>. https://vast-lab.org/dmp/.
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-doorn2022" class="csl-entry" role="listitem">
+Doorn, Peter, and Paola Ronzino. 2022. <span>“<span>ARIADNEplus Data Management Plan Tools</span>.”</span> <span>Ariadne Portal</span>. <a href="https://vast-lab.org/dmp/">https://vast-lab.org/dmp/</a>.
 </div>
-<div id="ref-hollander2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hollander2019" class="csl-entry" role="listitem">
 Hollander, Hella, Francesca Morselli, Frank Uiterwaal, Femmy Admiraal, Thorsten Trippel, and Sara Di Giorgio. 2019. <span>“<span>PARTHENOS Guidelines</span> to <span>FAIRify</span> Data Management and Make Data Reusable,”</span> August. doi:<a href="https://doi.org/10.5281/zenodo.2668478">10.5281/zenodo.2668478</a>.
 </div>
-<div id="ref-mons2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mons2018" class="csl-entry" role="listitem">
 Mons, Barend. 2018. <em>Data <span>Stewardship For Open Science</span>: <span>Implementing FAIR</span> Principles</em>. <span>Boca Raton</span>: <span>CRC Press, Taylor &amp; Francis Group</span>.
 </div>
-<div id="ref-pajdla2021" class="csl-entry" role="doc-biblioentry">
-Pajdla, Petr, and František Trampota. 2021. <span>“Neolithic <span>Settlements</span> in <span>Central Europe</span>: <span>Data</span> from the <span>Project</span> <span>‘<span>Lifestyle</span> as an <span>Unintentional Identity</span> in the <span>Neolithic</span>’</span>.”</span> <em>Journal of Open Archaeology Data</em> 9 (0). <span>Ubiquity Press</span>: 13. doi:<a href="https://doi.org/10.5334/joad.88">10.5334/joad.88</a>.
+<div id="ref-pajdla2021" class="csl-entry" role="listitem">
+Pajdla, Petr, and František Trampota. 2021. <span>“Neolithic <span>Settlements</span> in <span>Central Europe</span>: <span>Data</span> from the <span>Project</span> <span>‘<span>Lifestyle</span> as an <span>Unintentional Identity</span> in the <span>Neolithic</span>’</span>.”</span> <em>Journal of Open Archaeology Data</em> 9 (0, 0). <span>Ubiquity Press</span>: 13. doi:<a href="https://doi.org/10.5334/joad.88">10.5334/joad.88</a>.
 </div>
-<div id="ref-pergl2019" class="csl-entry" role="doc-biblioentry">
-Pergl, Robert, Rob Hooft, Marek Suchánek, Vojtěch Knaisl, and Jan Slifka. 2019. <span>“<span>‘<span>Data Stewardship Wizard</span>’</span>: <span>A Tool Bringing Together Researchers</span>, <span>Data Stewards</span>, and <span>Data Experts</span> Around <span>Data Management Planning</span>.”</span> <em>Data Science Journal</em> 18 (1). <span>Ubiquity Press</span>: 59. doi:<a href="https://doi.org/10.5334/dsj-2019-059">10.5334/dsj-2019-059</a>.
+<div id="ref-pergl2019" class="csl-entry" role="listitem">
+Pergl, Robert, Rob Hooft, Marek Suchánek, Vojtěch Knaisl, and Jan Slifka. 2019. <span>“<span>‘<span>Data Stewardship Wizard</span>’</span>: <span>A Tool Bringing Together Researchers</span>, <span>Data Stewards</span>, and <span>Data Experts</span> Around <span>Data Management Planning</span>.”</span> <em>Data Science Journal</em> 18 (1, 1). <span>Ubiquity Press</span>: 59. doi:<a href="https://doi.org/10.5334/dsj-2019-059">10.5334/dsj-2019-059</a>.
 </div>
-<div id="ref-tkac2021" class="csl-entry" role="doc-biblioentry">
-Tkáč, Peter, and Jan Kolář. 2021. <span>“Towards <span>New Demography Proxies</span> and <span>Regional Chronologies</span>: <span>Radiocarbon Dates</span> from <span>Archaeological Contexts Located</span> in the <span>Czech Republic Covering</span> the <span>Period Between</span> 10,000 <span>BC</span> and <span>AD</span> 1250.”</span> <em>Journal of Open Archaeology Data</em> 9 (0). <span>Ubiquity Press</span>: 9. doi:<a href="https://doi.org/10.5334/joad.85">10.5334/joad.85</a>.
+<div id="ref-tkac2021" class="csl-entry" role="listitem">
+Tkáč, Peter, and Jan Kolář. 2021. <span>“Towards <span>New Demography Proxies</span> and <span>Regional Chronologies</span>: <span>Radiocarbon Dates</span> from <span>Archaeological Contexts Located</span> in the <span>Czech Republic Covering</span> the <span>Period Between</span> 10,000 <span>BC</span> and <span>AD</span> 1250.”</span> <em>Journal of Open Archaeology Data</em> 9 (0, 0). <span>Ubiquity Press</span>: 9. doi:<a href="https://doi.org/10.5334/joad.85">10.5334/joad.85</a>.
 </div>
-<div id="ref-wilkinson2016" class="csl-entry" role="doc-biblioentry">
-Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR Guiding Principles</span> for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1). <span>Nature Publishing Group</span>: 160018. doi:<a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.
+<div id="ref-wilkinson2016" class="csl-entry" role="listitem">
+Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR Guiding Principles</span> for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1, 1). <span>Nature Publishing Group</span>: 160018. doi:<a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.
 </div>
 </div>
 </section>
@@ -490,9 +514,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -557,6 +595,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -603,7 +727,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../references.html" class="pagination-link">
+      <a href="../biblio/references.html" class="pagination-link">
         <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
