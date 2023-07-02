@@ -22,10 +22,59 @@ As @kitchin2022 [pp. 15] states, "Data are not simply captured or recorded, but 
 
 "(...) databases are designed and build to hold certain kinds of data and enable certain kinds of analysis, and how they are structured has profound consequences as to what queries and analysis can be performed." [@ruppert2012]
 
+analogue vs born-digital
 
-### Data infrastructures {#sec-terms-infra}
 
-As I was saying in the @sec-terms-data.
+### Infrastructures {#sec-terms-infra}
+
+Although *infrastructures* became quite a buzzword in recent years both among the policy makers and researchers, it is rather difficult to define what an infrastructure actually is.
+Many slightly different variations of more-less the same name and concept are circulating in official documents, various reports, research articles etc.
+Thus, we encounter terms such as **research infrastructures**, large research infrastructures, open science infrastrucutres, **data infrastructures**, and perhaps more, even though most of their definitions are variations of the very same concept.
+
+@hallonsten2020 maps the field of European (research) infrastructures and identifies the principal problem as the difficulty to come up with a single definition that would fit all of those who are considered to be (or consider themselves to be) an *infrastructure*.
+@hallonsten2020 [630] concludes that:
+
+> *(...) "while a politically viable definition seems to be either already in place (...) or unneeded, an analytically workable definition is out of reach unless the scope is limited and the aim of the definition is made more precise.""*
+
+In the next paragraphs, we look at several of the *political* definitions of research infrastructures and later we focus on an *analytical* definition of data infrastructures.
+
+#### Political definitions
+
+In the European Union, research infrastructures are currently defined in the Article 2(1) of EU Regulation No 2021/695 establishing Horizon Europe [-@horizon] as facilities providing resources  and services for the research communities in their respective fields. These include:
+
+- human resources, major scientific equipment or sets of instruments;
+- collections, archives or scientific data, i.e. knowledge-related facilities;
+- computing systems and communication networks;
+- any other research and innovation infrastructure of a unique nature open to external users.
+
+The *Regulation* also states that infrastructures may be used beyond research, i.e. for education, public services etc.
+This broad definition given by the European Union covers almost any kind of an infrastructure.
+In the legal framework of the Czech Republic, given by Act No 130/2002 Coll. on the Support of Research, Experimental Development and Innovation [-@zakon130], Article 2(2), *large research infrastructure* is defined as follow [english translation from Roadmap of Large Research Infrastructures -@roadmap2019]:
+
+> *"(...) a facility necessary for conducting comprehensive research and development with high financial and technology demands, approved by the Government and established to be also used by other research organisations."*
+
+This political definition is rather an opportunistic one in demanding that the infrastructure is approved by the Czech government and has high financial and technology demands.
+Lastly, the UNESCO Open Science Recommendation [-@unesco2021] adds to the research infrastructures a strong element of open science, addressing them as *open science infrastructures*.
+
+To conclude, the political definitions of research infrastructures are mostly broad enough to fit any kind of a facility, that is deemed appropriate.
+This point is highlighted especially in the Czech definition, where an approval of the Government is required.
+In general, there is an emphasis on provision of services (etc.) to various stakeholder communities and cooperation.
+In the EU Regulation, a subset of a larger field of infrastructures is labeled *knowledge-related facilities*, it is exactly this part that is discussed here as *data infrastructures*.
+
+#### Data infrastructures
+
+@kitchin2022 [47-48] builds up the definition of data infrastructures by comparing them to *data holdings* and *data archives*.
+*Data holdings* are any data stored informally, presumably by an individual (scientist), without long-term preservation or sharing for reuse in mind.
+Such data are inevitably lost when the researcher retires, dies (etc.), because proper metadata descriptions are missing and the data, although they might be organised in some way, lack  documentation and it is difficult, if not impossible, to reconstruct the context of the data.
+In contrast, *data archives* are formal collections that are structured, curated and documented by appropriate metadata with plans for preservation, access and discoverability.
+
+The role of an interconnected digital world is then highlighted in Kitchin's definition of a data infrastructure [@kitchin2022, 50]:
+
+> *"A data infrastructure is a digital means for storing, sharing, connecting and consuming data holdings and archives across the internet."*
+
+
+
+In a broader sense, infrastructures are information systems, repositories, archives, databases, sets of equipment and instruments etc. shared by multiple shareholder groups that are essential in supporting open science and research.
 
 <!-- ============================================================================= -->
 
