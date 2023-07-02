@@ -9,7 +9,7 @@ This repository contains the data, code and text of my PhD thesis. This
 is still a **work-in-progress** thing, if you want to have a look at it,
 feel free to do so, but consider yourself warned.
 
-> Pjdla, P., (2023). *Archaeology Data Infrastructures*. Department of
+> Pajdla, P., (2023). *Archaeology Data Infrastructures*. Department of
 > Archaeology and Museology, Faculty of Arts, Masaryk University.
 > Accessed 17 Feb 2023. Online at
 > <https://petrpajdla.github.io/dataInfrastructures/>
@@ -24,18 +24,18 @@ Please cite this compendium as:
 
 ## Contents
 
+The **root** directory contains:
+
+- [./index.qmd](/index.qmd): Quarto source document containing the index
+  (preface) of the thesis, i.e. the landing page.
+- [./chapters/](/chapters/): Individual chapters of the thesis.
+- [./appendices/](/appendices/): Appendices to the main text.
+
 The **analysis** directory contains:
 
-- [:file_folder: index](/index.qmd): Quarto source document containing
-- the index (preface) of the thesis, the landing page.
-- [:file_folder: chapters](/chapters/): Individual chapters of the
-  thesis.
-- [:file_folder: appendices](/appendices/): Appendices to the main text.
-- [:file_folder: data](/analysis/data): Data used in the analysis.
-- [:file_folder: figures](/analysis/figures): Plots and other
-  illustrations
-- [:file_folder:
-  supplementary-materials](/analysis/supplementary-materials):
+- [./data/](/analysis/data): Data used in the analysis.
+- [./figures/](/analysis/figures): Plots and other illustrations
+- [./supplementary-materials/](/analysis/supplementary-materials):
   Supplementary materials including notes and other documents prepared
   and collected during the analysis.
 

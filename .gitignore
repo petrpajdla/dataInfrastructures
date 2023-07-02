@@ -15,3 +15,5 @@ settings.json
 # wordcounts
 wc.txt
 /.luarc.json
+
+README.html
