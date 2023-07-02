@@ -32,11 +32,11 @@ book:
     - chapters/theory.qmd
     - chapters/method.qmd
     - chapters/data.qmd
-# - part: chapters/analysis.qmd
-#   chapters:
-#     - chapters/cs01.qmd
-# - chapters/discussion.qmd
-# - chapters/summary.qmd
+    # - part: chapters/analysis.qmd
+    #   chapters:
+    #     - chapters/cs01.qmd
+    # - chapters/discussion.qmd
+    # - chapters/summary.qmd
     - biblio/references.qmd
   appendices:
     - appendices/glossary.qmd
@@ -55,9 +55,10 @@ callout-appearance: simple
 number-depth: 3
 # highlight-style: tango
 
+citation-location: margin
+
 bibliography:
   - biblio/library.bib
   # - biblio/zotero_data_in_archaeology.bib
   # - biblio/zotero_reproducible_research.bib
-# csl: journal-of-computer-applications-in-archaeology.csl
-csl: biblio/world-archaeology.csl
+csl: https://www.zotero.org/styles/world-archaeology
