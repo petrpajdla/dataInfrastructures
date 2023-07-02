@@ -122,7 +122,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -250,7 +250,7 @@ div.csl-indent {
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/petrpajdla/dataInfrastructures/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -292,7 +292,7 @@ div.csl-indent {
 
 </header>
 
-<section id="sec-preface" class="level1 unnumbered">
+<section id="sec-preface" class="level1 unnumbered page-columns page-full">
 <h1 class="unnumbered">Preface</h1>
 <div class="callout callout-style-simple callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -324,7 +324,7 @@ Note
 </div>
 </div>
 <p>This document is created in an open-source <a href="https://quarto.oq()rg/">Quarto</a> scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give <em>Quarto</em> publishing a try and set this whole thing up in less then an hour or so.</p>
-<section id="notes-on-writing" class="level3">
+<section id="notes-on-writing" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="notes-on-writing">Notes on writing</h3>
 <p>This note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.</p>
 <p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are tracked with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>. The online version is published with this command:</p>
@@ -345,7 +345,11 @@ Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> wit
 <li><strong>Embedded code</strong><br>
 Code blocks (and the associated results) can be easily embedded in the text. My language of choice is <em>R</em>. For more information on reproducibility see <span class="citation" data-cites="marwick2017">Marwick (<a href="biblio/references.html#ref-marwick2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="marwick2018a">Marwick, Boettiger, and Mullen (<a href="biblio/references.html#ref-marwick2018a" role="doc-biblioref">2018</a>)</span>.</li>
 </ul>
-<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="no-row-height column-margin column-container"><div id="ref-marwick2017" class="csl-entry" role="listitem">
+Marwick, Ben. 2017. <span>“Computational <span>Reproducibility</span> in <span>Archaeological Research</span>: <span>Basic Principles</span> and a <span>Case Study</span> of <span>Their Implementation</span>.”</span> <em>Journal of Archaeological Method and Theory</em> 24 (2): 424–450. doi:<a href="https://doi.org/10.1007/s10816-015-9272-9">10.1007/s10816-015-9272-9</a>.
+</div><div id="ref-marwick2018a" class="csl-entry" role="listitem">
+Marwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. <span>“Packaging <span>Data Analytical Work Reproducibly Using R</span> (and <span>Friends</span>).”</span> <em>The American Statistician</em> 72 (1): 80–88. doi:<a href="https://doi.org/10.1080/00031305.2017.1375986">10.1080/00031305.2017.1375986</a>.
+</div></div><div class="callout callout-style-simple callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -402,14 +406,7 @@ crossref without numbering: -@sec-label, [Chapter -@sec-label]</code></pre>
 <p>-[ ] Nešvar jménem mapa s odborným obsahem.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-marwick2017" class="csl-entry" role="listitem">
-Marwick, Ben. 2017. <span>“Computational <span>Reproducibility</span> in <span>Archaeological Research</span>: <span>Basic Principles</span> and a <span>Case Study</span> of <span>Their Implementation</span>.”</span> <em>Journal of Archaeological Method and Theory</em> 24 (2): 424–450. doi:<a href="https://doi.org/10.1007/s10816-015-9272-9">10.1007/s10816-015-9272-9</a>.
-</div>
-<div id="ref-marwick2018a" class="csl-entry" role="listitem">
-Marwick, Ben, Carl Boettiger, and Lincoln Mullen. 2018. <span>“Packaging <span>Data Analytical Work Reproducibly Using R</span> (and <span>Friends</span>).”</span> <em>The American Statistician</em> 72 (1): 80–88. doi:<a href="https://doi.org/10.1080/00031305.2017.1375986">10.1080/00031305.2017.1375986</a>.
-</div>
-</div>
+
 </section>
 </section>
 
