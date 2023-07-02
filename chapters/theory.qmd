@@ -1,21 +1,22 @@
 # Theory {#sec-theory}
 
-## Overview {.unnumbered}
+:::{.callout-note}
 
-<!-- A list of at least 3 things that are covered in the chapter. -->
+## @sec-theory introduces: {.unnumbered}
 
-@sec-theory presents: 
-
-- Definitions for fundamental concepts I am building up on further in the text.
+- Definitions for fundamental concepts I am building upon further in the text.
 - An overview of theoretical approaches the work is determined and shaped by.
 - A discussion of archaeological research as theory- and/or data-driven.
 - A commentary on data from the theoretical points presented earlier.
+
+:::
 
 ## Definitions and terminology {#sec-terms}
 
 ### Data {#sec-terms-data}
 
-The term data is used in a plural form what is the current scientific convention [@kitchin2022, xvii]. As @kitchin2022 [pp. 15] states, "Data are not simply captured or recorded, but are the product of discursively framed and technically mediated processes." 
+The term data is used in a plural form what is the current scientific convention [@kitchin2022, xvii].
+As @kitchin2022 [pp. 15] states, "Data are not simply captured or recorded, but are the product of discursively framed and technically mediated processes."
 
 "The production of data is a social practice, conducted through structured and structuring fields (e.g. methods, concepts, expertise, institutions) that are shaped by and contribute to configurations of power and knowledge." [@ruppert2017]
 
@@ -30,7 +31,7 @@ As I was saying in the @sec-terms-data.
 
 ## Overview of theoretical concepts {#sec-concepts}
 
-Review of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc. 
+Review of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc.
 Describe software used!
 
 ## Digital humanities
@@ -44,7 +45,8 @@ Describe software used!
 
 ::: {.callout-note}
 ## Note
-This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk co-authored with Hana Kubelková and Petr Květina. It was presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting entitled *Theoretical Approaches to Computational Archaeology* I organized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk co-authored with Hana Kubelková and Petr Květina.
+It was presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting entitled *Theoretical Approaches to Computational Archaeology* I organized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
 :::
 
 

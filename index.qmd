@@ -2,22 +2,30 @@
 
 ::: {.callout-warning}
 ## Warning
-This is a website for the **work-in-progress** PhD thesis of mine. It is **not** intended to be read by anyone except me *(and maybe few other people)* yet. If you do flick through it anyway, consider yourself warned. It might be messy at some places and will definitely undergo serious rewriting.
+This is a website for the **work-in-progress** PhD thesis of mine.
+It is **not** intended to be read by anyone except me *(and maybe few other people)* yet.
+If you do flick through it anyway, consider yourself warned.
+It might be messy at some places and will definitely undergo serious rewriting.
 :::
 
 ::: {.callout-note collapse="true"}
 ## Note
-This work can be read online at <https://petrpajdla.github.io/dataInfrastructures/>. 
+This work can be read online at <https://petrpajdla.github.io/dataInfrastructures/>.
 The source repository is on GitHub at <https://github.com/petrpajdla/dataInfrastructures/>.
 :::
 
-This document is created in an open-source [Quarto](https://quarto.oq()rg/) scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give *Quarto* publishing a try and set this whole thing up in less then an hour or so.
+This document is created in an open-source [Quarto](https://quarto.oq()rg/) scientific and technical publishing system.
+You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet.
+I have no answer to this. One evening I simply decided to give *Quarto* publishing a try and set this whole thing up in less then an hour or so.
 
 ### Notes on writing
 
 This note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.
 
-As of November 2022, this is written on [Archlabs](https://archlabslinux.com/) *GNU/Linux* machine, mostly in [Visual Studio Code](https://code.visualstudio.com/) editor and sometimes in [RStudio](https://posit.co/). Changes are tracked with *Git* and a remote repository is on *GitHub* (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch `gh-pages`. See a guide on how to set this up [here](https://quarto.org/docs/publishing/github-pages.html). The online version is published with this command:
+As of November 2022, this is written on [Archlabs](https://archlabslinux.com/) *GNU/Linux* machine, mostly in [Visual Studio Code](https://code.visualstudio.com/) editor and sometimes in [RStudio](https://posit.co/). Changes are tracked with *Git* and a remote repository is on *GitHub* (see the note above), same as the rendered website.
+The rendered version of the manuscript is in the branch `gh-pages`.
+See a guide on how to set this up [here](https://quarto.org/docs/publishing/github-pages.html).
+The online version is published with this command:
 
 ```{.bash filename="Terminal"}
 quarto publish gh-pages
@@ -30,7 +38,7 @@ In my point of view, there are numerous advantages to scientific writing in this
 - **Version control**  
   Tracking changes using *git* is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.
 - **Simple citation management**  
-  Bibliography is organized using [Zotero](https://www.zotero.org/) with [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as *.bib* files. My *Zotero* library is [here](https://www.zotero.org/knytt). To format the citations, a citation style of the *Journal of Computer Applications in Archaeology* is used (.csl file was obtained [here](https://www.zotero.org/styles/)). 
+  Bibliography is organized using [Zotero](https://www.zotero.org/) with [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as *.bib* files. My *Zotero* library is [here](https://www.zotero.org/knytt). To format the citations, a citation style of the *Journal of Computer Applications in Archaeology* is used (.csl file was obtained [here](https://www.zotero.org/styles/)).
 - **Embedded code**  
   Code blocks (and the associated results) can be easily embedded in the text. My language of choice is *R*. For more information on reproducibility see @marwick2017 and @marwick2018a.
 
@@ -50,7 +58,7 @@ In my point of view, there are numerous advantages to scientific writing in this
 ```
 {#sec-label} -> #sec-label
 {#fig-label} -> #fig-label
-crossref withot numbering: -@sec-label, [Chapter -@sec-label]
+crossref without numbering: -@sec-label, [Chapter -@sec-label]
 ```
 :::
 
@@ -66,8 +74,8 @@ wc <- read.csv("wc.txt", header = FALSE)[, 2:4] |>
   setNames(c("w", "c", "f"))
 ```
 
-As of `r format(Sys.Date(), "%B %-d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages of text. 
-Length of individual chapters is as follows: 
+As of `r format(Sys.Date(), "%B %-d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages of text.
+Length of individual chapters is as follows:
 
 ```{r}
 #| label: wc-out
@@ -75,4 +83,6 @@ Length of individual chapters is as follows:
 wc
 ```
 
+## TODO
 
+-[ ] Nešvar jménem mapa s odborným obsahem.

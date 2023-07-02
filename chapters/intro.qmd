@@ -1,15 +1,17 @@
 # Introduction {.unnumbered #sec-intro}
 
-<!-- A paragraph of introductory text. -->
+::: {.callout-note}
 
-## Overview {.unnumbered}
-
-The introduction explains:
+## Chapter overview: {.unnumbered}
 
 - What is the general research context of the work.
-- How archaeological heritage is managed in the Czech Republic, especially in relation to data.
+- How archaeological heritage is managed in the Czech Republic, especially in relation to data findability, accessibility, interoperability and reusability.
 - What research questions are asked here and why.
-- How is the thesis structured into chapters and sections. 
+- How is the thesis structured into chapters and sections.
+
+:::
+
+<!-- A paragraph of introductory text. -->
 
 ## Context {#sec-context}
 
@@ -17,7 +19,8 @@ The introduction explains:
 
 ### Archaeological heritage management in the Czech Republic
 
-How archaeology, its finds, sites and data are managed in various countries is heavily influenced by given legal framework. In this section, issues specific to the case of the Czech Republic are described.  
+How archaeology, its finds, sites and data are managed in various countries is heavily influenced by given legal framework. In this section, issues specific to the case of the Czech Republic are described.
+
 
 
 ## Research questions {#sec-questions}
@@ -29,10 +32,15 @@ How archaeology, its finds, sites and data are managed in various countries is h
 
 <!-- Briefly describe the structure of the work! -->
 
-Here is a brief outline of the structure of the thesis.  In @sec-theory, *Theory*, the foundation is given by defining basic terms, data, data infrastructures etc.  Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized.  The dichotomy between archaeology as data- and/or theory-driven science is debated.
+Here is a brief outline of the structure of the thesis.
+In @sec-theory, *Theory*, the foundation is given by defining basic terms, data, data infrastructures etc.
+Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized.  The dichotomy between archaeology as data- and/or theory-driven science is debated.
 
-In @sec-method, *Method*, methodological boundaries are set up. 
+In @sec-method, *Method*, methodological boundaries are set up.
 
-@sec-data, *Data*, introduces data sources that are used here.  Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process. Special attention is thus given to analysing how reality and facts are represented by the data models of used sources. A data management plan (@sec-dmp) details how data is handled in this research.
+@sec-data, *Data*, introduces data sources that are used here.
+Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process.
+Special attention is thus given to analysing how reality and facts are represented by the data models of used sources.
+A data management plan (@sec-dmp) details how data is handled in this research.
 
 ## Summary {.unnumbered}

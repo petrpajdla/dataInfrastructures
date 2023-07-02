@@ -1,19 +1,21 @@
 # Methods {#sec-method}
 
-## Overview {.unnumbered}
+::: {.callout-note}
 
-@sec-method describes: 
+## @sec-method presents: {.unnumbered}
 
-- 
+-
 - The software that is used in the analysis.
+
+:::
 
 
 ## Software
 
-Most of the things included here, if not all of them, were achieved using open-source software. 
+Most of the things included here, if not all of them, were achieved using open-source software.
 Large part of this endeavor is also documented in code.
 This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc.
-At some places there  are R code blocks. 
+At some places there  are R code blocks.
 The text is processed into three outputs, a [website](https://petrpajdla.github.io/dataInfrastructures/) (HTML document), a [PDF](https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.pdf) document and a [MS Word](https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.docx) document using Quarto.
 The plain text version, same as the rendered website, is hosted at [GitHub](https://github.com/petrpajdla/dataInfrastructures).
 The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal.
@@ -25,7 +27,7 @@ All the GIS operations that required graphical user interface (GUI), or were mor
 Some data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts.
 Data from [Wikidata]() was queried using SPARQL.
 Any analysis was mostly done in R, a language for statistical computing and graphics [@rcore].
-Various packages were used, the most important packages are listed here, the complete list is in an Appendix 
+Various packages were used, the most important packages are listed here, the complete list is in an Appendix
 
 
 ### Reproduciblity

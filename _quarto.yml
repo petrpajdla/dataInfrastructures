@@ -13,15 +13,17 @@ book:
       orcid: "0000-0001-7050-9572"
       affiliations:
         - name: "Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
-        - name: "Institute of Archaeology, Czech Acad. Sci., Brno"
+        - name: "Institute of Archaeology, Czech Acad Sci, Brno"
   date: today
-  favicon: cover.png
+  favicon: figs/cover.png
   # cover-image: cover.png
   search: true
-  sidebar:
-    tools:
-      - icon: github
-        href: "https://github.com/petrpajdla/dataInfrastructures/"
+  repo-url: "https://github.com/petrpajdla/dataInfrastructures/"
+  repo-actions: [source, edit, issue]
+  # sidebar:
+  #   tools:
+  #     - icon: github
+  #       href: "https://github.com/petrpajdla/dataInfrastructures/"
   # reader-mode: true
   downloads: [pdf, docx]
   chapters:
@@ -30,9 +32,12 @@ book:
     - chapters/theory.qmd
     - chapters/method.qmd
     - chapters/data.qmd
-#    - chapters/discussion.qmd
-#    - chapters/summary.qmd
-    - references.qmd
+    - part: chapters/analysis.qmd
+      chapters:
+        - chapters/cs01.qmd
+    - chapters/discussion.qmd
+    - chapters/summary.qmd
+    - biblio/references.qmd
   appendices:
     - appendices/glossary.qmd
     # - appendices/software.qmd
@@ -51,7 +56,8 @@ number-depth: 3
 # highlight-style: tango
 
 bibliography:
-  - "zotero_data_in_archaeology.bib"
-  - "zotero_reproducible_research.bib"
+  - biblio/library.bib
+  # - biblio/zotero_data_in_archaeology.bib
+  # - biblio/zotero_reproducible_research.bib
 # csl: journal-of-computer-applications-in-archaeology.csl
-csl: world-archaeology.csl
+csl: biblio/world-archaeology.csl
