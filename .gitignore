@@ -12,8 +12,15 @@
 
 settings.json
 
+README.html
+
 # wordcounts
 wc.txt
 /.luarc.json
 
-README.html
+
+# ignore unfinished chapters
+chapters/analysis.qmd
+chapters/cs01.qmd
+chapters/discussion.qmd
+chapters/summary.qmd
