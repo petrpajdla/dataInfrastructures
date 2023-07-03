@@ -13,16 +13,54 @@
 
 ## Definitions and terminology {#sec-terms}
 
+This section presents a discussion of how I (and others) understand **data** and **data infrastructures**.
+Data are a corner stone of this work and looking closely at how scholars, policy makers, and various other stakeholders define them is crucial for further understanding what is possible and what is not in the process of knowledge building.
+
 ### Data {#sec-terms-data}
 
-The term data is used in a plural form what is the current scientific convention [@kitchin2022, xvii].
-As @kitchin2022 [pp. 15] states, "Data are not simply captured or recorded, but are the product of discursively framed and technically mediated processes."
+In the current *information age*, word *data*[^1] is almost omnipresent and it became such a generic term that it is somewhat challenging to define.
+Most of the definitions understand data as building blocks of *information* [e.g. @kitchin2022, 4].
+These pieces of information are percieved as pre-factual and pre-analytical.
+That is, in contrast to facts, false data are data nonetheless, disproven facts are no longer facts [@rosenberg2013, 17-18].
+Thus data are understood as incontrovertible and non-deconstructibe units.
+These assumptions migh lead to an impression that data exist in the outside world as entities or phenomena independent of the one observing them.
+And this is indeed one way to comprehend data, as *'things given'* that just need to be discoverd [cf. @huggett2020a].
+This inductive explanation of data brings in itself a danger that the process of discovering the data is viewed as an atheoretical endeavour.
 
-"The production of data is a social practice, conducted through structured and structuring fields (e.g. methods, concepts, expertise, institutions) that are shaped by and contribute to configurations of power and knowledge." [@ruppert2017]
+[^1]: In this text, I adhere to the current scholarly convention as noted by @kitchin2022 [xvii], i.e. using term *data* in the plural form, with a singular form of *datum*.
 
-"(...) databases are designed and build to hold certain kinds of data and enable certain kinds of analysis, and how they are structured has profound consequences as to what queries and analysis can be performed." [@ruppert2012]
+On the contrary, data understood as *'things made'* are created at the moment when they are captured by observation, measurement, or derived from other data.
+This implies theory-laden creative process of data generation, recording, etc.
+In this case, it is clear that the one creating or recording the data does that based on the experience, objective and knowledge he/she has.
+The whole process of data recording, creation, or capture is thus discursively framed and technically mediated [cf. @kitchin2022, 4-15; @huggett2020a].
+As Kitchin notes, what we label as data are in fact *capta*, i.e. *'things taken'*.
 
-analogue vs born-digital
+@ruppert2017 voice the idea that the practice of data production does not happen through unstructured social (and/or political) practices, but through structured and structuring fields that add to configurations of power and knowledge.
+In this section we went from understanding *data* as ubiquitous phenomena that are waiting out there to be discovered to *capta* that are actively and creatively made, recorded, generated etc. by a theory- and agenda-laden researcher.
+What more, the practice of data production is recognized as being shaped by and contributing to structure of power and knowledge.
+What data are recorded and how they are structured has consequences as to what can be later devised, i.e. what knowlege can be generated.
+
+<!--
+[@ruppert2017]:
+"(...) the production of data is a social and often political practice that mobilizes agents who are not only objects of data (about whom data is produced) but that they are also subjects of data (those whose engagement drives how data is produced). Our question thus shifts to social practices and agents. Data does not happen through unstructured social practices but through structured and structuring fields in and through which various agents and their interests generate forms of expertise, interpretation, concepts, and methods that collectively function as fields of power and knowledge."
+
+cited in [@kitchin2022]:
+"The production of data is a social practice, conducted through structured and structuring fields (e.g. methods, concepts, expertise, institutions) that are shaped by and contribute to configurations of power and knowledge."
+-->
+
+Talking about how chosen strategies in data recording and generation may influence the knowledge generated further along the way an idea of good and bad data might come to mind.
+Bad data, like false data, do not exist.
+Data can be useless, but their value is probably more determined by the current goal in mind.
+Nevertheless, there are some signs of good-quality data as cited[^2] by @kitchin2022 [4]:
+
+- they are discreet and intelligible, i.e. each datum is individual, separate and separable, and clearly defined;
+- they are aggregative, that is they can be built into sets;
+- they have associated metadata (data about data);
+- they can be linked to other datasets to provide insights not available from a single dataset.
+
+[^2]: Author's note: Kitchin cites @rosenberg2013, but I was not able to locate this part in Rosenberg's paper, which is primarily focused on the history of the term *data* in English language, not the quality of data.
+
+<!-- "(...) databases are designed and build to hold certain kinds of data and enable certain kinds of analysis, and how they are structured has profound consequences as to what queries and analysis can be performed." [@ruppert2012] -->
 
 
 ### Infrastructures {#sec-terms-infra}
@@ -34,7 +72,7 @@ Thus, we encounter terms such as **research infrastructures**, large research in
 @hallonsten2020 maps the field of European (research) infrastructures and identifies the principal problem as the difficulty to come up with a single definition that would fit all of those who are considered to be (or consider themselves to be) an *infrastructure*.
 @hallonsten2020 [630] concludes that:
 
-> *(...) "while a politically viable definition seems to be either already in place (...) or unneeded, an analytically workable definition is out of reach unless the scope is limited and the aim of the definition is made more precise.""*
+> *(...) "while a politically viable definition seems to be either already in place (...) or unneeded, an analytically workable definition is out of reach unless the scope is limited and the aim of the definition is made more precise."*
 
 In the next paragraphs, we look at several of the *political* definitions of research infrastructures and later we focus on an *analytical* definition of data infrastructures.
 
@@ -81,13 +119,12 @@ In a broader sense, infrastructures are information systems, repositories, archi
 ## Overview of theoretical concepts {#sec-concepts}
 
 Review of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc.
-Describe software used!
 
-## Digital humanities
+### Digital humanities
 
-## Digital archaeology
+### Digital archaeology
 
-## Spatial archaeology
+### Spatial archaeology
 
 
 ## Archaeology as theory- and/or data-driven science

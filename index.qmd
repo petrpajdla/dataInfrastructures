@@ -33,13 +33,13 @@ quarto publish gh-pages
 
 In my point of view, there are numerous advantages to scientific writing in this manner over traditional *Office*-based approach. A non-exhaustive list of why to do scientific writing this way is below.
 
-- **Plain text**  
+- **Plain text**
   Writing in plain text enhanced with a simple *Markdown* syntax and some *Quarto* elements is great because from one source document, a *.pdf*, *.html*, *.docx* (and probably more) document formats can be rendered using [pandoc](https://pandoc.org/).
-- **Version control**  
+- **Version control**
   Tracking changes using *git* is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.
-- **Simple citation management**  
+- **Simple citation management**
   Bibliography is organized using [Zotero](https://www.zotero.org/) with [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as *.bib* files. My *Zotero* library is [here](https://www.zotero.org/knytt). To format the citations, a citation style of the *Journal of Computer Applications in Archaeology* is used (.csl file was obtained [here](https://www.zotero.org/styles/)).
-- **Embedded code**  
+- **Embedded code**
   Code blocks (and the associated results) can be easily embedded in the text. My language of choice is *R*. For more information on reproducibility see @marwick2017 and @marwick2018a.
 
 
@@ -82,7 +82,3 @@ Length of individual chapters is as follows:
 #| echo: false
 wc
 ```
-
-## TODO
-
--[ ] Nešvar jménem mapa s odborným obsahem.
