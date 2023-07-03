@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Petr Pajdla">
-<meta name="dcterms.date" content="2023-07-02">
+<meta name="dcterms.date" content="2023-07-03">
 
 <title>Archaeology Data Infrastructures</title>
 <style>
@@ -244,7 +244,6 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#notes-on-writing" id="toc-notes-on-writing" class="nav-link" data-scroll-target="#notes-on-writing">Notes on writing</a></li>
   <li><a href="#stats" id="toc-stats" class="nav-link" data-scroll-target="#stats">Stats</a></li>
-  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo">TODO</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/petrpajdla/dataInfrastructures/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -282,7 +281,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 2, 2023</p>
+      <p class="date">July 3, 2023</p>
     </div>
   </div>
   
@@ -336,14 +335,10 @@ Note
 </div>
 <p>In my point of view, there are numerous advantages to scientific writing in this manner over traditional <em>Office</em>-based approach. A non-exhaustive list of why to do scientific writing this way is below.</p>
 <ul>
-<li><strong>Plain text</strong><br>
-Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a <em>.pdf</em>, <em>.html</em>, <em>.docx</em> (and probably more) document formats can be rendered using <a href="https://pandoc.org/">pandoc</a>.</li>
-<li><strong>Version control</strong><br>
-Tracking changes using <em>git</em> is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.</li>
-<li><strong>Simple citation management</strong><br>
-Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> with <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as <em>.bib</em> files. My <em>Zotero</em> library is <a href="https://www.zotero.org/knytt">here</a>. To format the citations, a citation style of the <em>Journal of Computer Applications in Archaeology</em> is used (.csl file was obtained <a href="https://www.zotero.org/styles/">here</a>).</li>
-<li><strong>Embedded code</strong><br>
-Code blocks (and the associated results) can be easily embedded in the text. My language of choice is <em>R</em>. For more information on reproducibility see <span class="citation" data-cites="marwick2017">Marwick (<a href="biblio/references.html#ref-marwick2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="marwick2018a">Marwick, Boettiger, and Mullen (<a href="biblio/references.html#ref-marwick2018a" role="doc-biblioref">2018</a>)</span>.</li>
+<li><strong>Plain text</strong> Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a <em>.pdf</em>, <em>.html</em>, <em>.docx</em> (and probably more) document formats can be rendered using <a href="https://pandoc.org/">pandoc</a>.</li>
+<li><strong>Version control</strong> Tracking changes using <em>git</em> is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.</li>
+<li><strong>Simple citation management</strong> Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> with <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as <em>.bib</em> files. My <em>Zotero</em> library is <a href="https://www.zotero.org/knytt">here</a>. To format the citations, a citation style of the <em>Journal of Computer Applications in Archaeology</em> is used (.csl file was obtained <a href="https://www.zotero.org/styles/">here</a>).</li>
+<li><strong>Embedded code</strong> Code blocks (and the associated results) can be easily embedded in the text. My language of choice is <em>R</em>. For more information on reproducibility see <span class="citation" data-cites="marwick2017">Marwick (<a href="biblio/references.html#ref-marwick2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="marwick2018a">Marwick, Boettiger, and Mullen (<a href="biblio/references.html#ref-marwick2018a" role="doc-biblioref">2018</a>)</span>.</li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="ref-marwick2017" class="csl-entry" role="listitem">
 Marwick, Ben. 2017. <span>“Computational <span>Reproducibility</span> in <span>Archaeological Research</span>: <span>Basic Principles</span> and a <span>Case Study</span> of <span>Their Implementation</span>.”</span> <em>Journal of Archaeological Method and Theory</em> 24 (2): 424–450. doi:<a href="https://doi.org/10.1007/s10816-015-9272-9">10.1007/s10816-015-9272-9</a>.
@@ -389,21 +384,17 @@ crossref without numbering: -@sec-label, [Chapter -@sec-label]</code></pre>
 </section>
 <section id="stats" class="level3">
 <h3 class="anchored" data-anchor-id="stats">Stats</h3>
-<p>As of May 20, 2023 there are roughly 6.4 pages of text. Length of individual chapters is as follows:</p>
+<p>As of July 3, 2023 there are roughly 9 pages of text. Length of individual chapters is as follows:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>     w     c                   f
-1  282  1892  chapters/intro.qmd
-2  329  2388 chapters/theory.qmd
-3  227  1741 chapters/method.qmd
-4  802  5423   chapters/data.qmd
-5 1640 11444               total</code></pre>
+1  273  1851  chapters/intro.qmd
+2 1002  7172 chapters/theory.qmd
+3  229  1752 chapters/method.qmd
+4  804  5445   chapters/data.qmd
+5 2308 16220               total</code></pre>
 </div>
 </div>
-</section>
-<section id="todo" class="level2">
-<h2 class="anchored" data-anchor-id="todo">TODO</h2>
-<p>-[ ] Nešvar jménem mapa s odborným obsahem.</p>
 
 
 

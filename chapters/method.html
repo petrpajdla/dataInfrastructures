@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -68,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -195,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/petrpajdla/dataInfrastructures/blob/main/chapters/method.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/edit/main/chapters/method.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/petrpajdla/dataInfrastructures/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -230,17 +249,20 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </div>
-<section id="software" class="level2" data-number="2.1">
+<section id="software" class="level2 page-columns page-full" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="software"><span class="header-section-number">2.1</span> Software</h2>
 <p>Most of the things included here, if not all of them, were achieved using open-source software. Large part of this endeavor is also documented in code. This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc. At some places there are R code blocks. The text is processed into three outputs, a <a href="https://petrpajdla.github.io/dataInfrastructures/">website</a> (HTML document), a <a href="https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.pdf">PDF</a> document and a <a href="https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.docx">MS Word</a> document using Quarto. The plain text version, same as the rendered website, is hosted at <a href="https://github.com/petrpajdla/dataInfrastructures">GitHub</a>. The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal. Library was organized using <a href="">Zotero</a>.</p>
 <p>Raster graphics were created and edited using <a href="">GIMP</a>, vector graphics using <a href="">Inkscape</a>. All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in <a href="">QGIS</a>.</p>
-<p>Some data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from <a href="">Wikidata</a> was queried using SPARQL. Any analysis was mostly done in R, a language for statistical computing and graphics <span class="citation" data-cites="rcore">(<a href="../biblio/references.html#ref-rcore" role="doc-biblioref"><strong>rcore?</strong></a>)</span>. Various packages were used, the most important packages are listed here, the complete list is in an Appendix</p>
-<section id="reproduciblity" class="level3" data-number="2.1.1">
+<p>Some data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts. Data from <a href="">Wikidata</a> was queried using SPARQL. Any analysis was mostly done in R, a language for statistical computing and graphics <span class="citation" data-cites="rcore">(<a href="../biblio/references.html#ref-rcore" role="doc-biblioref">R Core Team 2023</a>)</span>. Various packages were used, the most important packages are listed here, the complete list is in an Appendix</p>
+<div class="no-row-height column-margin column-container"><div id="ref-rcore" class="csl-entry" role="listitem">
+R Core Team. 2023. <em>R: <span>A Language</span> and <span>Environment</span> for <span>Statistical Computing</span></em>. <span>Vienna, Austria</span>: <span>R Foundation for Statistical Computing</span>. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+</div></div><section id="reproduciblity" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="reproduciblity"><span class="header-section-number">2.1.1</span> Reproduciblity</h3>
 </section>
 </section>
 <section id="chapter-summary" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="chapter-summary">Chapter summary</h2>
+
 
 
 </section>
