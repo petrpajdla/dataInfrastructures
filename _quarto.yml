@@ -48,14 +48,14 @@ format:
     theme:
       light: lumen # cosmo flatly yeti lumen
       dark: slate # darkly slate
+    citation-location: margin
+    reference-location: margin
   pdf:
     documentclass: scrreprt
   docx: default
 callout-appearance: simple
 number-depth: 3
 # highlight-style: tango
-
-citation-location: margin
 
 bibliography:
   - biblio/library.bib
