@@ -1,4 +1,4 @@
-# Theory {#sec-theory}
+# Theory and method {#sec-theory}
 
 :::{.callout-note}
 
@@ -10,6 +10,7 @@
 - A commentary on data from the theoretical points presented earlier.
 
 :::
+
 
 ## Definitions and terminology {#sec-terms}
 
@@ -62,7 +63,6 @@ Nevertheless, there are some signs of good-quality data as cited[^2] by @kitchin
 
 <!-- "(...) databases are designed and build to hold certain kinds of data and enable certain kinds of analysis, and how they are structured has profound consequences as to what queries and analysis can be performed." [@ruppert2012] -->
 
-
 ### Infrastructures {#sec-terms-infra}
 
 Although *infrastructures* became quite a buzzword in recent years both among the policy makers and researchers, it is rather difficult to define what an infrastructure actually is.
@@ -110,36 +110,74 @@ The role of an interconnected digital world is then highlighted in Kitchin's def
 
 > *"A data infrastructure is a digital means for storing, sharing, connecting and consuming data holdings and archives across the internet."*
 
+Data infrastructures are thus information systems, repositories, archives, databases etc. shared by multiple shareholder groups that are essential in supporting open science and research.
 
-
-In a broader sense, infrastructures are information systems, repositories, archives, databases, sets of equipment and instruments etc. shared by multiple shareholder groups that are essential in supporting open science and research.
-
-<!-- ============================================================================= -->
 
 ## Overview of theoretical concepts {#sec-concepts}
 
-Review of current approaches: Spatial and/or Landscape archaeology, Macroarchaeology,Big data archaeology etc.
+This section aims at briefly introducing theoretical approaches this work is shaped by.
+At first, digital humanities as an umbrella concept connecting the digital or computing world with the humanitites are introduced followed by discussion of digital, quantitative and computational archaeology.
+And lastly, spatial or landscape archaeology as a main concept framing this study is reviewed.
 
 ### Digital humanities
 
 ### Digital archaeology
 
+### Computational and quantitative archaeology
+
 ### Spatial archaeology
 
 
-## Archaeology as theory- and/or data-driven science
+## Archaeology as theory- and data-driven
 
 ::: {.callout-note}
+
 ## Note
-This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk co-authored with Hana Kubelková and Petr Květina.
-It was presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting entitled *Theoretical Approaches to Computational Archaeology* I organized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+
+This section is partly based on the *Data-driven Archaeology. Are we there yet?* talk co-authored with Hana Kubelková and Petr Květina presented at the *Central European Theoretical Archaeology Group (CE TAG)* meeting focused on *Theoretical Approaches to Computational Archaeology* I coorganized with Michael Kempf, Jan Kolář and Jiří Macháček in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+
 :::
+
+In his vision for the future of archaeology, @kristiansen2014 [14] sees the opposition between theory and data disappear.
+Here we examine the percieved dichotomy between data- and theory-driven approaches.
+The idea that scientific method and/or theory is dead was addressed by many, but I will start this discussion with a trending comment by @anderson2008.
+
+Anderson uses Boxes famous aphorism *"(...) all models are wrong (...)"* [@box1976, 792], later extended to *"All models are wrong but some [models] are useful."* [@box1979, 202] and extends it to *"All models are wrong, and increasingly you can succeed without them."* [@anderson2008].
 
 
 
 ## Theorizing data
 
 Defining archaeological data, micro- to macro-scales;
+
+Earlier in this chapter it was explained that here, data is understood as *capta*, i.e. *things*, that are actively and creatively made, recorded, generated etc.
+
+  In this section we went from understanding data as ubiquitous phenomena that are waiting out there to be discovered to capta that are actively and creatively made, recorded, generated etc. by a theory- and agenda-laden researcher. What more, the practice of data production is recognized as being shaped by and contributing to structure of power and knowledge. What data are recorded and how they are structured has consequences as to what can be later devised, i.e. what knowlege can be generated.
+
+
+
+
+## Software
+
+Most of the things included here, if not all of them, were achieved using open-source software.
+Large part of this endeavor is also documented in code.
+This text was written in plain text with some basic markdown and quarto syntax for formatting, cross references, citations etc.
+At some places there are R code blocks.
+The text is processed into three outputs, a [website](https://petrpajdla.github.io/dataInfrastructures/) (HTML document), a [PDF](https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.pdf) document and a [MS Word](https://petrpajdla.github.io/dataInfrastructures/Archaeology-Data-Infrastructures.docx) document using Quarto.
+The plain text version, same as the rendered website, is hosted at [GitHub](https://github.com/petrpajdla/dataInfrastructures).
+The text was mostly written in the Visual Code Studio, analysis were mostly performed using Rstudio or terminal.
+Library was organized using [Zotero]().
+
+Raster graphics were created and edited using [GIMP](), vector graphics using [Inkscape]().
+All the GIS operations that required graphical user interface (GUI), or were more conveniently performed in a GUI, were done in [QGIS]().
+
+Some data were prepared, extracted or processed using basic GNU/Linux shell or SQL commands or scripts.
+Data from [Wikidata]() was queried using SPARQL.
+Any analysis was mostly done in R, a language for statistical computing and graphics [@rcore].
+Various packages were used, the most important packages are listed here, the complete list is in an Appendix
+
+
+### Reproduciblity
 
 
 ## Chapter summary {.unnumbered}

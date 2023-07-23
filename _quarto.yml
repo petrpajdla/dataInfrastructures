@@ -30,7 +30,7 @@ book:
     - index.qmd
     - chapters/intro.qmd
     - chapters/theory.qmd
-    - chapters/method.qmd
+    # - chapters/method.qmd
     - chapters/data.qmd
     # - part: chapters/analysis.qmd
     #   chapters:
@@ -58,7 +58,8 @@ number-depth: 3
 # highlight-style: tango
 
 bibliography:
-  - biblio/library.bib
+  # - biblio/library.bib
+  - biblio/dataInfrastructures.bib
   # - biblio/zotero_data_in_archaeology.bib
   # - biblio/zotero_reproducible_research.bib
 csl: https://www.zotero.org/styles/world-archaeology
