@@ -24,7 +24,7 @@ book:
   #   tools:
   #     - icon: github
   #       href: "https://github.com/petrpajdla/dataInfrastructures/"
-  # reader-mode: true
+  reader-mode: true
   downloads: [pdf, docx]
   chapters:
     - index.qmd
@@ -38,8 +38,8 @@ book:
     # - chapters/discussion.qmd
     # - chapters/summary.qmd
     - biblio/references.qmd
-  appendices:
-    - appendices/glossary.qmd
+  # appendices:
+  #   - appendices/glossary.qmd
     # - appendices/software.qmd
 citation: true
 
@@ -62,4 +62,6 @@ bibliography:
   - biblio/dataInfrastructures.bib
   # - biblio/zotero_data_in_archaeology.bib
   # - biblio/zotero_reproducible_research.bib
-csl: https://www.zotero.org/styles/world-archaeology
+csl: https://www.zotero.org/styles/journal-of-computer-applications-in-archaeology
+# csl: https://www.zotero.org/styles/harvard-european-archaeology
+# csl: https://www.zotero.org/styles/world-archaeology
