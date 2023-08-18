@@ -3,6 +3,7 @@ project:
 
 execute:
   freeze: auto
+  echo: false
 
 book:
   title: "Archaeology Data Infrastructures"
@@ -24,7 +25,7 @@ book:
   #   tools:
   #     - icon: github
   #       href: "https://github.com/petrpajdla/dataInfrastructures/"
-  reader-mode: true
+  reader-mode: false
   downloads: [pdf, docx]
   chapters:
     - index.qmd
@@ -47,7 +48,7 @@ format:
   html:
     theme:
       light: lumen # cosmo flatly yeti lumen
-      dark: slate # darkly slate
+      # dark: slate # darkly slate
     citation-location: margin
     reference-location: margin
   pdf:
@@ -56,6 +57,8 @@ format:
 callout-appearance: simple
 number-depth: 3
 # highlight-style: tango
+
+toc-title: "Contents"
 
 bibliography:
   # - biblio/library.bib

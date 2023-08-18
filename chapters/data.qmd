@@ -4,7 +4,7 @@
 
 ## @sec-data details: {.unnumbered}
 
-- How data is managed in this research.
+- How are data managed in this research.
   This is described in a data management plan.
 - What data sources are available in the Czech Republic.
 - What data models are most commonly used in Czech archaeology.
@@ -16,12 +16,9 @@
 
 ## Note
 
-This chapter, especially the @sec-dmp: Data management plan, builds up on the project [Data management in Archaeology](https://www.phil.muni.cz/en/research/current-projects/57940) I cooperated on with Hana Kubelková in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
+This chapter, especially the @sec-dmp: Data management plan, builds up on the project [*Data management in Archaeology*](https://www.phil.muni.cz/en/research/current-projects/57940) I cooperated on with Hana Kubelková in 2021 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University.
 
 :::
-
-
-
 
 Sources of (archaeology) data in the Czech Republic, an overview:
 
@@ -29,6 +26,20 @@ Data models, datafication of past reality, simple vs complex data models;
 Assessing findability, accessibility, interoperability, and reusability (FAIR) principles;
 Cultural heritage management data vs research data domains;
 Archaeological information system of the Czech Republic (AIS CR) as the main data infrastructure.
+
+## Sources of archaeology data in the Czech Republic {#sec-sources}
+
+
+
+### Archaeology information system of the Czech Republic {#sec-aiscr}
+
+### Legacy data sources
+
+What is a legacy data source?
+
+#### Museum databases
+
+####
 
 
 ## Data management plan {#sec-dmp}
@@ -108,17 +119,5 @@ Is data long-term archived? Will it be usable and accessible after a long period
 
 Will the data be as open as possible?
 What are the reasons your data cannot became open?
-
-## Data sources {#sec-sources}
-
-### Archaeology information system of the Czech Republic {#sec-aiscr}
-
-### Legacy data sources
-
-What is a legacy data source?
-
-#### Museum databases
-
-####
 
 ## Chapter summary {.unnumbered}

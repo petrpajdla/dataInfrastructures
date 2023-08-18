@@ -35,7 +35,7 @@ Here is a brief outline of the structure of the thesis.
 In @sec-theory, *Theory*, the foundation is given by defining basic terms, data, data infrastructures etc.
 Then, theoretical approaches the work spans from are discussed and the concept of data in archaeology theorized.  The dichotomy between archaeology as data- and/or theory-driven science is debated.
 
-In @sec-method, *Method*, methodological boundaries are set up.
+<!-- In @sec-method, *Method*, methodological boundaries are set up. -->
 
 @sec-data, *Data*, introduces data sources that are used here.
 Understanding the data models employed in various data sources is vital for any subsequent steps taken in the analytical process.
