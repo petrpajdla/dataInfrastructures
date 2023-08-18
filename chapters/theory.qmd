@@ -157,75 +157,151 @@ Earlier in this chapter it was explained that here, data is understood as *capta
 
 <!-- Here more less starts chapter Method -->
 
-## Quality of data infrastructures {#sec-quality}
+## Assessing data infrastructures {#sec-quality}
 
-In this section I attempt to come up with a framework for an assessment of the quality of data infrastructures.
-As there are some signs of good-quality data (as noted in the @sec-terms-data), i.e. they are discreet and intelligible, aggregative, have associated metadata and can be linked to other datasets, by extension, good-quality data infrastructures allow data to be discreet and separable from other data, enable data aggregation, contain metadata and allow linking to other data sources.
+In this section I define a framework for an assessment of the quality of data infrastructures.
+As there are some signs of good-quality data (as cited from @kitchin2022 [4] in the @sec-terms-data), i.e. they are discreet and intelligible, aggregative, have associated metadata and can be linked to other datasets, by extension, good-quality data infrastructures allow data to be discreet and separable from other data, enable data aggregation, contain metadata and allow linking to other data sources.
 This gives us a general idea about requirements for a data infrastrucutre, but is difficult to assess in practice.
-These general ideas are further developed in the FAIR data principles [@wilkinson2016], which are
-especially aimed at enhancing the reusability of data holdings with an emphasis on the ability of machines to find and use the data and what more, are measurable.
+These general ideas are concretized and further developed by the FAIR data principles [@wilkinson2016], which are aimed at enhancing the reusability of data holdings with an emphasis on the ability of machines to find and use the data.
+The FAIR data principles are measurable what gives us an opportunity to assess how *FAIR* an infrastructure is.
 
 <!-- The CARE principles, on the other hand, are  -->
 
-<!-- My *framework* for assessing the quality of data infrastructures builds up the concept of FAIR data principles. -->
+FAIR data principles, i.e. findability, accessibility, interoperability and reusability, as originally defined by @wilkinson2016 [4], are as follows.
+To be *findable*, data and metadata have globally unique and persistent identifiers; are described with rich metadata which include the identifier of the data they describe; and are registered or indexed in a searchable resource.
+To be *accessible*, (meta)data are retrievable by the identifier using a standardized (open, free and universally implementable) communications protocol that allows for an authentication and authorization procedure; and metadata are accessible, even when the data are no longer available.
+To be *interoperable*, (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation; contain vocabularies that follow FAIR principles; and include qualified references to other (meta)data.
+To be *reusable*, meta(data) are richly described with a plurality of accurate and relevant attributes; are released with a clear and accessible data usage license; are associated with detailed provenance; and meet domain-relevant community standards.
 
-FAIR data principles, i.e. findability, accessibility, interoperability and reusability, as originally defined by @wilkinson2016 [4], are as follows:
+<!-- To be **Findable**:
 
-- To be **Findable**:
+  - data and metadata have globally unique and persistent identifiers;
+  - data are described with rich metadata;
+  - metadata include the identifier of the data they describe;
+  - (meta)data are registered or indexed in a searchable resource.
 
-  - data and metadata have globally unique and persistent identifiers (F1);
-  - data are described with rich metadata (F2);
-  - metadata include the identifier of the data they describe (F3);
-  - (meta)data are registered or indexed in a searchable resource (F4).
+To be **Accessible**:
 
-- To be **Accessible**:
+  - (meta)data are retrievable by the identifier using a standardized communications protocol;
 
-  - (meta)data are retrievable by the identifier using a standardized communications protocol (A1);
+    - the protocol is open, free, and universally implementable;
+    - the protocol allows for an authentication and authorization procedure;
 
-    - the protocol is open, free, and universally implementable (A1.1);
-    - the protocol allows for an authentication and authorization procedure (A1.2);
-
-  - metadata are accessible, even when the data are no longer available (A2).
+  - metadata are accessible, even when the data are no longer available.
 
 - To be **Interoperable**:
 
-  - (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation (I1);
-  - (meta)data use vocabularies that follow FAIR principles (I2);
-  - (meta)data include qualified references to other (meta)data (I3).
+  - (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation;
+  - (meta)data use vocabularies that follow FAIR principles;
+  - (meta)data include qualified references to other (meta)data.
 
 - To be **Reusable**:
 
-  - meta(data) are richly described with a plurality of accurate and relevant attributes (R1);
+  - meta(data) are richly described with a plurality of accurate and relevant attributes;
 
-    - (meta)data are released with a clear and accessible data usage license (R1.1);
-    - (meta)data are associated with detailed provenance (R1.2);
-    - (meta)data meet domain-relevant community standards (R1.3).
+    - (meta)data are released with a clear and accessible data usage license;
+    - (meta)data are associated with detailed provenance;
+    - (meta)data meet domain-relevant community standards. -->
 
 With archaeology audiences in mind, the principles are further explained together with tips for implementations etc. by @hollander2019.
-Here I build up on @wilkinson2016 and @hollander2019 to come up with a set of formal, i.e. measurable or determinable, criteria for assessment of data infrastructures.
+Here I build up on @wilkinson2016 and @hollander2019 to come up with a set of formal, i.e. measurable and/or determinable criteria for assessment of data infrastructures.
 This framework is then used to evaluate archaeology data infrastructures in the Czech Republic in @sec-data.
 
-#### Findability
+### Assessment framework
 
-In order to be able to use the data object in any way, it must be possible to uniquely identify it, find it, and refer to it.
+```{r}
+#| label: data-framework
+
+tbl_framework <- read.csv("tbls/framework.csv")
+
+kable_framework <- function(x, data, label) {
+  data[grep(x, data$ID), c("ID", "Quality", "Value")] |>
+    knitr::kable(col.names = c("ID", label, "Value"), row.names = FALSE)
+}
+```
+
+Assessment criteria are grouped together according to the FAIR principle they relate to.
+@tbl-framework-f lists criteria for findability of resources.
+Data should be easy to find by both humans and machines and well documented by metadata in order to be reusable by other researchers.
+To be able to use the data object in any way, it must be possible to uniquely identify it, find it, and refer to it (F1).
 This implies that an identifier of some sort, preferably persistent, i.e. immutable and long-lasting, is assigned to the resource (data and/or metadata).
-Another feature that enables findability of data is a rich metadata description.
+Persistent identifiers typically take form of DOIs, Handles, PURLs and URNs to name just a few examples[^3].
 
-- Does the data infrastructure have unique identifiers?
-- Are the identifiers persistent?
-  Are they of any standard form, e.g. DOI, Handle, URN[^3] etc.?
-- Is it possible to locate the resource by the identifier?
+Furthermore, it is convenient to be able to locate the resource (preferably on the internet) if the identifier, and possibly prefix of some sort, is known (F2).
+Since @marwick2018 explore the lack of data citation and reuse in archaeology and suggest a standard for data citation, one of the criteria is whether the infrastructure makes it easy to cite the resources it publishes (F3).
+Another feature that enables findability of data is a rich metadata description (F4--F5).
 
-- Is it possible (and easy) to cite the whole data infrastrucutre, its parts, and individual resources?
+```{r}
+#| label: tbl-framework-f
+#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Findability
 
-[^3]: Persistent identifiers typically take sevral forms.
-One example are Handles and DOIs (Digital Object Identifiers) composed of a `prefix/suffix` and typically resolved at <https://doi.org/>.
+kable_framework("F", tbl_framework, "Findability")
+```
+
+[^3]: Handles and DOIs (Digital Object Identifiers) are composed of a `prefix/suffix` and typically resolved at <https://doi.org/>.
 URNs (Uniform Resource Names), in form `urn:namespace:name`, are mostly used in the Semantic Web and are not resolvable, i.e. URNs do not have information about the location of the object.
 PURLs (Persistent Uniform Resource Locators) are an extension of URLs and are resolvable.
 URNs and (P)URLs are both subsets of URIs (Uniform Resource Identifiers).
-See e.g. @ducharme2013 [21-23] for details on URIs.
+See e.g. @ducharme2013 [21-23] for details.
 
+Criteria for accessibility are listed in @tbl-framework-a.
+Accessible data are retrievable under well-defined conditions using standardised protocols.
+Certification of a data infrastructure guarantees that its repository is trustworthy, the data are stored safely and will be available over a long period of time.
+Certifications may include [CoreTrustSeal](https://www.coretrustseal.org/), [nestor seal](https://www.langzeitarchivierung.de/) etc. (A1).
+By a standardised exchange protocol (A2.1) a well-documented technology created and maintained by a recognized authority (e.g. World Wide Web Consortium, [W3C](https://www.w3.org/)) is meant.
+For example [SPARQL](SPARQL) is a query language for semantic data created by W3C, [OAI-PMH](OAI-PMH), a Protocol for Metadata Harvesting, is created and maintained by the Open Archives Initiative etc.
+By a standardised format (A2.2) a machine-readable format is meant, for instance [XML](https://www.w3.org/TR/xml11/), a W3C format for hierarchical data representation, [RDF](https://www.w3.org/TR/rdf-primer/), a W3C standard for semantic data, etc.
 
+For (meta)data to be easily accessible, the policies for the access need to be clearly stated (A3), i.e. definitions of who can access what and when needs to be explicitly communicated, for example existence of differentiated user roles and/or embargo periods.
+This gives both the users accessing the data clear instructions on how to access the objects they need, and the users depositing the data sets options to protect sensitive data etc.
+Existence of policies how to handle situations if a data object is no longer available (e.g. deleted, superseded etc.) and presence of metadata tombstones is a good practice how to  communicate that a data object existed, but does not anymore (A4).
+
+```{r}
+#| label: tbl-framework-a
+#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Accessibility
+
+kable_framework("A", tbl_framework, "Accessibility")
+```
+Interoperability is the ability of the (meta)data to be easily combined with other data sets, @tbl-framework-i lists the interoperability criteria relevant to data infrastructures.
+Machine interoperability is closely related to the availability of APIs and their quality and human interoperability derives from the existence and extensiveness of documentation.
+
+To enable interoperability, (meta)data model[^4] needs to be described clearly and accessibly (I1) and employed controlled vocabularies need to be explained and published, preferably following the FAIR principles (I2).
+Explanation of the given data model and vocabularies describing exact meanings embedded in the data are a prerequisites for building understanding by other people.
+Furthermore, well-documented (meta)data models allow creation of mappings between different metadata schemes and data infrastructures.
+Similarly, the existence of machine actionable APIs (application programming interfaces, I4) that allow harvesting of (meta)data through standardised protocols and return responses in standardised formats (cf. A2) ensure machine interoperability.
+
+[^4]: The term *data model* is used here in the sense of how phenomena present, observed and/or measured in the real world are encoded in the data, what ratinale is behind the chosen abstraction process, and what is actually meant by the given wording.
+
+```{r}
+#| label: tbl-framework-i
+#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Interoperability
+
+kable_framework("I", tbl_framework, "Interoperability")
+```
+
+By reusability the process of making data ready for future processing and analysis is meant.
+This is crucial for reproducibility of scientific research.
+Data, repositories and infrastructures that are systematically documented by manuals, tutorials, guides, codebooks etc. and transparent about what they do and do not contain foster reuse, because researchers reusing the data have clear notion of what to expect from the data source (R1).
+Reusability is also enhanced by using widely used and open source file formats (R2).
+In the long run, long-term preservation (LTP) is a prerequisite for reusability, because if the file format in which the data is saved gets obsolete, it is often difficult to retrieve the original data, see @brin2013 for recommended file formats, online as *Guides to Good Practice* [-@archaeologydataservice].
+
+Integrity of the (meta)data and existence of multiple versions of the given data objects is also important to consider, because if this information is not properly communicated, different versions of the data objects with identical identifiers might get mixed up (R3).
+This closely relates to the provenance of the data, i.e. the documentation of the origin of the data object and record of any changes with a rationale behind these processes.
+Knowing why changes in the (meta)data happened, whether it was a correction of a previous mistake or something else, might be useful for data reuse in the future.
+Lastly, releasing the (meta)data with proper license information, preferably under a standard data license, for instance a [Creative Commons Licence](https://creativecommons.org/), and any information on a rights holder is neccessary for future reuse because without this information, it is unclear what the terms of (meta)data use are.
+
+```{r}
+#| label: tbl-framework-r
+#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Reusability
+
+kable_framework("R", tbl_framework, "Reusability")
+```
+The framework consists predominantly of qualities that are measurable and builds up on the FAIR data principles.
+CARE data principles, as defined by @carroll2020, were considered as well, but their goal is to increase the indigenous data sovereignity and self-determination by being people and purpose-oriented, while the FAIR data principles are primarily focused on the characteristics of the data.
+CARE data principles are put together to address imbalances of power in the knowledge societies and economies and protect indigenous and human rights.
+Hence the extent to which a data infrastructure adheres to CARE data principles is difficult to determine and/or measure.
+
+The framework for assessment of the quality of data infrastructures is used in @sec-data to evaluate the quality of archaeology data infrastructures in the Czech Republic.
 
 ## Software
 
