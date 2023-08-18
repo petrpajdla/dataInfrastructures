@@ -66,7 +66,7 @@ crossref without numbering: -@sec-label, [Chapter -@sec-label]
 
 ```{r}
 #| label: wc-in
-#| echo: false
+#| freeze: false
 fl <- paste0("chapters/", c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd"))
 # count words (w) and characters (c) using shell
 system(paste0("wc -wm ", paste0(fl, collapse = " "), " | sed -re 's/ +/,/g' > wc.txt"))
@@ -79,6 +79,6 @@ Length of individual chapters is as follows:
 
 ```{r}
 #| label: wc-out
-#| echo: false
+#| freeze: false
 wc
 ```
