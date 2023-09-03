@@ -67,18 +67,23 @@ crossref without numbering: -@sec-label, [Chapter -@sec-label]
 ```{r}
 #| label: wc-in
 #| freeze: false
-fl <- paste0("chapters/", c("intro.qmd", "theory.qmd", "method.qmd", "data.qmd"))
+fl <- paste0("chapters/", c("intro.qmd", "theory.qmd", "data.qmd"))
 # count words (w) and characters (c) using shell
 system(paste0("wc -wm ", paste0(fl, collapse = " "), " | sed -re 's/ +/,/g' > wc.txt"))
 wc <- read.csv("wc.txt", header = FALSE)[, 2:4] |>
   setNames(c("w", "c", "f"))
+wc$ns <- round(wc$c / 1800)
 ```
 
-As of `r format(Sys.Date(), "%B %-d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages of text.
+As of `r format(Sys.Date(), "%B %-d, %Y")` there are roughly `r round(wc[nrow(wc), "c"]/1800, 1)` pages (1800 characters per page) of text.
 Length of individual chapters is as follows:
+
+- Introduction: `r wc$ns[1]` pages
+- Theory and Method: `r wc$ns[2]` pages
+- Data and materials: `r wc$ns[3]` pages
 
 ```{r}
 #| label: wc-out
 #| freeze: false
-wc
+wc[, c("w", "c", "ns", "f")]
 ```
