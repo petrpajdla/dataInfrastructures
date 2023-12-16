@@ -77,7 +77,7 @@ Thus, we encounter terms such as **research infrastructures**, large research in
 
 In the next paragraphs, we look at several of the *political* definitions of research infrastructures and later we focus on an *analytical* definition of data infrastructures.
 
-#### Political definitions
+**Political definitions**
 
 In the European Union, research infrastructures are currently defined in the Article 2(1) of EU Regulation No 2021/695 establishing Horizon Europe [-@horizon] as facilities providing resources  and services for the research communities in their respective fields. These include:
 
@@ -100,7 +100,7 @@ This point is highlighted especially in the Czech definition, where an approval 
 In general, there is an emphasis on provision of services (etc.) to various stakeholder communities and cooperation.
 In the EU Regulation, a subset of a larger field of infrastructures is labeled *knowledge-related facilities*, it is exactly this part that is discussed here as *data infrastructures*.
 
-#### Data infrastructures
+**Data infrastructures**
 
 @kitchin2022 [47-48] builds up the definition of data infrastructures by comparing them to *data holdings* and *data archives*.
 *Data holdings* are any data stored informally, presumably by an individual (scientist), without long-term preservation or sharing for reuse in mind.
@@ -239,7 +239,7 @@ Another feature that enables findability of data is a rich metadata description 
 
 ```{r}
 #| label: tbl-framework-f
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Findability
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Findability
 
 kable_framework("F", tbl_framework, "Findability")
 ```
@@ -264,7 +264,7 @@ Existence of policies how to handle situations if a data object is no longer ava
 
 ```{r}
 #| label: tbl-framework-a
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Accessibility
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Accessibility
 
 kable_framework("A", tbl_framework, "Accessibility")
 ```
@@ -280,7 +280,7 @@ Similarly, the existence of machine actionable APIs (application programming int
 
 ```{r}
 #| label: tbl-framework-i
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Interoperability
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Interoperability
 
 kable_framework("I", tbl_framework, "Interoperability")
 ```
@@ -298,7 +298,7 @@ Lastly, releasing the (meta)data with proper license information, preferably und
 
 ```{r}
 #| label: tbl-framework-r
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Reusability
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Reusability
 
 kable_framework("R", tbl_framework, "Reusability")
 ```

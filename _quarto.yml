@@ -6,20 +6,20 @@ execute:
   echo: false
 
 book:
-  title: "Archaeology Data Infrastructures"
-  subtitle: "Data reuse potentials and limitations to modelling settlement systems (...)"
+  title: Archaeology Data Infrastructures
+  subtitle: Data reuse potentials and limitations to modelling settlement systems
   author:
-    - name: "Petr Pajdla"
-      email: "petr.pajdla@proton.me"
-      orcid: "0000-0001-7050-9572"
+    - name: Petr Pajdla
+      email: petr.pajdla@proton.me
+      orcid: 0000-0001-7050-9572
       affiliations:
-        - name: "Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
-        - name: "Institute of Archaeology, Czech Acad Sci, Brno"
+        - name: Department of Archaeology and Museology, Faculty of Arts, Masaryk University
+        - name: Institute of Archaeology, Czech Acad Sci, Brno
   date: today
   favicon: figs/cover.png
   # cover-image: cover.png
   search: true
-  repo-url: "https://github.com/petrpajdla/dataInfrastructures/"
+  repo-url: https://github.com/petrpajdla/dataInfrastructures/
   repo-actions: [source, edit, issue]
   # sidebar:
   #   tools:
@@ -52,13 +52,42 @@ format:
     citation-location: margin
     reference-location: margin
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook # scrreprt
+    papersize: a4wide
+    color-links: true
+    urlcolor: Periwinkle
+    linkcolor: Periwinkle
+    toc: true
+    toc-depth: 2
+    lof: true
+    lot: true
+    highlight-style: atom-one
+    include-in-header:
+      - text: |
+          \usepackage{fontspec}
+          \setmainfont{Alegreya}[
+               Path=./fonts/Alegreya/static/,
+               Extension = .ttf,
+               UprightFont=*-Regular,
+               BoldFont=*-SemiBold,
+               ItalicFont=*-Italic,
+               BoldItalicFont=*-SemiBoldItalic
+               ]
+          \setsansfont{AlegreyaSans}[
+               Path=./fonts/AlegreyaSans/,
+               Extension = .ttf,
+               UprightFont=*-Regular,
+               BoldFont=*-Bold,
+               ItalicFont=*-Italic,
+               BoldItalicFont=*-BoldItalic
+               ]
+          \KOMAoptions{BCOR=6mm}
   docx: default
 callout-appearance: simple
 number-depth: 3
 # highlight-style: tango
 
-toc-title: "Contents"
+toc-title: Contents
 
 bibliography:
   # - biblio/library.bib
