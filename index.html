@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Petr Pajdla">
-<meta name="dcterms.date" content="2023-08-18">
+<meta name="dcterms.date" content="2023-12-16">
 
 <title>Archaeology Data Infrastructures</title>
 <style>
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -228,7 +194,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Archaeology Data Infrastructures</h1>
-<p class="subtitle lead">Data reuse potentials and limitations to modelling settlement systems (…)</p>
+<p class="subtitle lead">Data reuse potentials and limitations to modelling settlement systems</p>
 </div>
 
 
@@ -255,7 +221,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 18, 2023</p>
+      <p class="date">December 16, 2023</p>
     </div>
   </div>
   
@@ -296,17 +262,11 @@ Note
 </div>
 </div>
 </div>
-<p>This document is created in an open-source <a href="https://quarto.oq()rg/">Quarto</a> scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give <em>Quarto</em> publishing a try and set this whole thing up in less then an hour or so.</p>
+<p>This document is created in an open-source <a href="https://quarto.org/">Quarto</a> scientific and technical publishing system. You might be asking why is it published and written like this even if it is not intended for any audiences except myself yet. I have no answer to this. One evening I simply decided to give <em>Quarto</em> publishing a try and set this whole thing up in less then an hour or so.</p>
 <section id="notes-on-writing" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="notes-on-writing">Notes on writing</h3>
 <p>This note is written mostly for a future me, in case I need to set up the working environment again on a different machine and to serve as a memo if I forget how to continue.</p>
-<p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are tracked with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>. The online version is published with this command:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Terminal</strong></pre>
-</div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are tracked with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>.</p>
 <p>In my point of view, there are numerous advantages to scientific writing in this manner over traditional <em>Office</em>-based approach. A non-exhaustive list of why to do scientific writing this way is below.</p>
 <ul>
 <li><strong>Plain text</strong> Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a <em>.pdf</em>, <em>.html</em>, <em>.docx</em> (and probably more) document formats can be rendered using <a href="https://pandoc.org/">pandoc</a>.</li>
@@ -330,9 +290,9 @@ In-text citations
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<pre><code>@citekey        -&gt; Author (year)
--@citekey       -&gt; (year)
-[@citekey]      -&gt; (Author, year)
+<pre><code>@citekey -&gt; Author (year)
+-@citekey -&gt; (year)
+[@citekey] -&gt; (Author, year)
 @citekey [p. X] -&gt; Author (year, p. X)</code></pre>
 </div>
 </div>
@@ -358,15 +318,19 @@ crossref without numbering: -@sec-label, [Chapter -@sec-label]</code></pre>
 </section>
 <section id="stats" class="level3">
 <h3 class="anchored" data-anchor-id="stats">Stats</h3>
-<p>As of August 18, 2023 there are roughly 19.2 pages of text. Length of individual chapters is as follows:</p>
+<p>As of September 8, 2023 there are roughly 19.3 pages (1800 characters per page) of text. Length of individual chapters is as follows:</p>
+<ul>
+<li>Introduction: 1 pages</li>
+<li>Theory and Method: 15 pages</li>
+<li>Data and materials: 3 pages</li>
+</ul>
 <div class="cell" data-freeze="false">
 <div class="cell-output cell-output-stdout">
-<pre><code>     w     c                   f
-1  282  1896  chapters/intro.qmd
-2 3670 25391 chapters/theory.qmd
-3  229  1755 chapters/method.qmd
-4  810  5484   chapters/data.qmd
-5 4991 34526               total</code></pre>
+<pre><code>     w     c ns                   f
+1  284  1905  1  chapters/intro.qmd
+2 3962 27369 15 chapters/theory.qmd
+3  805  5473  3   chapters/data.qmd
+4 5051 34747 19               total</code></pre>
 </div>
 </div>
 
