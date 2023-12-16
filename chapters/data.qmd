@@ -37,9 +37,7 @@ Archaeological information system of the Czech Republic (AIS CR) as the main dat
 
 What is a legacy data source?
 
-#### Museum databases
-
-####
+### Museum databases
 
 
 ## Data management plan {#sec-dmp}
@@ -56,7 +54,7 @@ It is included both as part of the text and as a standalone machine actionable f
 
 ### Created, collected and re-used data
 
-#### Data re-use
+**Data re-use**
 
 The work is predominantly based on re-using existing data.
 The sources of data are listed in @sec-sources.
@@ -72,12 +70,12 @@ Are there pre-existing data?
 License? Conditions for use?
 How is it accessed? -->
 
-#### Data creation and collection
+**Data creation and collection**
 <!-- - Creation and collection
 Data formats?
 Volumes of data? Suitable for LTP and sharing? -->
 
-#### Vocabularies
+**Vocabularies**
 
 <!-- Any used vocabularies, terminologies, ontologies? -->
 I am explicitly using vocabularies that are inherent to data sources from which the data is reused.
@@ -90,7 +88,7 @@ If reconciliation between data from different data sources is necessary, the *AA
 
 <!-- Any metadata convention? -->
 
-#### File naming conventions
+**File naming conventions**
 
 
 

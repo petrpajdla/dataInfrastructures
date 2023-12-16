@@ -4,10 +4,10 @@
 
 ## @sec-theory introduces: {.unnumbered}
 
-- Definitions for fundamental concepts I am building upon further in the text.
+- Definitions of fundamental concepts I am building up on further in the text.
 - An overview of theoretical approaches the work is determined and shaped by.
 - A discussion of archaeological research as theory- and/or data-driven.
-- A commentary on data from the theoretical points presented earlier.
+- A commentary on data from the theoretical points presented here.
 
 :::
 
@@ -15,31 +15,31 @@
 ## Definitions and terminology {#sec-terms}
 
 This section presents a discussion of how I (and others) understand **data** and **data infrastructures**.
-Data are a corner stone of this work and looking closely at how scholars, policy makers, and various other stakeholders define them is crucial for further understanding what is possible and what is not in the process of knowledge building.
+Data are a corner stone of this work and looking closely at how scholars, policy makers, and various other stakeholders define data is crucial for further understanding of what is possible and what is not in the process of knowledge building.
 
 ### Data {#sec-terms-data}
 
-In the current *information age*, word *data*[^1] is almost omnipresent and it became such a generic term that it is somewhat challenging to define.
-Most of the definitions understand data as building blocks of *information* [e.g. @kitchin2022, 4].
+In the current *information age*, word *data*[^1] is almost omnipresent and it became such a generic term that almost everyone has some notion or idea of what data are.
+Most of the formal definitions understand data as building blocks of *information* [e.g. @kitchin2022, 4].
 These pieces of information are percieved as pre-factual and pre-analytical.
 That is, in contrast to facts, false data are data nonetheless, disproven facts are no longer facts [@rosenberg2013, 17-18].
-Thus data are understood as incontrovertible and non-deconstructibe units.
+What more, data need to be analysed and interpreted to make a meaning.
+Data are furthermore understood as incontrovertible and non-deconstructible units.
 These assumptions migh lead to an impression that data exist in the outside world as entities or phenomena independent of the one observing them.
 And this is indeed one way to comprehend data, as *'things given'* that just need to be discoverd [cf. @huggett2020a].
 This inductive explanation of data brings in itself a danger that the process of discovering the data is viewed as an atheoretical endeavour.
 
 [^1]: In this text, I adhere to the current scholarly convention as noted by @kitchin2022 [xvii], i.e. using term *data* in the plural form, with a singular form of *datum*.
 
-On the contrary, data understood as *'things made'* are created at the moment when they are captured by observation, measurement, or derived from other data.
+On the contrary, if data are understood as *'things made'* they are created at the moment when they are captured by observation, measurement, or derived from other data.
 This implies theory-laden creative process of data generation, recording, etc.
 In this case, it is clear that the one creating or recording the data does that based on the experience, objective and knowledge he/she has.
 The whole process of data recording, creation, or capture is thus discursively framed and technically mediated [cf. @kitchin2022, 4-15; @huggett2020a].
-As Kitchin notes, what we label as data are in fact *capta*, i.e. *'things taken'*.
+As Kitchin notes, what we nowadays label as data are in fact *capta*, i.e. *'things taken'*.
 
-@ruppert2017 voice the idea that the practice of data production does not happen through unstructured social (and/or political) practices, but through structured and structuring fields that add to configurations of power and knowledge.
-In this section we went from understanding *data* as ubiquitous phenomena that are waiting out there to be discovered to *capta* that are actively and creatively made, recorded, generated etc. by a theory- and agenda-laden researcher.
-What more, the practice of data production is recognized as being shaped by and contributing to structure of power and knowledge.
-What data are recorded and how they are structured has consequences as to what can be later devised, i.e. what knowlege can be generated.
+@ruppert2017 voice the idea that the practice of data production does not happen through unstructured social (and/or political) practices, but through structured and structuring processes that add to configurations of power and knowledge.
+Hence, I do not understand *data* as ubiquitous phenomena that are waiting out there to be discovered but as *capta* that are actively and creatively made, recorded, generated etc. by a theory- and agenda-laden researchers.
+What more, the practice of data production is shaped by and contributing to structure of power and knowledge, because what data are recorded and how they are structured has consequences as to what can be later devised, i.e. what knowlege can be generated.
 
 <!--
 [@ruppert2017]:
@@ -49,9 +49,10 @@ cited in [@kitchin2022]:
 "The production of data is a social practice, conducted through structured and structuring fields (e.g. methods, concepts, expertise, institutions) that are shaped by and contribute to configurations of power and knowledge."
 -->
 
-Talking about how chosen strategies in data recording and generation may influence the knowledge generated further along the way an idea of good and bad data might come to mind.
+If the chosen strategies in data recording and generation influence the knowledge generated further along the way, an idea of good and bad data comes to mind.
+<!-- Talking about how chosen strategies in data recording and generation may influence the knowledge generated further along the way an idea of good and bad data might come to mind. -->
 Bad data, like false data, do not exist.
-Data can be useless, but their value is probably more determined by the current goal in mind.
+Data can be useless, but the value of data is determined by the current goal in mind, data deemed useless by one project can become useful on other occassion, perhaps previously unforeseen and unintended.
 Nevertheless, there are some signs of good-quality data as cited[^2] by @kitchin2022 [4]:
 
 - they are discreet and intelligible, i.e. each datum is individual, separate and separable, and clearly defined;
@@ -76,7 +77,7 @@ Thus, we encounter terms such as **research infrastructures**, large research in
 
 In the next paragraphs, we look at several of the *political* definitions of research infrastructures and later we focus on an *analytical* definition of data infrastructures.
 
-#### Political definitions
+**Political definitions**
 
 In the European Union, research infrastructures are currently defined in the Article 2(1) of EU Regulation No 2021/695 establishing Horizon Europe [-@horizon] as facilities providing resources  and services for the research communities in their respective fields. These include:
 
@@ -99,7 +100,7 @@ This point is highlighted especially in the Czech definition, where an approval 
 In general, there is an emphasis on provision of services (etc.) to various stakeholder communities and cooperation.
 In the EU Regulation, a subset of a larger field of infrastructures is labeled *knowledge-related facilities*, it is exactly this part that is discussed here as *data infrastructures*.
 
-#### Data infrastructures
+**Data infrastructures**
 
 @kitchin2022 [47-48] builds up the definition of data infrastructures by comparing them to *data holdings* and *data archives*.
 *Data holdings* are any data stored informally, presumably by an individual (scientist), without long-term preservation or sharing for reuse in mind.
@@ -116,14 +117,12 @@ Data infrastructures are thus information systems, repositories, archives, datab
 ## Overview of theoretical concepts {#sec-concepts}
 
 This section aims at briefly introducing theoretical approaches this work is shaped by.
-At first, digital humanities as an umbrella concept connecting the digital or computing world with the humanitites are introduced followed by discussion of digital, quantitative and computational archaeology.
-And lastly, spatial or landscape archaeology as a main concept framing this study is reviewed.
+At first, digital humanities as an umbrella concept connecting the digital and/or computing world with the humanitites are introduced followed by discussion of digital, quantitative and computational archaeology.
+And lastly, spatial archaeology as a main concept framing this study is reviewed.
 
 ### Digital humanities
 
-### Digital archaeology
-
-### Computational and quantitative archaeology
+### Digital, computational and quantitative archaeology
 
 ### Spatial archaeology
 
@@ -139,20 +138,27 @@ This section is partly based on the *Data-driven Archaeology. Are we there yet?*
 :::
 
 In his vision for the future of archaeology, @kristiansen2014 [14] sees the opposition between theory and data disappear.
-Here we examine the percieved dichotomy between data- and theory-driven approaches.
+Here we examine the dichotomy between data- and theory-driven approaches.
 The idea that scientific method and/or theory is dead was addressed by many, but I will start this discussion with a trending comment by @anderson2008.
 
 Anderson uses Boxes famous aphorism *"(...) all models are wrong (...)"* [@box1976, 792], later extended to *"All models are wrong but some [models] are useful."* [@box1979, 202] and extends it to *"All models are wrong, and increasingly you can succeed without them."* [@anderson2008].
+By this statement, the author means that science as we know it, i.e. building a hypothesis
+
+<!-- HERE HERE -->
+
+a (research) question can be tackled by accumulating and analysing large quantities of data (or *big data*[^5]) because
+
+[^5]: *Big data* is a phrase often heard in archaeology to address large amounts of data.
+In fact, it is a technical term for a data defined by their large volume, velocity, variety, exhaustivity, resolution, etc. [@kitchin2022, 61-74]. For instance some geophysical, 3D, remote sensing, or archaeogenetic and similar data can fit under the definition of big data, but most of archaeological data, like databases of sites and assamblages etc. are not big data by definition, even though they might cover large spatial and/or temporal regions and consist of many records.
 
 
 
-## Theorizing data
+## Theorizing archaeological data
 
 Defining archaeological data, micro- to macro-scales;
 
-Earlier in this chapter it was explained that here, data is understood as *capta*, i.e. *things*, that are actively and creatively made, recorded, generated etc.
+Earlier in this chapter it was explained that here, data is understood as *capta*, i.e. they are actively and creatively made, recorded, generated etc.
 
-  In this section we went from understanding data as ubiquitous phenomena that are waiting out there to be discovered to capta that are actively and creatively made, recorded, generated etc. by a theory- and agenda-laden researcher. What more, the practice of data production is recognized as being shaped by and contributing to structure of power and knowledge. What data are recorded and how they are structured has consequences as to what can be later devised, i.e. what knowlege can be generated.
 
 
 <!-- Here more less starts chapter Method -->
@@ -233,7 +239,7 @@ Another feature that enables findability of data is a rich metadata description 
 
 ```{r}
 #| label: tbl-framework-f
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Findability
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Findability
 
 kable_framework("F", tbl_framework, "Findability")
 ```
@@ -258,7 +264,7 @@ Existence of policies how to handle situations if a data object is no longer ava
 
 ```{r}
 #| label: tbl-framework-a
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Accessibility
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Accessibility
 
 kable_framework("A", tbl_framework, "Accessibility")
 ```
@@ -274,7 +280,7 @@ Similarly, the existence of machine actionable APIs (application programming int
 
 ```{r}
 #| label: tbl-framework-i
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Interoperability
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Interoperability
 
 kable_framework("I", tbl_framework, "Interoperability")
 ```
@@ -292,7 +298,7 @@ Lastly, releasing the (meta)data with proper license information, preferably und
 
 ```{r}
 #| label: tbl-framework-r
-#| tbl-cap: Framework for quality assessment of data infrastrastructres -- Reusability
+#| tbl-cap: Framework for quality assessment of data infrastrastructres, Reusability
 
 kable_framework("R", tbl_framework, "Reusability")
 ```
