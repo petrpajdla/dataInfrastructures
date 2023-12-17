@@ -1,0 +1,9 @@
+ISAD data (Information system about archaeological data) is separated into
+a geographical database and metadata/attribute database called SAS
+(State archeological list). The data is licensed under CC BY-SA 4.0.
+
+See https://geoportal.npu.cz/metadataserver/record/basic/%7BF7CD9912-E89F-415E-9582-C49C3D67784B%7D
+and https://geoportal.npu.cz/web/UAP
+
+There is an API for geographical data (https://geoportal.npu.cz/arcgis/rest/services/Tematicke/, ArcGIS REST MapService and FeatureService) but not for its attributes.
+
