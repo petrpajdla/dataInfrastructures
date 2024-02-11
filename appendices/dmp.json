@@ -1,0 +1,39 @@
+{
+    "dmp": {
+        "contributor": [
+            {
+                "contributor_id": {
+                    "identifier": "0000-0001-7050-9572",
+                    "type": "orcid"
+                },
+                "name": "Petr Pajdla",
+                "role": [
+                    "contact person",
+                    "data curator",
+                    "data manager",
+                    "producer",
+                    "researcher"
+                ]
+            }
+        ],
+        "created": "2024-02-11T22:40:41Z",
+        "dataset": [],
+        "description": "This maDMP has been created using Data Stewardship Wizard (ds-wizard.org) and is based on knowledge model Common DSW Knowledge Model (dsw:root:2.6.3). The questionnaire used for this DMP is identified by UUID \"a88e1de9-87e8-4e2a-ba5b-ec994acc4b30\" within https://avcr.fair-wizard.com/wizard DSW instance.",
+        "dmp_id": {
+            "identifier": "https://avcr.fair-wizard.com/wizard/projects/a88e1de9-87e8-4e2a-ba5b-ec994acc4b30",
+            "type": "url"
+        },
+        "ethical_issues_exist": "",
+        "language": "eng",
+        "modified": "2024-02-11T22:40:41Z",
+        "project": [
+            {
+                "description": "A PhD thesis on archaeology data infrastructures in the Czech republic.",
+                "end": "2025-12-31",
+                "start": "2022-01-01",
+                "title": "PhD Thesis \u0027Archaeology Data Infrasturcutres in the Czech republic\u0027 at the Department of Archaeology and Museology, Faculty of Arts, Masaryk University"
+            }
+        ],
+        "title": "dataInfrastructures"
+    }
+}
