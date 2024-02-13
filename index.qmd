@@ -42,6 +42,18 @@ In my point of view, there are numerous advantages to scientific writing in this
   Bibliography is organized using [Zotero](https://www.zotero.org/) with [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as *.bib* files. My *Zotero* library is [here](https://www.zotero.org/knytt). To format the citations, a citation style of the *Journal of Computer Applications in Archaeology* is used (.csl file was obtained [here](https://www.zotero.org/styles/)).
 - **Embedded code**
   Code blocks (and the associated results) can be easily embedded in the text. My language of choice is *R*. For more information on reproducibility see @marwick2017 and @marwick2018a.
+- **Reproduciblity**
+  Using `renv` package makes reproducibility of the whole project less tedious than I would normally expect. Hints:
+
+    - use `renv::status()` to check the status of the project,
+    - use `renv::install()` (`install.packages()` is aliased to it as well) to install new packages,
+    - use `renv::snapshot()` to update the lockfile,
+    - use `renv::restore()` to restore the state of the project/dependencies recorded in the lock file
+    - use `renv::update()` to updated the project.
+
+See [https://rstudio.github.io/renv/index.html](https://rstudio.github.io/renv/index.html) for more details, as well as this figure:
+
+![Basic usage of `renv`](https://rstudio.github.io/renv/articles/renv.png)
 
 ::: {.callout-tip collapse="true"}
 
