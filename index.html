@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Petr Pajdla">
-<meta name="dcterms.date" content="2024-02-11">
+<meta name="dcterms.date" content="2024-02-13">
 
 <title>Archaeology Data Infrastructures</title>
 <style>
@@ -177,6 +177,29 @@ div.csl-indent {
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary and abbreviations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices/dmp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Data management plan</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -228,7 +251,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 11, 2024</p>
+      <p class="date">February 13, 2024</p>
     </div>
   </div>
   
@@ -278,16 +301,31 @@ Note
 <p>As of November 2022, this is written on <a href="https://archlabslinux.com/">Archlabs</a> <em>GNU/Linux</em> machine, mostly in <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor and sometimes in <a href="https://posit.co/">RStudio</a>. Changes are tracked with <em>Git</em> and a remote repository is on <em>GitHub</em> (see the note above), same as the rendered website. The rendered version of the manuscript is in the branch <code>gh-pages</code>. See a guide on how to set this up <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>.</p>
 <p>In my point of view, there are numerous advantages to scientific writing in this manner over traditional <em>Office</em>-based approach. A non-exhaustive list of why to do scientific writing this way is below.</p>
 <ul>
-<li><strong>Plain text</strong> Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a <em>.pdf</em>, <em>.html</em>, <em>.docx</em> (and probably more) document formats can be rendered using <a href="https://pandoc.org/">pandoc</a>.</li>
-<li><strong>Version control</strong> Tracking changes using <em>git</em> is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.</li>
-<li><strong>Simple citation management</strong> Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> with <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as <em>.bib</em> files. My <em>Zotero</em> library is <a href="https://www.zotero.org/knytt">here</a>. To format the citations, a citation style of the <em>Journal of Computer Applications in Archaeology</em> is used (.csl file was obtained <a href="https://www.zotero.org/styles/">here</a>).</li>
-<li><strong>Embedded code</strong> Code blocks (and the associated results) can be easily embedded in the text. My language of choice is <em>R</em>. For more information on reproducibility see <span class="citation" data-cites="marwick2017">Marwick (<a href="biblio/references.html#ref-marwick2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="marwick2018a">Marwick, Boettiger and Mullen (<a href="biblio/references.html#ref-marwick2018a" role="doc-biblioref">2018</a>)</span>.</li>
+<li><p><strong>Plain text</strong> Writing in plain text enhanced with a simple <em>Markdown</em> syntax and some <em>Quarto</em> elements is great because from one source document, a <em>.pdf</em>, <em>.html</em>, <em>.docx</em> (and probably more) document formats can be rendered using <a href="https://pandoc.org/">pandoc</a>.</p></li>
+<li><p><strong>Version control</strong> Tracking changes using <em>git</em> is easily implemented when writing in a plain text. Keeping track of any changes in the manuscript is obviously crucial for any later revisions etc.</p></li>
+<li><p><strong>Simple citation management</strong> Bibliography is organized using <a href="https://www.zotero.org/">Zotero</a> with <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension which is used to export (and keep updated) necessary collections in a parent folder of the manuscript as <em>.bib</em> files. My <em>Zotero</em> library is <a href="https://www.zotero.org/knytt">here</a>. To format the citations, a citation style of the <em>Journal of Computer Applications in Archaeology</em> is used (.csl file was obtained <a href="https://www.zotero.org/styles/">here</a>).</p></li>
+<li><p><strong>Embedded code</strong> Code blocks (and the associated results) can be easily embedded in the text. My language of choice is <em>R</em>. For more information on reproducibility see <span class="citation" data-cites="marwick2017">Marwick (<a href="biblio/references.html#ref-marwick2017" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="marwick2018a">Marwick, Boettiger and Mullen (<a href="biblio/references.html#ref-marwick2018a" role="doc-biblioref">2018</a>)</span>.</p></li>
+<li><p><strong>Reproduciblity</strong> Using <code>renv</code> package makes reproducibility of the whole project less tedious than I would normally expect. Hints:</p>
+<ul>
+<li>use <code>renv::status()</code> to check the status of the project,</li>
+<li>use <code>renv::install()</code> (<code>install.packages()</code> is aliased to it as well) to install new packages,</li>
+<li>use <code>renv::snapshot()</code> to update the lockfile,</li>
+<li>use <code>renv::restore()</code> to restore the state of the project/dependencies recorded in the lock file</li>
+<li>use <code>renv::update()</code> to updated the project.</li>
+</ul></li>
 </ul>
 <div class="no-row-height column-margin column-container"><div id="ref-marwick2017" class="csl-entry" role="listitem">
 Marwick, B. 2017 Computational <span>Reproducibility</span> in <span>Archaeological Research</span>: <span>Basic Principles</span> and a <span>Case Study</span> of <span>Their Implementation</span>. <em>Journal of Archaeological Method and Theory</em> 24(2): 424–450. DOI: https://doi.org/<a href="https://doi.org/10.1007/s10816-015-9272-9">10.1007/s10816-015-9272-9</a>.
 </div><div id="ref-marwick2018a" class="csl-entry" role="listitem">
 Marwick, B, Boettiger, C and Mullen, L. 2018 Packaging <span>Data Analytical Work Reproducibly Using R</span> (and <span>Friends</span>). <em>The American Statistician</em> 72(1): 80–88. DOI: https://doi.org/<a href="https://doi.org/10.1080/00031305.2017.1375986">10.1080/00031305.2017.1375986</a>.
-</div></div><div class="callout callout-style-simple callout-tip callout-titled">
+</div></div><p>See <a href="https://rstudio.github.io/renv/index.html">https://rstudio.github.io/renv/index.html</a> for more details, as well as this figure:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rstudio.github.io/renv/articles/renv.png" class="img-fluid figure-img"></p>
+<figcaption>Basic usage of <code>renv</code></figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -327,19 +365,19 @@ crossref without numbering: -@sec-label, [Chapter -@sec-label]</code></pre>
 </section>
 <section id="stats" class="level3">
 <h3 class="anchored" data-anchor-id="stats">Stats</h3>
-<p>As of September 8, 2023 there are roughly 19.3 pages (1800 characters per page) of text. Length of individual chapters is as follows:</p>
+<p>As of February 11, 2024 there are roughly 21.7 pages (1800 characters per page) of text. Length of individual chapters is as follows:</p>
 <ul>
-<li>Introduction: 1 pages</li>
+<li>Introduction: 2 pages</li>
 <li>Theory and Method: 15 pages</li>
-<li>Data and materials: 3 pages</li>
+<li>Data and materials: 4 pages</li>
 </ul>
 <div class="cell" data-freeze="false">
 <div class="cell-output cell-output-stdout">
 <pre><code>     w     c ns                   f
-1  284  1905  1  chapters/intro.qmd
-2 3962 27369 15 chapters/theory.qmd
-3  805  5473  3   chapters/data.qmd
-4 5051 34747 19               total</code></pre>
+1  508  3551  2  chapters/intro.qmd
+2 3963 27385 15 chapters/theory.qmd
+3 1222  8089  4   chapters/data.qmd
+4 5693 39025 22               total</code></pre>
 </div>
 </div>
 
