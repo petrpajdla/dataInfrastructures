@@ -111,7 +111,7 @@ The role of an interconnected digital world is then highlighted in Kitchin's def
 
 > *"A data infrastructure is a digital means for storing, sharing, connecting and consuming data holdings and archives across the internet."*
 
-Data infrastructures are thus information systems, repositories, archives, databases etc. shared by multiple shareholder groups that are essential in supporting open science and research.
+Data infrastructures are thus information systems, repositories, archives, databases etc. shared by multiple shareholder groups that are essential in supporting open science, research and in our case archaeological heritage management.
 
 
 ## Overview of theoretical concepts {#sec-concepts}
@@ -120,11 +120,19 @@ This section aims at briefly introducing theoretical approaches this work is sha
 At first, digital humanities as an umbrella concept connecting the digital and/or computing world with the humanitites are introduced followed by discussion of digital, quantitative and computational archaeology.
 And lastly, spatial archaeology as a main concept framing this study is reviewed.
 
-### Digital humanities
+Digital humanities is now a fully developed interdisciplinary field that utilizes computational methods and digital tools to conduct research, analyze, and interpret humanities data and artefacts.
+Digital humanities does not create qualitatively *new science*, it enhances and extends the ways in which scholars in the humanities approach their research questions with extensive use of computational methods, statistics, geographic information systems, network analyses, text mining etc.
 
-### Digital, computational and quantitative archaeology
+Archaeology, with its strong interdisciplinary focus and early adoption of many innovations, positions itself somewhat aside from the digital humanities.
+The difference of archaeology might be given by its specific sources, ie. the material culture objects, which is distinct from many of digital humanities disciplines, which are predominantly based on textual sources.
+Fieldwork, physical excavations, handling of material culture and focus on physical preservation are processes that lead to archaelogy having apparently closer connections to some of natural sciences, like geology, than to other humanities text-centric disciplines, like history.
+On the other hand, there are many intersections between digital humanities and archaeology that speak for stronger inclusion of archaeology in this field.
 
-### Spatial archaeology
+
+TODO: Describe why DH is relevant, brief intro on Digital, computational and quantitative archaeology, spatial archaeology
+<!-- ### Digital, computational and quantitative archaeology
+
+### Spatial archaeology -->
 
 
 ## Archaeology as theory- and data-driven
@@ -138,26 +146,74 @@ This section is partly based on the *Data-driven Archaeology. Are we there yet?*
 :::
 
 In his vision for the future of archaeology, @kristiansen2014 [14] sees the opposition between theory and data disappear.
-Here we examine the dichotomy between data- and theory-driven approaches.
-The idea that scientific method and/or theory is dead was addressed by many, but I will start this discussion with a trending comment by @anderson2008.
+Here I examine the dichotomy between data- and theory-driven approaches in archaeology, because this work utilises large amounts of data and addressing its data-driven nature is important for methodological transparency and reproducibility, as well as understanding what does it mean in the first place.
+Abundance of data led to an idea that scientifc method and/or theory is obsolete.
+This idea was addressed by many, but I will start the discussion with a trending comment by @anderson2008.
 
 Anderson uses Boxes famous aphorism *"(...) all models are wrong (...)"* [@box1976, 792], later extended to *"All models are wrong but some [models] are useful."* [@box1979, 202] and extends it to *"All models are wrong, and increasingly you can succeed without them."* [@anderson2008].
-By this statement, the author means that science as we know it, i.e. building a hypothesis
-
-<!-- HERE HERE -->
-
-a (research) question can be tackled by accumulating and analysing large quantities of data (or *big data*[^5]) because
+By this statement, the author means that scientific method as we know it, i.e. positing a research question based on previous knowledge and observation, formulating a testable and falsifiable hypothesis to address this question, and gathering data or conducting experiments in order to test the hypothesis, is superseded by accumulating large quantities of data (or *big data*[^5]) and analyzing it for correlations is good enough, even better, than burdening yourself with building models first.
+Anderson simply proclaims that *"correlation supersedes causation, and science can advance even without coherent models, unified theories, or really any mechanistic explanation at all"*.
 
 [^5]: *Big data* is a phrase often heard in archaeology to address large amounts of data.
-In fact, it is a technical term for a data defined by their large volume, velocity, variety, exhaustivity, resolution, etc. [@kitchin2022, 61-74]. For instance some geophysical, 3D, remote sensing, or archaeogenetic and similar data can fit under the definition of big data, but most of archaeological data, like databases of sites and assamblages etc. are not big data by definition, even though they might cover large spatial and/or temporal regions and consist of many records.
+In fact, it is a technical term for a data defined by their large volume, velocity, variety, exhaustivity, resolution, etc. [@kitchin2022, 61-74].
+For instance some geophysical, 3D, remote sensing, or archaeogenetic and similar data can fit under the definition of big data, but most of archaeological data, like databases of sites and assamblages etc. are not big data by definition, even though they might cover large spatial and/or temporal regions and consist of many records and variables.
 
+Both theory-driven and data-driven aspects are fundamentally rooted in archaeology.
+The theory-driven aspect of archaeology comes in a plurality of conceptual frameworks or paradigms, e.g. cultural history, cultural ecology, processual and post-processual archaeology etc.
+Theories in archaeology shape interpretive models that are created to make sense of the past embedded in material objects.
+They influence the decisions about the design of archaeological projects, like what aspects of archaeological record and data are deemed significant and worthy preserving or what sampling strategy is chosen.
+
+The data-driven aspect of archaeology spans from the focus on material remains of past human activities.
+The collection, documentation and analysis of the data on artefacts, ecofacts, and other evidence etc. are central part of archaeological practice.
+The urge to meticulously document each and every detail of the excavated situation is driven by the non-repeatable nature of archaeological research.
+Together with the use of scientific techniques, such as aDNA analysis, radiocarbon dating etc. and various quantitative methods, GIS, and statistical techniques, an impression or fallacy of objectivity and practice devoid of presumptions or theory arises.
+
+To summarise, theory-driven approach is a top-down process, where knowlege is created by testing models against reality, the data-driven approach is a bottom-up process, where knowledge is created by identifying patterns in large data sets [@maass2018].
+Theory and data driven approaches coexist in archaeology in relationship that does I do not see as a strictly binary opposition.
+Anderson's comment challenges scientific method, emphasizing possibilities of vast data sets for uncovering patterns, yet the vast data sets, or big data, would not exist in archaeology without decisions driven by theory and models how to create them in one way or another in the first place.
+
+In summary, the duality of approaches in archaeology creates an iterative dialogue, where theories guide the formulation of research questions and interpretation of phenomena, while data derived from fieldwork and analysis continually refine theories and models.
+In this sense, the opposition between theory and data is indeed disappearing, as Kristiansen suggests, and theory- and data-driven approachech permeate and intermingle one with the other, creating a dynamic and evolving discipline.
 
 
 ## Theorizing archaeological data
 
-Defining archaeological data, micro- to macro-scales;
+In the previous section I discussed the interwining nature of archaeology as theory-driven and data-driven practice.
+Here I delve into the discussion of the heterogeneous nature of archaeological data.
+Even earlier in this chapter it was explained that here, data is understood as *capta*, i.e. it is actively and creatively made, recorded, generated etc.
+In this sense, also archaeological data is in fact archaeological *capta*, meaning that in my point of view, it is created the moment it is recorded, it does not exist on its own, an agent's incentive is then a neccessary condition for the *capta*/data to originate.
 
-Earlier in this chapter it was explained that here, data is understood as *capta*, i.e. they are actively and creatively made, recorded, generated etc.
+I will start this section by citing three authors dealing with the nature of archaeological data and use their critical comments on the problematic nature of archaeology data as a starting point for explaining how it is understood throughout this work:
+
+> *“(...) however dense it becomes, archaeological evidence will always remain patchy, with levels of uncertainty and variable expert opinions that are hugely challenging.”*
+> [@bevan2015, 1477]
+
+> *“Archaeological data are shadowy in a number of senses. They are notoriously incomplete and fragmentary, and the sedimented layers of interpretive scaffolding on which archaeologists rely to constitute these data as evidence carry the risk that they will recognize only those data that conform to expectation.”*
+> [@wylie2017, 1477]
+
+> *“Archaeological data is always incomplete, frequently unreliable, often replete with unknown unknowns (...)”*
+> [@huggett2020a, S8]
+
+The citation from Bevan's article could suggests that although abundance of archaeological evidence is accumulated over time, and especially in recent decades in vast amounts (*data deluge*), it is difficult, sic impossible, to draw conclusions about the past.
+On the contrary, the author acknowledges that *"(...) at least in certain parts of the world, we cannot in all good conscience claim 'we don’t yet have enough evidence' or that we should 'wait till the evidence is in'."*
+In a similar manner, @kristiansen2014 [18] assumes that *"After 40 years of contract archaeology, real historical knowledge about settlements and landscapes is possible."*
+However optimistic these claims sound, they are not without problems.
+The first one is expressed in Bevan's citation, ie. the patchy nature of archaeological evidence and associated uncertainty levels.
+Although there is most certainly a finite amount of archaeological evidence buried below the surface, in some way our knowledge is never complete, because some (many) patches of land remain unexplored.
+This makes the evidence, *sensu* data, close to infinite in the sense that we will never be sure whether we are missing any pieces or not.
+
+Wylie addresses these aspects of archaeological data as *notorious incompleteness and fragmentarity*.
+What more, she stresses that archaeological data is always burdened by the *interpretive scaffoldings*, that is, the theories and models individual archaeologists, the active agents in the data creation process, carry with themselves.
+This poses a conundrum.
+If we accept the *theory-driven* aspect of archaeology described in the previous section we approach data recording with certain models in mind, and in turn we fail to recognize and record evidence that does not conform to our expectation, to paraphrase Wylie.
+If we stick to the *data-driven* aspect of archaeology, we fail to recognize that the data we are re-using was created by someone with certain models and theories in mind.
+These examples are obviously great simplifications, but illustrate the point that no archaeological data exist without theory, models or expectations in their provenance.
+
+Lastly, Hugget's assertion adds *unknown unknowns* to the mix of archaeological data.
+
+
+
+TODO: Defining archaeological data, micro- to macro-scales;
 
 
 
@@ -309,7 +365,7 @@ Hence the extent to which a data infrastructure adheres to CARE data principles 
 
 The framework for assessment of the quality of data infrastructures is used in @sec-data to evaluate the quality of archaeology data infrastructures in the Czech Republic.
 
-## Software
+## Software {#sec-software}
 
 Most of the things included here, if not all of them, were achieved using open-source software.
 Large part of this endeavor is also documented in code.
