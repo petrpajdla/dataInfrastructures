@@ -39,9 +39,10 @@ book:
     # - chapters/discussion.qmd
     # - chapters/summary.qmd
     - biblio/references.qmd
-  # appendices:
-  #   - appendices/glossary.qmd
+  appendices:
+    - appendices/glossary.qmd
     # - appendices/software.qmd
+    - appendices/dmp.qmd
 citation: true
 
 format:

@@ -1,29 +1,61 @@
-# Glossary {#sec-glossary}
+# Glossary and abbreviations {#sec-glossary}
 
+## Institutions, infrastructures, services etc.
+
+AAT, Getty AAT
+: Getty Art & Architecture Thesaurus
+
+AIS CR
+: Archaeological information system of the Czech republic (Archeologický informační systém České republiky, <https://aiscr.cz/>). Central data infrastructure in the Czech republic operated jointly by Institutes of Archaeology of the Czech Academy of Sciences in Prague and Brno. Its main component is the AMČR.
+
+AMČR
+: Archaeological map of the Czech republic (Archeologická mapa České republiky, <https://amcr-info.aiscr.cz/>). A backbone ecosystem of AIS CR gathering data on archaeological fieldworks in the Czech republic.
+
+ARIADNE
+: ARIADNE (<https://ariadne-infrastructure.eu/>) is an international infrastructure devoted to archaeological data preservation and sharing. ARIADNE is operating [ARIADNE Portal](https://portal.ariadne-infrastructure.eu/), a central point of access to archaeological resources offered by different partner institutions.
+
+ARUB
+: Institute of Archaeology, Czech Academy of Sciences, Brno (<https://www.arub.cz/>).
+
+ARUP
+: Institute of Archaeology, Czech Academy of Sciences, Prague (<https://www.arup.cas.cz>)
+
+ISAD
+: Information system about archaeological data (Informační systém o archeologických datech, <https://isad.npu.cz/>), an information system operated by the NHI. ISAD consists in principle of spatial data and its metadata, ie. SAS.
+
+NHI (NPÚ)
+: National Heritage Institute (Národní památkový ústav, <https://npu.cz/>).
+
+NM
+: Natinal Museum (Národní muzeum, <https://www.nm.cz/>)
+
+SAS
+: State archaeological list (Státní archeologický seznam), part of ISAD operated by the NHI.
+
+
+## Other abbreviations
+
+DMP
+: Data management plan, also data stewardship plan.
+
+DSW
+: Data stewardship wizard (<https://ds-wizard.org/>), an online tool for DMP creation. A FAIR Wizard, an instance of DSW operated by the Czech Academy of Sciences, was used to create a DMP enclosed as @sec-apx-dmp.
+
+FAIR data
+: Findable, interoperable, accessible and reusable data.
+
+
+
+<!--
 ### Data {.unnumbered}
 
 ### Data infrastructure {.unnumbered}
-
-### Data management plan (DMP) {.unnumbered}
-
-(also data stewardship plan)
 
 ### Database {.unnumbered}
 
 ### Data set {.unnumbered}
 
-
-### FAIR data principles {.unnumbered}
-
 ### CARE data principles
 
 ### Legacy data {.unnumbered}
-
-
-
-
-### Roles {.unnumbered}
-
-#### Data curator
-
-#### Data steward
+-->
